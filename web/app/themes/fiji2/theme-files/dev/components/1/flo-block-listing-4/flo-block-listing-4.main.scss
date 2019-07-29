@@ -1,0 +1,117 @@
+.flo-block-listing-4 {
+  $b: ".flo-block-listing-4";
+  
+  a {
+    &:focus,
+    &:active {
+      color: inherit;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+  }
+    &__featured-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      @include global-bgi-cover;
+    }
+    &__overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      $size: calc(100% - #{rem-calc(18) * 2});
+      width: $size;
+      height: $size;
+    }
+      &__decorative-image {
+        display: inline-block;
+        max-height: rem-calc(53);
+        width: auto;
+        margin-bottom: rem-calc(18);
+      }
+      &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__category {
+        display: block;
+        margin-top: rem-calc(27);
+      }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      overflow: hidden;
+      &--has-featured-image {
+        #{$b}__overlay {
+          transform: translate(-50%, 0);
+          bottom: 100%;
+          top: auto;
+          @include global-transition(transform, bottom);
+        }
+        &:hover {
+          #{$b}__overlay {
+            transform: translate(-50%, 50%);
+            bottom: 50%;
+          }
+        }
+      }
+      &:not(#{$b}__item--has-featured-image) {
+        #{$b}__overlay {
+          @include global-transition(transform);
+          &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+        }
+      }
+    }
+      &__featured-image {
+
+      }
+      &__overlay {
+        padding: rem-calc(28);
+      }
+        &__decorative-image {
+
+        }
+        &__title {
+
+        }
+        &__category {
+
+        }
+  }
+
+  @include breakpoint(small only) {
+    &__item {
+      height: rem-calc(350);
+      margin-bottom: rem-calc(30);
+    }
+      &__featured-image {
+
+      }
+      &__overlay {
+        padding: rem-calc(20)
+      }
+        &__decorative-image {
+
+        }
+        &__title {
+
+        }
+        &__category {
+
+        }
+  }
+}

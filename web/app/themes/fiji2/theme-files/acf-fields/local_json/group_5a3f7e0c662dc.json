@@ -1,0 +1,219 @@
+{
+    "key": "group_5a3f7e0c662dc",
+    "title": "Block. Item Vendors",
+    "fields": [
+        {
+            "key": "field_5a3f7e0c6a468",
+            "label": "Specific",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a3f7e0c6a499",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/lovely2\/flo-block-item-vendors.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a3f7e2af4fca",
+            "label": "1. Elements Color",
+            "name": "elements_color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": ""
+        },
+        {
+            "key": "field_5a3f7e4bf4fcb",
+            "label": "2. Title",
+            "name": "title",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "EVENT VENDORS",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3f7e62f4fcc",
+            "label": "2.1. Title Font",
+            "name": "title_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_5a3f7e7df4fcd",
+            "label": "3. Links",
+            "name": "links",
+            "type": "repeater",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Link",
+            "sub_fields": [
+                {
+                    "key": "field_5a3f7e92f4fce",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Vendor Title",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a3f7e9ff4fcf",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5a3f7ea8f4fd0",
+            "label": "3.1. Link Font",
+            "name": "link_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_5a3f7e0c6a4ee",
+            "label": "Additional Fields",
+            "name": "additional_fields",
+            "type": "clone",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58eb425e82b8c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1514110694
+}

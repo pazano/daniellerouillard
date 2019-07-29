@@ -1,0 +1,133 @@
+.flo-footer-area-2 {
+  $b: ".flo-footer-area-2";
+
+  &__social-area {
+
+  }
+    &__link {
+
+    }
+    &__social-links {
+
+    }
+  &__title-area {
+    text-align: center;
+  }
+    &__title {
+
+    }
+    &__subtitle {
+
+    }
+  &__newsletter-form {
+    display: flex;
+    padding: rem-calc(14) rem-calc(26) rem-calc(14) rem-calc(18);
+  }
+    &__newsletter-form-email {
+      border: 0!important;
+      padding: 0!important;
+    }
+    &__newsletter-form-submit {
+      font-size: rem-calc(18);
+      cursor: pointer;
+    }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    align-items: center;
+    // width: calc(100% - #{rem-calc(100) * 2});
+    // padding: rem-calc(31) 0;
+    // margin: 0 auto;
+    width: 100%;
+    padding: rem-calc(31) $global-padding--horizontal;
+    // border-bottom: 1px solid;
+
+    &__social-area,
+    &__title-area
+    {
+      width: calc(100% / 3);
+    }
+    &__social-area {
+      display: flex;
+      align-items: center;
+      position: relative;
+      &:after {
+        content: " ";
+
+        display: block;
+
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        height: rem-calc(41);
+        // border-left: 1px solid;
+        border-color: inherit;
+      }
+    }
+      &__link {
+        margin-right: rem-calc(36);
+      }
+      &__social-links {
+        a {
+          font-size: rem-calc(12);
+          margin-right: rem-calc(13);
+        }
+      }
+    &__title-area {
+
+    }
+      &__title {
+
+      }
+      &__subtitle {
+
+      }
+    &__newsletter-form {
+      width: calc(100% / 3 - #{$global-column-width / 2});
+      margin-left: auto;
+    }
+      &__newsletter-form-email {
+
+      }
+      &__newsletter-form-submit {
+
+      }
+  }
+
+  @include breakpoint(small only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem-calc(20) $global-padding-mobile--horizontal;
+
+    &__social-area {
+      margin-bottom: rem-calc(30);
+    }
+      &__link {
+
+      }
+      &__social-links {
+        text-align: center;
+      }
+    &__title-area {
+      margin-bottom: rem-calc(30);
+    }
+      &__title {
+
+      }
+      &__subtitle {
+
+      }
+    &__newsletter-form {
+      width: 100%;
+    }
+      &__newsletter-form-email {
+
+      }
+      &__newsletter-form-submit {
+
+      }
+  }
+}

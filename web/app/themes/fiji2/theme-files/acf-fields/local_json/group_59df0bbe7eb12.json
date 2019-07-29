@@ -1,0 +1,534 @@
+{
+    "key": "group_59df0bbe7eb12",
+    "title": "Block. Comments",
+    "fields": [
+        {
+            "key": "field_59df0bd3cc684",
+            "label": "Specific",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59df0be6cc685",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/lovely2\/flo-block-comments.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59df0ec5cc68f",
+            "label": "1. Elements Color",
+            "name": "elements_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0
+        },
+        {
+            "key": "field_59df0c1ecc686",
+            "label": "A.1. Comments Title",
+            "name": "comments_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Comments",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59df0d1acc687",
+            "label": "A.1.1. Comments Title Font",
+            "name": "comments_title_font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_5b978e261e8f9",
+            "label": "Use Facebook Comments",
+            "name": "use_facebook_comments",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This will replace Default WordPress comments",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59e32edf9666b",
+            "label": "B.1. Display Avatars",
+            "name": "display_avatar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59df0d4fcc688",
+            "label": "B.2. Comment Author Font",
+            "name": "comment_author_font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_59df0d85cc689",
+            "label": "B.3. Display Comment Date",
+            "name": "display_comment_date",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59df0d9fcc68a",
+            "label": "B.3.1. Comment Date Font",
+            "name": "comment_date_font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59df0d85cc689",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        },
+        {
+            "key": "field_59df0dd0cc68b",
+            "label": "B.4. Comment Font",
+            "name": "comment_font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_59df0e35cc68c",
+            "label": "B.5. \"Reply\" Button Label",
+            "name": "reply_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "REPLY",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59df0e6ccc68d",
+            "label": "B.5.1. \"Reply\" Button Label Font",
+            "name": "reply_button_label_font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_1"
+        },
+        {
+            "key": "field_59df0eedcc690",
+            "label": "B.6.1. \"Reply\" Comment Background Color",
+            "name": "reply_comment_background_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "secondary-background-color-1",
+            "default_value": "",
+            "use_alpha": 0
+        },
+        {
+            "key": "field_59df0f2bcc691",
+            "label": "B.6.2. Reply Comment Elements Color",
+            "name": "reply_comment_elements_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0
+        },
+        {
+            "key": "field_59df0f4dcc692",
+            "label": "C.1. Form Title",
+            "name": "form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Add Your Comment",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59df0f7fcc693",
+            "label": "C.1.1. Form Title Font",
+            "name": "form_title_font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 4",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_4"
+        },
+        {
+            "key": "field_59df0fd2cc695",
+            "label": "C.2. Form Field Font",
+            "name": "form_field_font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        },
+        {
+            "key": "field_59df1032cc698",
+            "label": "C.3. Submit Button Label",
+            "name": "submit_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "SUBMIT",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59df1044cc699",
+            "label": "C.3.1. Submit Button Label Font",
+            "name": "submit_button_label_font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b978e261e8f9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_59df142f83769",
+            "label": "Additional Fields",
+            "name": "additional_fields",
+            "type": "clone",
+            "instructions": "D",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58eb425e82b8c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1542793935
+}

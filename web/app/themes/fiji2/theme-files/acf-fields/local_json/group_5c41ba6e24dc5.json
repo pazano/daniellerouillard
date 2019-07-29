@@ -1,0 +1,228 @@
+{
+    "key": "group_5c41ba6e24dc5",
+    "title": "Block. Listing Pagination 2",
+    "fields": [
+        {
+            "key": "field_5c41ba7349f92",
+            "label": "Specific",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c41ba8649f93",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/narcisse\/flo-block-listing-pagination-3.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c41bb0d49f94",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "LOAD MORE",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c41bb2549f95",
+            "label": "Button Text while Loading",
+            "name": "loading_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "LOADING",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c41bb3149f96",
+            "label": "Button Text Font",
+            "name": "button_font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_5c41bb4949f97",
+            "label": "Text Color",
+            "name": "text_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "#000000",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5c41bb6c49f98",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "#FFFFFF",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5c41bb8d49f99",
+            "label": "Hover State",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c41bb9949f9a",
+            "label": "Hover Text Color",
+            "name": "hover_text_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5c41bbb749f9b",
+            "label": "Hover Background Color",
+            "name": "hover_background_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "secondary-background-color-1",
+            "default_value": "",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5c41bc1e49f9c",
+            "label": "Additional",
+            "name": "additional",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58eb425e82b8c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1549896326
+}

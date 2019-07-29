@@ -1,0 +1,84 @@
+.flo-footer {
+  $b: ".flo-footer";
+
+  position: relative;
+
+  /* START: IMAGE FEED */
+    @mixin images($size: rem-calc(100), $mobile_margin_bottom: rem-calc(20)) {
+      &__images {
+        .img-block {
+          a {
+            display: block;
+          }
+        }
+        @include breakpoint(medium up) {
+        }
+      }
+        &__image {
+          @include global-bgi-cover;
+        }
+
+      @include breakpoint(medium up){
+        &__images {
+          &,
+          .flo-shcode-instgm-container {
+            display: flex;
+          }
+        }
+          &__image {
+            width: $size;
+            height: $size;
+          }
+          .img-block {
+            width: $size!important;
+          }
+      }
+      @include breakpoint(small only) {
+        &__images {
+
+        }
+          &__image {
+            width: 100%;
+            height: rem-calc(300);
+            margin-bottom: $mobile_margin_bottom;
+          }
+          .img-block {
+            margin-bottom: $mobile_margin_bottom;
+            text-align: center;
+            width: 100%!important;
+          }
+      }
+    }
+  /* END: IMAGE FEED */
+
+  /* START: SEARCH FIELD STYLING */
+    .widget_search .search-field{
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+      .widget_search input[type="submit"] {
+        margin-top: rem-calc(20);
+      }
+
+  /* END: SEARCH FIELD STYLING */
+
+  /* START: AREA 1 */
+    @import "flo-footer-area-1-type-a";
+    @import "flo-footer-area-1-type-b";
+    @import "flo-footer-area-1-type-c";
+    @import "flo-footer-area-1-type-d";
+  /* END: AREA 1 */
+
+  /* START: COPYRIGHTS AREA */
+    @import "flo-footer-copyrights-area";
+  /* END: COPYRIGHTS AREA */
+
+  @include breakpoint(medium up) {
+
+  }
+
+  @include breakpoint(small only) {
+    
+  }
+}

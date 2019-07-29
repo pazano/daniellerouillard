@@ -1,0 +1,134 @@
+.flo-generic-menu-wrap {
+  $b: ".flo-generic-menu-wrap";
+
+  /* START: MENU (dropdowns, links etc.) */
+    $gap-under-first-level-item: rem-calc(37);
+
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 23112312;
+      flex-grow: 1;
+
+      // Start: Item
+        li {
+          display: inline-block;
+          position: relative;
+          text-align: center;
+          @include global-transition(border);
+
+          a {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            @include global-transition(color);
+          }
+        }
+      // End: Item
+
+        // Start: 1st level item
+          & > div > ul > li {
+            & > a {
+              padding: 0;
+            }
+          }
+        // End: 1st level item
+
+      // Start: Dropdowns
+        li {
+          &:hover {
+            & > ul {
+              opacity: 1;
+              pointer-events: initial;
+            }
+          }
+
+          ul {
+            border: 0;
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            width: rem-calc(250);
+            padding: rem-calc(18.5) 0;
+            z-index: 2;
+            @include global-transition(opacity);
+
+            // Start: Dropdown Item
+              li {
+                width: 100%;
+                padding: rem-calc(6.5) rem-calc(39);
+                & > a {
+                  padding: 0;
+                  position: relative;
+                  display: inline-block;
+                  background-color: transparent!important;
+                  &:hover:before {
+                    opacity: 1;
+                  }
+                  &:before {
+                    content: " ";
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    @include global-transition(opacity, border-color);
+                  }
+                }
+              }
+            // End: Dropdown Item
+          }
+        }
+
+        /* Start: 2nd Level Dropdown */
+          & > li  {
+            $bottom-gap: $gap-under-first-level-item;
+            // &:after {
+            //   content: " ";
+            //   position: absolute;
+            //   top: 100%;
+            //   left: 0;
+            //
+            //   display: block;
+            //   width: 100%;
+            //   height: $bottom-gap;
+            //   z-index: 1;
+            // }
+            & > ul {
+              top: calc(100% + #{$bottom-gap});
+              left: 50%;
+              transform: translateX(-50%);
+
+              &:before {
+                content: " ";
+                display: block;
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+
+                height: $gap-under-first-level-item;
+                width: 100%;
+              }
+              &:after {
+                content: " ";
+                  display: block;
+                  position: absolute;
+                  bottom: calc(100% - #{rem-calc(1)});
+                  left: 50%;
+                  transform: translateX(-50%);
+
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 rem-calc(7) rem-calc(6) rem-calc(7);
+                  border-color: transparent transparent transparent transparent;
+              }
+            }
+          }
+        /* End: 2nd Level Dropdown */
+      // End: Dropdowns
+    }
+  /* END: MENU (dropdowns, links etc.) */
+}

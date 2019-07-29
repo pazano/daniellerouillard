@@ -1,0 +1,423 @@
+{
+    "key": "group_5bed93a7b4475",
+    "title": "Block. Image Links 4",
+    "fields": [
+        {
+            "key": "field_5bed93a7b9188",
+            "label": "Specific",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5bed93a7b91cc",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-image-links-5.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bed93a7b923f",
+            "label": "A. Image Links",
+            "name": "image_links_list",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Image Link",
+            "sub_fields": [
+                {
+                    "key": "field_5bed93a7c3218",
+                    "label": "Area Type",
+                    "name": "area_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "image": "Image",
+                        "text_area": "Text Area"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "image",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5bed93a7c3244",
+                    "label": "A.1. Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5bee88b0d9bb2",
+                    "label": "A.2. Text Area Background Color",
+                    "name": "text_area_background_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "text_area"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "secondary-background-color-1",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bee88e0d9bb3",
+                    "label": "A.2. Text Area Elements Color",
+                    "name": "text_area_elements_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "text_area"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-text-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bed93a7c327e",
+                    "label": "A.2.1. Pre-Title",
+                    "name": "pretitle",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "text_area"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "GET IN TOUCH",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bed93a7c329e",
+                    "label": "A.2.2. Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "text_area"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "We love because it’s the only true adventure",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bee8618b3563",
+                    "label": "A.2.3. Subtitle",
+                    "name": "subtitle",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "text_area"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "A precious moment, a lovely image, can be",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bee8632b3564",
+                    "label": "A.2.4. Button Link",
+                    "name": "button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5bed93a7c3218",
+                                "operator": "==",
+                                "value": "text_area"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_5bed93a7b9252",
+            "label": "A.2.1.1. Pre-Title Font",
+            "name": "pretitle_font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        },
+        {
+            "key": "field_5bed93a7b9264",
+            "label": "A.2.2.1. Title Font",
+            "name": "title_font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_5bee8904d9bb4",
+            "label": "A.2.3.1. Subtitle Font",
+            "name": "subtitle_font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_3"
+        },
+        {
+            "key": "field_5bee8948d9bb5",
+            "label": "A.2.4.1. Button Link Font",
+            "name": "button_link_font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_5bee8986d9bb6",
+            "label": "A.2.4.2. Button Color",
+            "name": "button_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0
+        },
+        {
+            "key": "field_5bee8a8fd9bb7",
+            "label": "A.2.4.3. Button Background Color",
+            "name": "button_background_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "",
+            "use_alpha": 0
+        },
+        {
+            "key": "field_5bed93a7b92e5",
+            "label": "Additional",
+            "name": "additional",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58eb425e82b8c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1542622676
+}

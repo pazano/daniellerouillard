@@ -1,0 +1,1175 @@
+{
+    "key": "group_5847bb6ae1a6a",
+    "title": "7. Generics",
+    "fields": [
+        {
+            "key": "field_5865467716ba5",
+            "label": "Introduction",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5865468016ba6",
+            "label": "Generic Settings",
+            "name": "generic_settings",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Generic Settings",
+            "video_description": "Some themes, depending on their design and functionality, allowing users to choose between Responsive and Fixed website widths.\r\nUnlike the Responsive option, where the site content is the edge to edge regardless of the screen size, selecting the Fixed website content width allows you to control how your content is displayed.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/WHK9mosqHLE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5847bc1e3d637",
+            "label": "Social Media",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5847bc5661301",
+            "label": "Social Links Fields",
+            "name": "social_links_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_57fe687a9bed6"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_58513deef47d9",
+            "label": "Custom Code",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58513dfff47da",
+            "label": "Custom Code Fields",
+            "name": "56_custom_code_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5847b804e589d"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_58513dfff47da_field_5847b81bb3ca3",
+                    "label": "7.4.1. Enter your <b>CSS<\/b> code here:",
+                    "name": "flo-custom-css",
+                    "prefix": "acf[field_58513dfff47da]",
+                    "type": "acf_code_field",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--label-on-top",
+                        "id": ""
+                    },
+                    "_name": "flo-custom-css",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "mode": "css",
+                    "theme": "monokai",
+                    "_clone": "field_58513dfff47da",
+                    "__key": "field_5847b81bb3ca3",
+                    "__name": "flo-custom-css",
+                    "__label": "7.4.1. Enter your <b>CSS<\/b> code here:"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_58513dfff47da_field_5849128f7f619",
+                    "label": "7.4.2. Enter your <b>JavaScript<\/b> code here:",
+                    "name": "flo-custom-js",
+                    "prefix": "acf[field_58513dfff47da]",
+                    "type": "acf_code_field",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--label-on-top",
+                        "id": ""
+                    },
+                    "_name": "flo-custom-js",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "mode": "javascript",
+                    "theme": "monokai",
+                    "_clone": "field_58513dfff47da",
+                    "__key": "field_5849128f7f619",
+                    "__name": "flo-custom-js",
+                    "__label": "7.4.2. Enter your <b>JavaScript<\/b> code here:"
+                }
+            ]
+        },
+        {
+            "key": "field_5959f1d5274a6",
+            "label": "Generic Typography",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5959f1e6274a7",
+            "label": "Generic Typography",
+            "name": "generic_typography",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_582f24f90b33e"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_590ae255e08b0",
+                    "label": "Tablet Font Size Zoom Factor",
+                    "name": "flo-tablet_font-size-zoom",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "number_slider",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "Default: 0\r\n<br\/>\r\nUse this option only if the tablet font size seems too small. This option will affect the majority of the elements.",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-tablet_font-size-zoom",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "slider_units": "%",
+                    "default_value": 0,
+                    "slider_min_value": 0,
+                    "slider_max_value": 300,
+                    "increment_value": 1,
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_590ae255e08b0",
+                    "__name": "flo-tablet_font-size-zoom",
+                    "__label": "Tablet Font Size Zoom Factor"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5943b3f0668ce",
+                    "label": "Text Input Field Label Font",
+                    "name": "flo-text_input_field_label_font",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "Default: Call To Action 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-text_input_field_label_font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": "label",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "call_to_action_1",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5943b3f0668ce",
+                    "__name": "flo-text_input_field_label_font",
+                    "__label": "Text Input Field Label Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_585263c319ddc",
+                    "label": "Text Input Field Font",
+                    "name": "flo-text_input_field_font",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "Default: Meta 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-text_input_field_font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": "input[type]:not([type=\"submit\"]):not(.flo-no-styling), form textarea:not(.flo-no-styling), .parsley-required",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "meta_2",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_585263c319ddc",
+                    "__name": "flo-text_input_field_font",
+                    "__label": "Text Input Field Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_582f2596820c3",
+                    "label": "Paragraph Font",
+                    "name": "flo-post__paragraph-font",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "Default: Paragraph 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__paragraph-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post, .woocommerce-product-details__short-description, .entry-content, .description_tab, .reviews_tab, .woocommerce-message, .flo-woocommerce-wrap",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "paragraph_1",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_582f2596820c3",
+                    "__name": "flo-post__paragraph-font",
+                    "__label": "Paragraph Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832c3021e483",
+                    "label": "Paragraph Link Font",
+                    "name": "flo-post__paragraph-link-font",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 4,
+                    "instructions": "Default: Paragraph 1 Link",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__paragraph-link-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post a",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "paragraph_1_link",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832c3021e483",
+                    "__name": "flo-post__paragraph-link-font",
+                    "__label": "Paragraph Link Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832bd34b4b68",
+                    "label": "H1 font",
+                    "name": "flo-post__h1",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 5,
+                    "instructions": "Default: Heading 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__h1",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post h1, h1.product_title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_1",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832bd34b4b68",
+                    "__name": "flo-post__h1",
+                    "__label": "H1 font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832bf278d95a",
+                    "label": "H2 font",
+                    "name": "flo-post__h2",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 6,
+                    "instructions": "Default: Heading 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__h2",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post h2, .woocommerce h2",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_2",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832bf278d95a",
+                    "__name": "flo-post__h2",
+                    "__label": "H2 font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832bf3c8d95b",
+                    "label": "H3 font",
+                    "name": "flo-post__h3",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 7,
+                    "instructions": "Default: Heading 3",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__h3",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post h3",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_3",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832bf3c8d95b",
+                    "__name": "flo-post__h3",
+                    "__label": "H3 font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832bf508d95e",
+                    "label": "H4 font",
+                    "name": "flo-post__h4",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 8,
+                    "instructions": "Default: Heading 4",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__h4",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post h4",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_4",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832bf508d95e",
+                    "__name": "flo-post__h4",
+                    "__label": "H4 font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832bf4e8d95d",
+                    "label": "H5 font",
+                    "name": "flo-post__h5",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 9,
+                    "instructions": "Default: Heading 5",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__h5",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post h5",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_5",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832bf4e8d95d",
+                    "__name": "flo-post__h5",
+                    "__label": "H5 font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832bf4c8d95c",
+                    "label": "H6 font",
+                    "name": "flo-post__h6",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 10,
+                    "instructions": "Default: Heading 6",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__h6",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post h6",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_6",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832bf4c8d95c",
+                    "__name": "flo-post__h6",
+                    "__label": "H6 font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5959f1e6274a7_field_5832c91c78881",
+                    "label": "Blockquote Font",
+                    "name": "flo-post__blockquote-font",
+                    "prefix": "acf[field_5959f1e6274a7]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 11,
+                    "instructions": "Default: Heading 4",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bb6ae1a6a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-post__blockquote-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post blockquote, .flo-post blockquote p",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_4",
+                    "_clone": "field_5959f1e6274a7",
+                    "__key": "field_5832c91c78881",
+                    "__name": "flo-post__blockquote-font",
+                    "__label": "Blockquote Font"
+                }
+            ]
+        },
+        {
+            "key": "field_5847bbdbccfb9",
+            "label": "Miscellaneous",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c77f072f4800",
+            "label": "Miscellaneous Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c754f4d2de67",
+            "label": "Favicon",
+            "name": "flo-get_started__favicon",
+            "type": "image",
+            "instructions": "<h3>What are favicons?<\/h3>\r\n\r\nFavicons are small 16x16 icon files that are displayed next to the URL of your site in a browser's address bar.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "ico"
+        },
+        {
+            "key": "field_5c77f0bdf4801",
+            "label": "Analytics code",
+            "name": "flo-get_started__analytics",
+            "type": "textarea",
+            "instructions": "Paste your Google Analytics or other tracking code here. It will be added into the header of this theme",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_59cce565359da",
+            "label": "Button Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5936b91c3adc8",
+            "label": "Buttons - Text Color",
+            "name": "flo-lovely2-buttons__text-color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5936b93f3adc9",
+            "label": "Buttons - Font",
+            "name": "flo-lovely2-buttons__font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "input[type=\"submit\"], .flo-button, .button, a.button, .widget a.widget--image-link__button.flo-button",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_59cce59b3c8b9",
+            "label": "Other Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5947de1528124",
+            "label": "Disable Fading Effect on desktops",
+            "name": "flo-lovely2-setions__fade-effect-disable",
+            "type": "true_false",
+            "instructions": "This will turn off the fading effect when scrolling through pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ab0d8d133053",
+            "label": "Disable Fading Effect on tablets",
+            "name": "flo-lovely2-setings__tablet-fade-effect-disable",
+            "type": "true_false",
+            "instructions": "This will turn off the fading effect when scrolling through pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ab0d8d333054",
+            "label": "Disable Fading Effect on mobiles",
+            "name": "flo-lovely2-setings__mobile-fade-effect-disable",
+            "type": "true_false",
+            "instructions": "This will turn off the fading effect when scrolling through pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_597053f9e883e",
+            "label": "Site Background Color",
+            "name": "flo-lovely2-site-background-color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5a410842afb2b",
+            "label": "Site Width",
+            "name": "flo-lovely2-site_width",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "responsive": "Responsive",
+                "fixed": "Fixed"
+            },
+            "default_value": [
+                "responsive"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a4108d9b8fb6",
+            "label": "Maximum Content Width (px)",
+            "name": "flo-lovely2-maximum_content_width",
+            "type": "number_slider",
+            "instructions": "Default: 990px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a410842afb2b",
+                        "operator": "==",
+                        "value": "fixed"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 990,
+            "slider_min_value": 990,
+            "slider_max_value": 1440,
+            "increment_value": 10
+        },
+        {
+            "key": "field_5ab8f3055e3c7",
+            "label": "Disable \"Preview Your Site\" Button",
+            "name": "flo-admin-settings__disable-flo-admin-preview",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5c782c1505a0a",
+            "label": "Import & Export",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c77f4cf19816",
+            "label": "Import or Export Current Theme Options",
+            "name": "flo-get_started__import_export",
+            "type": "import_export",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "options_prefix": "flo-"
+        },
+        {
+            "key": "field_5a94355b9cf95",
+            "label": "",
+            "name": "",
+            "type": "enhanced_message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "enhanced_message": "<?php if ( function_exists('icl_object_id') ) { ?>\r\n \r\n<div class=\"flo-wpml-config-regeneration\">\r\n    <h3>Regenerate WPML configuration file:<\/h3>\r\n    <input type=\"button\" class=\"wpml-conf-generator flo-admin-button\" style=\"margin-bottom: 25px;\" onclick=\"wpml_conf_generation();\"  value=\"Generate Now\">\r\n    <div class=\"spinner-container\"><span class=\"spinner wpml-conf-spinner\"><\/span><\/div>\r\n\r\n    <div class=\"flo-wmpl-disable-cache acf-true-false\">\r\n\t<?php \r\n\t\t$flo_wmpl_disable_cache = get_option( 'flo_wmpl_disable_cache', $default = false );\r\n\t\t$checked_f = $flo_wmpl_disable_cache;\r\n                \/\/ The value to compare with (the value of the checkbox below).\r\n                $current = 1; \r\n\t?>\r\n        <label>\r\n\t<input id=\"flo_wmpl_disable_cache\" type=\"checkbox\" value=\"1\" <?php checked( $checked_f, $current, $echo = true ); ?> > <p>Disable Options Cache. This is recommended only when translating the options using WPML String Translations. After you are done translating, we strongly recommed to uncheck this option to benefit from cache performance. <\/p>\r\n                 <\/label>\r\n        <\/div>\r\n\r\n    <div class=\"import-response\"><\/div>\r\n<\/div>\r\n\r\n<?php } ?>",
+            "hide_label": "no"
+        },
+        {
+            "key": "field_5c41b225e6ae0",
+            "label": "Preloader",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c41b241e6ae1",
+            "label": "Site Preloader Animation Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c41b261e6ae2",
+            "label": "Site Preloader",
+            "name": "flo-fiji2-settings__preloader",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5c41b27be6ae3",
+            "label": "Preloader Background Color",
+            "name": "flo-fiji2-settings___preloader-background-color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c41b261e6ae2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "#FFFFFF",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5c41b2b0e6ae4",
+            "label": "Use the default Site Logo",
+            "name": "flo-fiji2-settings___preloader-default-logo",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c41b261e6ae2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5c41b2eae6ae5",
+            "label": "Preloader Size",
+            "name": "flo-fiji2-settings___preloader-size",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c41b261e6ae2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 450,
+            "slider_min_value": 200,
+            "slider_max_value": 1200,
+            "increment_value": 10
+        },
+        {
+            "key": "field_5c41b30ee6ae6",
+            "label": "Mobile Preloader Size",
+            "name": "flo-fiji2-settings___preloader-mobile-size",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c41b261e6ae2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 250,
+            "slider_min_value": 50,
+            "slider_max_value": 500,
+            "increment_value": 10
+        },
+        {
+            "key": "field_5c41b33be6ae7",
+            "label": "Use Custom Image",
+            "name": "flo-fiji2-settings___preloader-custom-image",
+            "type": "flo-image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c41b261e6ae2",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5c41b2b0e6ae4",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-7-generics"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1554796558
+}

@@ -1,0 +1,167 @@
+.flo-block-image-block-4 {
+  $b: ".flo-block-image-block-4";
+
+  &__image {
+  }
+
+  &__text-area {
+  }
+    &__title {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(10);
+      }
+    }
+    &__subtitle {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(25);
+      }
+    }
+    &__text {
+    }
+    /* START: Button Type A */
+      &__buttons-wrap {
+        display: flex;
+        justify-content: flex-start;
+      }
+        &__button {
+          padding: rem-calc(11) rem-calc(30);
+          @include global-transition(background-color, color);
+
+          &--primary {
+          }
+          &--secondary {
+          }
+        }
+    /* END: Button Type A */
+
+    /* START: Button Type B */
+      &__button-links-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+        &__button-link {
+          backface-visibility: hidden;
+          padding: rem-calc(25) rem-calc(30) rem-calc(25) rem-calc(30);
+          border: 1px groove;
+          border-color: inherit;
+
+          &:not(:last-child) {
+            border-bottom: 0;
+          }
+
+          position: relative;
+
+          &:before {
+            font-size: rem-calc(7);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: rem-calc(3);
+          }
+
+          @include global-transition(background-color);
+        }
+    /* END: Button Type B */
+
+  @include breakpoint(medium up) {
+
+    display: flex;
+    align-items: center;
+
+    &__image {
+      width: rem-calc(450);
+      flex-shrink: 0;
+    }
+
+    &__text-area {
+      flex-grow: 1;
+      align-self: stretch;
+
+      padding: rem-calc(40) rem-calc(65);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+      &__title {
+      }
+      &__subtitle {
+      }
+      &__text {
+        padding-right: rem-calc(45);
+
+        &:not(:last-child) {
+          margin-bottom: rem-calc(67);
+        }
+      }
+      /* START: Button Type A */
+        &__buttons-wrap {
+        }
+          &__button {
+
+            // max-width: rem-calc(220);
+
+            &--primary {
+              margin-right: rem-calc(20);
+            }
+            &--secondary {
+            }
+          }
+      /* END: Button Type A */
+
+      /* START: Button Type B */
+        &__button-links-wrap {
+        }
+          &__button-link {
+          }
+      /* END: Button Type B */
+
+  }
+
+  @include breakpoint(small only) {
+
+    & > *:not(:last-child) {
+      margin-bottom: rem-calc(30);
+    }
+
+    &__image {
+    }
+
+    &__text-area {
+      padding: rem-calc(30) rem-calc(25);
+    }
+      &__title {
+      }
+      &__subtitle {
+      }
+      &__text {
+        &:not(:last-child) {
+          margin-bottom: rem-calc(30);
+        }
+      }
+      /* START: Button Type A */
+        &__buttons-wrap {
+          flex-direction: column;
+          align-items: center;
+        }
+          &__button {
+
+            &--primary {
+              &:not(:last-child) {
+                margin-bottom: rem-calc(20);
+              }
+            }
+            &--secondary {
+            }
+          }
+      /* END: Button Type A */
+
+      /* START: Button Type B */
+        &__button-links-wrap {
+        }
+          &__button-link {
+          }
+      /* END: Button Type B */
+
+  }
+}

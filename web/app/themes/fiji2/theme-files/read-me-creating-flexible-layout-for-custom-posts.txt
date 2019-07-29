@@ -1,0 +1,77 @@
+- Install and activate Flo Pack (Flo Backery) plugin to avoid conflicts with the custom fields json files
+
+- Make sure the theme has support for the Flexible content and new custom post types. 
+	The example can be checked for Cannes and FIji 2 in: 
+	/cannes/theme-files/views/layout/page.blade.php
+	/cannes/theme-files/flo_layout_templates/global-post.template.php
+	/cannes/theme-files/app/acf-options-page.php
+
+
+- Create your Post type.
+
+
+- Create a new Field group for the new post type options page (clone the Gallery options for example) and choose
+	to show that on the Options page created above: https://i.imgur.com/Eh2jWBU.jpg
+	Make sure to replace the clonned names with something appropriate for this custom post type: https://i.imgur.com/o9NBQBF.jpg
+	The names used here will be used further in the other steps.
+	https://i.imgur.com/yDOHW2X.jpg - Don't forget to change the 'Target Flexible Content Field Name'
+
+- Create a Field group for the new post type.  Example from Cannes: 
+		https://i.imgur.com/7FG0Il1.jpg
+
+- Create in the child theme the following folder:
+	/theme-files/flo_layout_templates/
+
+- Inside 'flo_layout_templates' create a file  %post_type%-default.template.php
+
+- Use the 'flo_subpages_options' filter in the child thme to add a new menu in the  Options page:
+	https://pastebin.com/tJmB9cYW
+
+- Use the 'flo_custom_post_type_layout' filter in the child theme
+		https://pastebin.com/dW3jER18
+
+- Remove filter 'flo_cached_layout_options' for the current theme, and register a new one on the child theme that includes
+	the layouts for the new custom posts.
+	https://pastebin.com/batyKRfL
+
+- In the theme-filters.php file find the 'flo_layout_options_name' filter.
+	Remove it, and add it one more time from the child theme with the complete option array
+
+
+- For the new post type it is necessary to create the blade view in the child theme. To do that we will have to create the following: ...-child/theme-files/views/%custom_post_type%/single.blade.php		(replace %custom_post_type% with the correct value), and add in it the code from the parent theme for the single blog post for example: cannes/theme-files/views/post/single.blade.php
+
+- Add the following filter: 'flo_any_custom_post_option'
+  Ex: https://pastebin.com/0dJBcqKv
+
+- Add the following filter: 'flo_'.$any_custom_post_option[$url_args['query']].'_fields_key'
+  Ex: https://pastebin.com/CS3zhkDU
+
+- Add the following filter: 'flo_other_custom_post_types_options'
+  Ex: https://pastebin.com/iuZhrDC4
+
+- Add the following filter: 'flo_custom_posts_scree_post_types'
+  Ex: https://pastebin.com/1J0RqHRf
+
+- Add the following filter: flo_single_%screen_post_type%_fields_key
+  Ex: https://pastebin.com/TMVSzu0M
+
+- Edit 'Flag. Post Options' and add the new custom post type and page options:
+	https://i.imgur.com/cvEK3qC.jpg
+
+
+
+
+-----------
+Example of Functional child theme where the custom post type 'Book' was added:
+
+
+functions.php - https://pastebin.com/ZmpU2qfy  (note, the 'flo_layout_options_name' filter is missing in this example, but you should use it)
+
+cannes-child/theme-files/flo_layout_templates/book-default.template.php - https://pastebin.com/Y8PWe2Sf
+
+cannes-child/theme-files/views/book/single.blade.php - https://pastebin.com/DVY1hE9M
+
+
+
+
+

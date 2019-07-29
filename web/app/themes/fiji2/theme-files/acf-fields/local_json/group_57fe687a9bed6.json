@@ -1,0 +1,275 @@
+{
+    "key": "group_57fe687a9bed6",
+    "title": "Social Media Options",
+    "fields": [
+        {
+            "key": "field_595b919104c90",
+            "label": "Social Links Style",
+            "name": "flo-lovely2-social-links-style",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select flo-image-select--columns-3",
+                "id": ""
+            },
+            "choices": {
+                "a": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/trento\/social-links-style-type-a.jpg\"><p>Icons<\/p>",
+                "b": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/trento\/social-links-style-type-b.jpg\"><p>Letters<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "a",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_595a015906629",
+            "label": "Social Links Font",
+            "name": "flo-lovely2-social-links-font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_595b919104c90",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-social-links-type-b .flo-social-links__link:before, .flo-social-links-type-b .flo-share-link i:before",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_5847bde213e18",
+            "label": "Social Sharing Links Options",
+            "name": "flo-lovely2-sharing-options",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "facebook": "FACEBOOK",
+                "twitter": "TWITTER",
+                "gplus": "GOOGLE +",
+                "pinterest": "PINTEREST"
+            },
+            "default_value": [
+                "facebook",
+                "twitter",
+                "pinterest"
+            ],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57fe68b5c57a7",
+            "label": "Social Links",
+            "name": "flo-social-links",
+            "type": "repeater",
+            "instructions": "<b>NOTE!<\/b> The font icons are available for the following services: <b>Facebook, Twitter, Google Plus, Yahoo, Dribbble, Linkedin, Vimeo, YouTube, Tumblr, Delicious, Flickr, Instagram, Pinterest, Email<\/b>. For any other social profiles you'll have to upload custom image icons.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Social Link",
+            "sub_fields": [
+                {
+                    "key": "field_57fe68e4c57a9",
+                    "label": "Label and Icon",
+                    "name": "type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "FACEBOOK",
+                        "twitter": "TWITTER",
+                        "gplus": "GOOGLE +",
+                        "yahoo": "YAHOO",
+                        "dribbble": "DRIBBLE",
+                        "linkedin": "LINKEDIN",
+                        "vimeo": "VIMEO",
+                        "youtube": "YOUTUBE",
+                        "tumblr": "TUMBLR",
+                        "delicious": "DELICIOUS",
+                        "flickr": "FCKRIL",
+                        "instagram": "INSTAGRAM",
+                        "pinterest": "PINTEREST",
+                        "mail": "EMAIL",
+                        "custom": "Add Other"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "array",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_57fe68cdc57a8",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_58009a8cc6a15",
+                    "label": "Custom Label",
+                    "name": "custom-label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57fe68e4c57a9",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_58ad4d01680e3",
+                    "label": "Custom Icon",
+                    "name": "custom-icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57fe68e4c57a9",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_58ad4d4e680e4",
+                    "label": "Custom Icon - Hover State",
+                    "name": "custom-icon--hover",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57fe68e4c57a9",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-1-introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Options -> 9. Social Links",
+    "modified": 1551796158
+}

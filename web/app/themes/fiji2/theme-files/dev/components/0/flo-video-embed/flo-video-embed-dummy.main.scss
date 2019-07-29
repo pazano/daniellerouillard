@@ -1,0 +1,60 @@
+.flo-video-embed-dummy {
+  $b: ".flo-video-embed-dummy";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+
+  &__video-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    z-index: 100;
+
+    $size: rem-calc(70);
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    font-size: rem-calc(11);
+
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    user-select: none;
+    cursor: pointer;
+
+    @include global-transition(color, top, opacity, border, transform);
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+    &__video-button-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include global-transition(opacity);
+
+      &--play {
+        opacity: 1;
+      }
+
+    }
+
+  @include breakpoint(small only){
+    &__video-button {
+      $size: rem-calc(48);
+      width: $size;
+      height: $size;
+      border-radius: $size;
+      font-size: $size / 1.61 / 1.61 / 1.61;
+    }
+  }
+}

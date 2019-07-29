@@ -1,0 +1,74 @@
+.flo-splash {
+  $b: ".flo-splash";
+  $bc: ".flo-header";
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ffffff;
+  display: block;
+  z-index: 1000000000;
+  overflow: hidden;
+  
+  @include global-transition(all);
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    
+    #{$bc}__logo,
+    #{$bc}-mobile__logo,
+    img  {
+      justify-content: center;
+      max-width: none !important;
+    }
+
+  }
+  
+  &__custom-preloader {
+    @include global-bgi-contain;
+    opacity: 1;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(medium up){
+    &__content {
+      &--medium-up {
+        opacity: 1;
+      }
+      &--small-only {
+        opacity: 0;
+      }
+    }
+  }
+  @include breakpoint(small only){
+    &__content {
+      &--medium-up {
+        opacity: 0;
+      }
+      &--small-only {
+        opacity: 1;
+        #{$bc}-mobile__logo img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  @include flo-responsive-image-bg('&__custom-preloader');
+}

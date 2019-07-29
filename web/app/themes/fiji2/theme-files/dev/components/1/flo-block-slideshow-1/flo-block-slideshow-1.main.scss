@@ -1,0 +1,223 @@
+.flo-block-slideshow-1 {
+  $b: ".flo-block-slideshow-1";
+  
+  &__slides {
+
+  }
+  
+  &__slideshow-has-button {
+    .flo-hero-video-embed__button {
+      top: 30%;
+    }
+  }
+    
+  &__content-wrap {
+    overflow: hidden;
+    pointer-events: none;
+    
+    @include global-transition(background-color);
+  }
+    &__header-area {
+      pointer-events: auto;
+
+      header:not(.is-sticky) {
+        .flo-header {
+          color: inherit;
+          border-color: inherit!important;
+          background-color: transparent!important;
+        }
+      }
+    }
+    &__title-area {
+      text-align: center;
+      @include global-transition(color);
+    }
+      &__title {
+
+      }
+      &__text {
+        margin-bottom: rem-calc(24);
+      }
+      &__button {
+        @include global-transition(all);
+        padding: rem-calc(14) rem-calc(30);
+        border: 1px solid;
+        pointer-events: initial;
+      }
+    &__bottom-area {
+      text-align: center;
+      width: 100%;
+      padding: rem-calc(22);
+      @include global-transition(color);
+    }
+    .flo-block-slideshow-1__title,
+    .flo-block-slideshow-1__text,
+    .flo-block-slideshow-1__bottom-label{
+      // opacity: 0;
+      // display: none;
+    }
+      &__navigation {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+
+        display: flex;
+        justify-content: space-between;
+      }
+        &__arrow {
+          font-size: rem-calc(9);
+          @include global-clickable();
+        }
+        &__counter {
+          display: none;
+        }
+          &__counter-index {
+
+          }
+          &__counter-separator {
+            margin: 0 rem-calc(6);
+            &:before,
+            &:after {
+              content: " - ";
+            }
+          }
+          &__counter-count {
+
+          }
+      &__bottom-label {
+
+      }
+
+  @include breakpoint(medium up) {
+    &__slides {
+
+    }
+    &__content-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+      &__header-area {
+        width: 100%;
+      }
+      &__title-area {
+
+        width: $global-column-width * 4;
+      }
+        &__title {
+
+        }
+        &__text {
+          &:not(:first-child) {
+            margin-top: rem-calc(24);
+          }
+        }
+      &__bottom-area {
+        width: calc(100% - #{$global-padding--horizontal * 2});
+      }
+        &__navigation {
+          padding: 0 rem-calc(40);
+        }
+          &__arrow {
+            &:hover {
+              transform: scale(1.1);
+            }
+            @include global-transition(transform);
+          }
+          &__counter {
+
+          }
+            &__counter-index {
+
+            }
+            &__counter-separator {
+
+            }
+            &__counter-count {
+
+            }
+        &__bottom-label {
+
+        }
+  }
+
+  @include breakpoint(small only) {
+    @at-root {
+      .flo-block[data-onready="flo_block_slideshow_1"]{
+        padding: 0;
+        z-index: 1;
+      }
+    }
+    &__slides {
+
+    }
+    .flo-hero-video-embed__button {
+      top: 20vh;
+    }
+    &__content-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      overflow: visible;
+    }
+      &__header-area {
+        margin-bottom: rem-calc(80);
+        .flo-header-mobile.not-sticky {
+          background-color: transparent;
+        }
+      }
+      &__title-area {
+        padding: 0 rem-calc(55);
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+        &__title {
+
+        }
+        &__text {
+
+        }
+      &__bottom-area {
+      }
+        &__navigation {
+          padding: 0 rem-calc(10);
+        }
+          &__arrow {
+
+          }
+          &__counter {
+
+          }
+            &__counter-index {
+
+            }
+            &__counter-separator {
+
+            }
+            &__counter-count {
+
+            }
+        &__bottom-label {
+
+        }
+  }
+}

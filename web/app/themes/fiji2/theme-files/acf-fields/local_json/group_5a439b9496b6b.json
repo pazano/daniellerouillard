@@ -1,0 +1,157 @@
+{
+    "key": "group_5a439b9496b6b",
+    "title": "Widget. Social Links",
+    "fields": [
+        {
+            "key": "field_5a439b949a105",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-widget-social-sharing.thumb.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a44a1cb8a050",
+            "label": "0.1. Elements Color",
+            "name": "social_links_elements_color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": ""
+        },
+        {
+            "key": "field_5a44a1e38a051",
+            "label": "0.2. Background Color",
+            "name": "social_links_background_color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "secondary-background-color-1",
+            "default_value": ""
+        },
+        {
+            "key": "field_5a439bb0fcbf1",
+            "label": "1. Pretitle",
+            "name": "social_links_pretitle",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "we are on socials",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a44a13bed576",
+            "label": "1.1. Pretitle Font",
+            "name": "social_links_pretitle_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Meta 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_3"
+        },
+        {
+            "key": "field_5a439bc0fcbf2",
+            "label": "2. Title",
+            "name": "social_links_title",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "FOLLOW US ON",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a44a15fed577",
+            "label": "2.1. Title Font",
+            "name": "social_links_title_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "flo_lvy_widget_social_links"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1519903049
+}

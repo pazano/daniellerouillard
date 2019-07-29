@@ -1,0 +1,304 @@
+.flo-post-wrap {
+  margin: 0 auto;
+  // max-width: $content-medium-width;
+}
+
+.flo-post--not-found {
+  padding-bottom: rem-calc(50);
+}
+
+.flo-post, .flo-post__styles {
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+  .blocks-gallery-item{
+    margin-bottom: 0;
+  }
+
+  p{
+    margin-bottom: rem-calc(15);
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+
+  blockquote{
+    padding: 0;
+    border: 0;
+    margin-bottom: rem-calc(30);
+    p{
+      padding: 0;
+      margin-bottom: rem-calc(15);
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+
+
+  }
+  h1,h2,h3,h4,h5,h6{
+    padding-bottom:  rem-calc(24);
+  }
+
+
+      /*--------------------------------------------------------------
+  3.0 Alignments
+  --------------------------------------------------------------*/
+
+  .alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  .alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+  }
+
+  .aligncenter {
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*--------------------------------------------------------------
+  8.0 Lists
+  --------------------------------------------------------------*/
+
+  ul,
+  ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li > ul,
+  li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 0 1.5em 1.5em;
+  }
+
+  /*--------------------------------------------------------------
+  16.0 Media
+  --------------------------------------------------------------*/
+
+  img,
+  video {
+    height: auto; /* Make sure images are scaled correctly. */
+    max-width: 100%; /* Adhere to container width. */
+    margin: 0 auto;
+  }
+
+
+  .comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  /* Make sure embeds and iframes fit their containers. */
+
+  embed,
+  iframe,
+  object {
+    margin-bottom: rem-calc(5);
+    max-width: 100%;
+  }
+
+  .wp-caption,
+  .wp-caption a,
+  .gallery-caption {
+    color: #666;
+    font-size: 0.6125rem;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    line-height: 1em;
+  }
+
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wp-caption .wp-caption-text, .wp-caption-text a {
+    margin: 0.8075em 0;
+  }
+  .wp-caption p{
+    margin-bottom: 0;
+  }
+
+  /* Media Elements */
+
+  .mejs-container {
+    margin-bottom:  rem-calc(5);
+    max-width: 100%;
+  }
+
+  /* Audio Player */
+
+  .mejs-controls a.mejs-horizontal-volume-slider,
+  .mejs-controls a.mejs-horizontal-volume-slider:focus,
+  .mejs-controls a.mejs-horizontal-volume-slider:hover {
+    background: transparent;
+    border: 0;
+  }
+
+  /*--------------------------------------------------------------
+  16.1 Galleries
+  --------------------------------------------------------------*/
+
+  .gallery-item {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 0 1.5em;
+    padding: 0 1em 0 0;
+    width: 50%;
+  }
+
+  .gallery-columns-1 .gallery-item {
+    width: 100%;
+    a{
+      display: block;
+    }
+  }
+
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%;
+  }
+
+  .gallery-item a,
+  .gallery-item a:hover,
+  .gallery-item a:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .gallery-item a img {
+    display: block;
+    -webkit-transition: -webkit-filter 0.2s ease-in;
+    transition: -webkit-filter 0.2s ease-in;
+    transition: filter 0.2s ease-in;
+    transition: filter 0.2s ease-in, -webkit-filter 0.2s ease-in;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .gallery-item a:hover img,
+  .gallery-item a:focus img {
+    -webkit-filter: opacity(60%);
+    filter: opacity(60%);
+  }
+
+  .gallery-caption {
+    display: block;
+    text-align: left;
+    padding: 0 10px 0 0;
+    margin-bottom: 0;
+  }
+
+  /* spacing below image */
+  a img, img, img.alignleft, img.alignright, img.aligncenter{
+    margin-bottom: rem-calc(20);
+  }
+
+  @include breakpoint(medium up) {
+    /* Gallery Columns */
+    //p {
+    //  padding: 0 rem-calc(95);
+    //}
+    //h1,h2,h3,h4,h5,h6{
+    //  padding-left: rem-calc(95);
+    //  padding-right: rem-calc(95);
+    //}
+
+      // fighting the space between display inline elements
+      div.gallery{
+        font-size: 0px;
+      }
+      .gallery-item {
+        max-width: 25%;
+      }
+
+      .gallery-columns-1 .gallery-item {
+        max-width: 100%;
+      }
+
+      .gallery-columns-2 .gallery-item {
+        max-width: 50%;
+      }
+
+      .gallery-columns-3 .gallery-item {
+        max-width: 33.33%;
+      }
+
+      .gallery-columns-4 .gallery-item {
+        max-width: 25%;
+      }
+      .gallery-columns-5 .gallery-item {
+        max-width: 20%;
+      }
+      .gallery-columns-6 .gallery-item {
+        max-width: 16.66%;
+      }
+      .gallery-columns-7 .gallery-item {
+        max-width: 14.285%;
+      }
+      .gallery-columns-8 .gallery-item {
+        max-width: 12.5%;
+      }
+      .gallery-columns-9 .gallery-item {
+        max-width: 11.111%;
+      }
+  }
+
+  @include breakpoint(small only){
+  }
+}
+
+/*Gutengberg gallery*/
+.wp-block-gallery {
+  .blocks-gallery-item {
+   figure {
+    align-items: flex-start;
+   }
+  }
+} 
+
+.post-password-form{
+  max-width: 800px;
+  margin: 0 auto 60px;
+
+  input[type="password"]{
+    border: 1px solid $color-gray-light!important;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    height: auto;
+  }
+}

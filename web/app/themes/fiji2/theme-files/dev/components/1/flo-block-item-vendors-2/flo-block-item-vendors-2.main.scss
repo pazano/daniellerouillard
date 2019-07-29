@@ -1,0 +1,58 @@
+.flo-block-item-vendors-2 {
+  $b: ".flo-block-item-vendors-2";
+
+  &__links {
+  }
+    &__link {
+    }
+      &__link-pretitle {
+
+      }
+      &__link-title {
+
+      }
+
+  @include breakpoint(medium up) {
+    padding: 0 $global-column-width;
+
+    &__links {
+      padding: rem-calc(64.22) $global-column-width;
+      text-align: center;
+    }
+      &__link {
+        margin-bottom: rem-calc(3);
+        margin-right: rem-calc(15);
+        display: inline-block;
+      }
+        &__link-pretitle {
+          margin: rem-calc(4);
+        }
+        &__link-title {
+
+        }
+  }
+
+  @include breakpoint(small only) {
+
+    &__links {
+      padding: rem-calc(20);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+      &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-child){
+          padding-bottom: rem-calc(10);
+        }
+      }
+        &__link-pretitle {
+
+        }
+        &__link-title {
+
+        }
+  }
+}

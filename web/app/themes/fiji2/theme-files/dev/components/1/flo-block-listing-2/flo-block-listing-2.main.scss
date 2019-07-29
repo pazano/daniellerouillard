@@ -1,0 +1,184 @@
+.flo-block-listing-2 {
+  $b: ".flo-block-listing-2";
+  
+  a {
+    &:focus,
+    &:active {
+      color: inherit;
+    }
+  }
+
+  &__item {
+    display: block;
+  }
+    &__featured-image {
+      display: block;
+      position: relative;
+      width: 100%;
+      @include global-bgi-cover;
+    }
+    &__featured-image-bg {
+      position: relative;
+      width: 100%;
+      @include global-bgi-cover;
+    }
+      @include flo-responsive-image-bg(".flo-block-listing-2__featured-image-bg");
+
+    &__text-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      margin-bottom: rem-calc(25);
+    }
+      &__decorative-image {
+        margin-bottom: rem-calc(10);
+      }
+      &__title {
+        position: relative;
+        display: block;
+        margin-bottom: rem-calc(10);
+      }
+      &__date-and-category-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+        &__category {
+          position: relative;
+          display: inline-block;
+        }
+        &__separator {
+        }
+        &__date {
+          display: inline-block;
+          text-align: center;
+        }
+
+  @include breakpoint(medium up) {
+    // $featured_image_height: rem-calc(471);
+    $text_area_offset: rem-calc(40);
+    &__item {
+      position: relative;
+      margin-bottom: rem-calc(119);
+
+      &:last-child {
+        margin-bottom: $text_area_offset;
+      }
+
+      &--has-featured-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        //height: $featured_image_height + $text_area_offset;
+
+        #{$b}__text-area {
+          position: absolute;
+          bottom: -$text_area_offset;
+          width: calc(100% - #{$global-column-width});
+        }
+      }
+
+      &:hover {
+
+        #{$b}__text-area {
+          margin-bottom: rem-calc(15);
+        }
+
+        #{$b}__hover-line {
+          width: 100%;
+        }
+
+      }
+    }
+      &__featured-image-bg {
+        //position: absolute;
+        //bottom: $text_area_offset;
+        left: 0;
+        // height: $featured_image_height;
+        width: 100%;
+        @include global-bgi-cover;
+      }
+      &__text-area {
+        position: relative;
+        margin: 0 auto;
+        padding: rem-calc(25);
+        @include global-transition(border-color,margin-bottom);
+      }
+        &__decorative-image {
+        }
+        &__title {
+        }
+        &__date-and-category-wrap {
+        }
+        &__category {
+        }
+        &__separator {
+          width: 1px;
+          height: rem-calc(10);
+          margin: 0 rem-calc(10);
+          border-left: 1px solid;
+        }
+        &__date {
+        }
+        &__hover-line {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          width: 0;
+
+          @include global-transition(width);
+        }
+  }
+
+  @include breakpoint(small only) {
+    &__item {
+      margin-bottom: rem-calc(60);
+    }
+      &__featured-image {
+        height: auto;
+      }
+      &__featured-image-bg {
+        height: rem-calc(300);
+        display: block;
+      }
+      &__text-area {
+        padding: rem-calc(20);
+      }
+        &__title-and-category {
+          padding-top: 0;
+        }
+          &__decorative-image {
+          }
+          &__title {
+          }
+          &__date-and-category-wrap {
+            flex-direction: column;
+          }
+          &__category {
+          }
+          &__separator {
+            height: 1px;
+            width: rem-calc(20);
+            margin: rem-calc(15) 0;
+            border-bottom: 1px solid;
+          }
+          &__date {
+          }
+  }
+}
+// sidebar compatibility
+@include breakpoint(medium up) {
+  .body_has_sidebar{
+    .flo-block-listing-2 {
+      &__featured-image-bg{
+        height: rem-calc(471) + $global-padding--horizontal;
+      }
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.flo-block-listing-pagination {
+  $b: ".flo-block-listing-pagination";
+
+  display: flex;
+  align-items: center;
+  &--hidden-numbers {
+    justify-content: space-around!important;
+  }
+  &__navigation {
+    i {
+      font-size: rem-calc(6.5);
+    }
+    &--previous {
+
+      & i {
+
+      }
+
+    }
+    &--next {
+      & i {
+
+      }
+    }
+  }
+  &__page-links {
+
+  }
+    &__page-number {
+      margin-right: rem-calc(30);
+      height: rem-calc(23);
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      @include global-clickable;
+
+      &:after {
+        content: " ";
+        background-color: #000;
+        width: 100%;
+        height: 1px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        @include global-transition(opacity);
+      }
+      &:hover:after {
+        opacity: 1;
+      }
+
+      &--active {
+        &:after {
+          opacity: 1;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__page-dots {
+      margin-right: rem-calc(30);
+    }
+
+  @include breakpoint(medium up) {
+
+    justify-content: space-between;
+    &__navigation {
+      &--previous {
+        & i {
+          margin-right: rem-calc(22);
+        }
+      }
+      &--next {
+        & i {
+          margin-left: rem-calc(22);
+        }
+      }
+    }
+      &__spacer {
+        flex: 0 1 10%;
+      }
+    &__page-links {
+
+      text-align: center;
+    }
+      &__page-number {
+      }
+      &__page-dots {
+
+      }
+  }
+
+  @include breakpoint(small only) {
+    flex-direction: column;
+    &__navigation {
+      display: flex;
+      &--previous {
+        margin-bottom: rem-calc(30);
+        & i {
+          margin-right: rem-calc(11);
+        }
+      }
+      &--next {
+        margin-top: rem-calc(30);
+        & i {
+          margin-left: rem-calc(11);
+        }
+      }
+    }
+    &__page-links {
+    }
+      &__page-number {
+
+        &--active {
+
+        }
+      }
+      &__page-dots {
+      }
+  }
+}

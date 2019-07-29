@@ -1,0 +1,136 @@
+.flo-block-pricing-packages-2 {
+  $b: ".flo-block-pricing-packages-2";
+
+  &__title-area {
+
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: rem-calc(60);
+    }
+  }
+    &__pretitle {
+    }
+    &__title {
+    }
+
+  &__packages-area {
+  }
+    &__package {
+      text-align: center;
+    }
+      &__package-number {
+        display: block;
+      }
+      &__package-title {
+      }
+      &__package-description {
+      }
+      &__package-price {
+        display: block;
+      }
+      &__package-button-wrap {
+        display: block;
+      }
+        &__package-button {
+          padding: rem-calc(11) rem-calc(22);
+
+          @include global-transition(background-color);
+        }
+
+  @include breakpoint(medium up) {
+
+    &__title-area {
+    }
+      &__pretitle {
+      }
+      &__title {
+      }
+
+    &__packages-area {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &--3-packages {
+        justify-content: space-between;
+      }
+    }
+      &__package {
+        $gap: rem-calc(20);
+        width: calc(100% / 3 - #{$gap});
+        padding: rem-calc(38) rem-calc(40) rem-calc(52) rem-calc(40);
+        @include global-transition(background-color);
+      }
+        &__package-number {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(43);
+          }
+        }
+        &__package-title {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(32);
+          }
+        }
+        &__package-description {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(37);
+          }
+        }
+        &__package-price {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(37);
+          }
+        }
+        &__package-button-wrap {
+        }
+          &__package-button {
+          }
+
+  }
+
+  @include breakpoint(small only) {
+
+    &__title-area {
+    }
+      &__pretitle {
+      }
+      &__title {
+      }
+
+    &__packages-area {
+    }
+      &__package {
+        padding: rem-calc(50) rem-calc(30);
+
+        &:not(:last-child) {
+          margin-bottom: rem-calc(25);
+        }
+      }
+        &__package-number {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(20);
+          }
+        }
+        &__package-title {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(20);
+          }
+        }
+        &__package-description {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(18.5);
+          }
+        }
+        &__package-price {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(18.5);
+          }
+        }
+        &__package-button-wrap {
+        }
+          &__package-button {
+          }
+
+  }
+}

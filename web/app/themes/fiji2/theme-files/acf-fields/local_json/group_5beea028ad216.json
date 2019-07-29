@@ -1,0 +1,1132 @@
+{
+    "key": "group_5beea028ad216",
+    "title": "Block. Intro Block 2",
+    "fields": [
+        {
+            "key": "field_5beea028b20fb",
+            "label": "Specific",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5beea4bf670a3",
+            "label": "Layout Type",
+            "name": "layout_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select flo-image-select--columns-3",
+                "id": ""
+            },
+            "choices": {
+                "a": "<img src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-block-intro-block-2-type-a.thumb.jpg\"><p>Type A<\/p>",
+                "b": "<img src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-block-intro-block-2-type-b.thumb.jpg\"><p>Type B<\/p>",
+                "c": "<img src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-block-intro-block-2-type-c.thumb.jpg\"><p>Type C<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "a",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5beea028b2115",
+            "label": "Overview A",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-intro-block-2-type-a.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beeaaf98dbd9",
+            "label": "Overview B",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-intro-block-2-type-b.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beeaafd8dbda",
+            "label": "Overview C",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "c"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-intro-block-2-type-c.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bf2daaf1fd78",
+            "label": "Button Position",
+            "name": "type_a_button_position",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "right": "Right Side",
+                "below": "Below Text"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "right",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5beea028b213d",
+            "label": "1. Elements Color",
+            "name": "elements_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "",
+            "use_alpha": false
+        },
+        {
+            "key": "field_5beea028b218a",
+            "label": "2.1. Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "The Image will be cropped to the resolution: 2560x1200px.<br>\r\nThe height is based on the value you set bellow.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5beea028b21b1",
+            "label": "2.2. Image Оverlay Color",
+            "name": "image_overlay_color",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0
+        },
+        {
+            "key": "field_5beea028b21c5",
+            "label": "2.3. Image Overlay Opacity",
+            "name": "overlay_opacity",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "%",
+            "default_value": 30,
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 1
+        },
+        {
+            "key": "field_5beea028b2129",
+            "label": "A. Header Area",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beea028b2151",
+            "label": "A.1. Display Header",
+            "name": "display_header",
+            "type": "true_false",
+            "instructions": "If you use this option please remove the Header Placeholder Block to avoid it's duplication.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5beea028b2165",
+            "label": "A.2. Custom Header Layout (Advanced Option)",
+            "name": "custom_header_layout",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea028b2151",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5beea028b2176",
+            "label": "A.3. Custom Header",
+            "name": "ch",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea028b2151",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5beea028b2165",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_59d4de11b4021"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5beea028b21d8",
+            "label": "B. Text Area",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beea028b21ec",
+            "label": "B.1. Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Quisque malesuada nibh pulvinar",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5beea028b21ff",
+            "label": "B.1.1. Title Font",
+            "name": "title_font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_5beea028b2213",
+            "label": "B.2. Text",
+            "name": "text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "All-Inclusive Wedding Day Storytelling",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5beea028b2226",
+            "label": "B.2.1. Text Font",
+            "name": "text_font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_3"
+        },
+        {
+            "key": "field_5beeb788095ff",
+            "label": "C. Buttons",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beebddf17ef1",
+            "label": "Buttons",
+            "name": "buttons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "block",
+            "button_label": "Add Button",
+            "sub_fields": [
+                {
+                    "key": "field_5beebdf517ef2",
+                    "label": "Button",
+                    "name": "button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5beebe9117ef7",
+                    "label": "Button Text Font",
+                    "name": "button_text_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Call to Action 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": "",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "call_to_action_1"
+                },
+                {
+                    "key": "field_5beebe6c17ef6",
+                    "label": "Button Text Color",
+                    "name": "button_text_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beebdfe17ef3",
+                    "label": "Button Border Color",
+                    "name": "button_border_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beebe4017ef4",
+                    "label": "Button Background Color",
+                    "name": "button_background_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beebe5117ef5",
+                    "label": "Button Background Color Opacity",
+                    "name": "button_background_color_opacity",
+                    "type": "number_slider",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "slider_units": "%",
+                    "default_value": 0,
+                    "slider_min_value": 0,
+                    "slider_max_value": 100,
+                    "increment_value": 1
+                },
+                {
+                    "key": "field_5beebef817efb",
+                    "label": "Button Text Color on Hover",
+                    "name": "button_text_color_hover",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-text-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beebed417ef9",
+                    "label": "Button Background Color Opacity on Hover",
+                    "name": "button_background_color_opacity_hover",
+                    "type": "number_slider",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "slider_units": "%",
+                    "default_value": 100,
+                    "slider_min_value": 0,
+                    "slider_max_value": 100,
+                    "increment_value": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5beeb79d09600",
+            "label": "C. Button",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beee58e9e7c3",
+            "label": "Button",
+            "name": "button",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width flo-no-border",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5beee52d9e7bb",
+                    "label": "Button",
+                    "name": "button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5beee5369e7bc",
+                    "label": "Button Text Font",
+                    "name": "button_text_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Call to Action 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": "",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "call_to_action_1"
+                },
+                {
+                    "key": "field_5beee53b9e7bd",
+                    "label": "Button Text Color",
+                    "name": "button_text_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beee5509e7be",
+                    "label": "Button Border Color",
+                    "name": "button_border_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beee55a9e7bf",
+                    "label": "Button Background Color",
+                    "name": "button_background_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beee56b9e7c0",
+                    "label": "Button Background Color Opacity",
+                    "name": "button_background_color_opacity",
+                    "type": "number_slider",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "slider_units": "%",
+                    "default_value": 0,
+                    "slider_min_value": 0,
+                    "slider_max_value": 100,
+                    "increment_value": 1
+                },
+                {
+                    "key": "field_5beee5769e7c1",
+                    "label": "Button Text Color on Hover",
+                    "name": "button_text_color_hover",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-text-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beee57c9e7c2",
+                    "label": "Button Background Color Opacity on Hover",
+                    "name": "button_background_color_opacity_hover",
+                    "type": "number_slider",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "slider_units": "%",
+                    "default_value": 100,
+                    "slider_min_value": 0,
+                    "slider_max_value": 100,
+                    "increment_value": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5beeb79f09601",
+            "label": "C. Links",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "c"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5beec153316f3",
+            "label": "Links",
+            "name": "links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5beea4bf670a3",
+                        "operator": "==",
+                        "value": "c"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "block",
+            "button_label": "Add Link",
+            "sub_fields": [
+                {
+                    "key": "field_5beeea7bd641f",
+                    "label": "Link Pretitle",
+                    "name": "button_pretitle",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "OUR WORK PROCESS",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5beeeba1778c9",
+                    "label": "Link Pretitle Font",
+                    "name": "button_pretitle_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Meta 2",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": "",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "meta_2"
+                },
+                {
+                    "key": "field_5beeea5ed641e",
+                    "label": "Link Title",
+                    "name": "button_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Quisque malesuada nibh",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5beec153316f5",
+                    "label": "Link Title Font",
+                    "name": "button_title_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Heading 2",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": "",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_2"
+                },
+                {
+                    "key": "field_5beec153316f6",
+                    "label": "Link Text Color",
+                    "name": "button_text_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beec153316f4",
+                    "label": "URL",
+                    "name": "button_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5beec16a316fc",
+                    "label": "Open Link in New Tab",
+                    "name": "button_target",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5beec153316f7",
+                    "label": "Link Border Color",
+                    "name": "button_border_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beec153316f8",
+                    "label": "Link Background Color",
+                    "name": "button_background_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beec153316f9",
+                    "label": "Link Background Color Opacity",
+                    "name": "button_background_color_opacity",
+                    "type": "number_slider",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "slider_units": "%",
+                    "default_value": 0,
+                    "slider_min_value": 0,
+                    "slider_max_value": 100,
+                    "increment_value": 1
+                },
+                {
+                    "key": "field_5beec153316fa",
+                    "label": "Link Text Color on Hover",
+                    "name": "button_text_color_hover",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-text-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5beec153316fb",
+                    "label": "Link Background Color Opacity on Hover",
+                    "name": "button_background_color_opacity_hover",
+                    "type": "number_slider",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "slider_units": "%",
+                    "default_value": 50,
+                    "slider_min_value": 0,
+                    "slider_max_value": 100,
+                    "increment_value": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5beea028b223b",
+            "label": "Additional",
+            "name": "additional",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58eb425e82b8c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1542642425
+}

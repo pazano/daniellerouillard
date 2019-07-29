@@ -1,0 +1,107 @@
+.flo-block-image-links-1 {
+  $b: ".flo-block-image-links-1";
+
+  display: flex;
+  &__link {
+    text-align: center;
+  }
+    &__link-image-wrap {
+      width: 100%;
+    }
+      &__link-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        @include global-bgi-cover;
+      }
+    &__link-description {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: rem-calc(27);
+    }
+      &__link-title {
+      }
+      &__link-subtitle {
+      }
+  @include breakpoint(medium up) {
+    align-items: center;
+    &--has-1-image {
+      justify-content: center;
+    }
+    &--has-2-images {
+      justify-content: space-around;
+    }
+    &--has-3-images {
+      justify-content: space-between;
+    }
+    &__link {
+      width: rem-calc(347);
+      &--has-url {
+        display: flex;
+        flex-direction: column;
+
+        #{$b}__link-image {
+          @include global-transition(transform);
+        }
+
+        &:hover {
+          #{$b}__link-image {
+            transform: scale(1.1);
+          }
+        }
+
+      }
+      &:nth-child(2) {
+        width: rem-calc(216);
+      }
+
+    }
+      &__link-image-wrap {
+        overflow: hidden;
+        height: rem-calc(217);
+        margin-bottom: rem-calc(20);
+      }
+        &__link-image {
+        }
+      &__link-description {
+        text-align: left;
+      }
+        &__link-title {
+        }
+        &__link-subtitle {
+          margin-left: rem-calc(15);
+        }
+  }
+
+  @include breakpoint(small only) {
+    flex-direction: column;
+    align-items: center;
+    &__link {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: rem-calc(35);
+      }
+      &--has-url {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &:nth-child(2) {
+        width: rem-calc(217);
+      }
+    }
+      &__link-image-wrap {
+        margin-bottom: rem-calc(15);
+      }
+        &__link-image {
+        }
+        &__link-description {
+        }
+          &__link-title {
+          }
+          &__link-subtitle {
+            margin-left: rem-calc(5);
+          }
+  }
+}

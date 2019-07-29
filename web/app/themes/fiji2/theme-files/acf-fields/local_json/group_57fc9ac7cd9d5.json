@@ -1,0 +1,758 @@
+{
+    "key": "group_57fc9ac7cd9d5",
+    "title": "4. Pages",
+    "fields": [
+        {
+            "key": "field_5a3a4e3fdcabe",
+            "label": "Introduction",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c7667020d7d0",
+            "label": "Page Structure",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c76674f0d7d1",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<h4 align=\"center\">Below you will find a short description of the page sections. <\/h4>\r\n<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/theme-structure-fiji2.jpg\" class=\"acf-img\"\/>\r\n<ul style=\"list-style: none; padding-left: 20px;\">\r\n<li>\r\n<b>Header<\/b> - is the top section of your website’s page where the site Navigation and Logo are located. For a more detailed overview of settings and features please look into Flotheme -> 3. Header section.  \r\n<\/li>\r\n<li>\r\n<b>Pages<\/b> -contain all your website content. This includes Blog Posts, Galleries, About Info, etc. More info on Pages, Layouts and Functionality can be found by going to the Flotheme -> 4. Pages section.\r\n<\/li>\r\n<li>\r\n<b>Sidebars<\/b> - an area commonly used to display additional info about your website. For more info and settings options go to Flotheme -> 8. Sidebars area.\r\n<\/li>\r\n<li>\r\n<b>Footer<\/b> - an area located at the bottom of each page that contains additional information such as Copyrights, Social Links, Newsletter Signup, Instagram feed, etc. For more info and settings options go to Flotheme -> 9. Footer area.\r\n<\/li>\r\n<\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_584aadcd16674",
+            "label": "Introduction to Page Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "In the following area we’ve listed out all the different Page Types available within the Theme. We’ve also drawn up a visual guide of each Page for an easier editing process.\r\n\r\nNote! Some of the videos are based on a different theme, but the principle is the same.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5863e7ba4297c",
+            "label": "Page Settings video",
+            "name": "page_settings_video",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Page Settings",
+            "video_description": "Global Page settings can be managed from the Flothemes -> Pages. In this section, you will be able to adjust the Main page options, Archives, Search and 404 Page types.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/ygV40xfN4pg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "video_embed_image": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-video-block-1.preview.jpg"
+        },
+        {
+            "key": "field_5c76cb0afd10f",
+            "label": "Templates Overview video",
+            "name": "templates_overview_video",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Templates Overview",
+            "video_description": "A Page Template is a pre-designed page layout that can be used for creating different pages such as Homepage, About, Contact, etc. Each theme include a variety of different Page Templates to choose from. In many cases there is more than one Template available for a certain page, for example, a theme may include 3 Homepage Templates.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/n2z2aBMw_oQ\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-mosaic-image-links-1.preview.jpg"
+        },
+        {
+            "key": "field_5c7825f6ff55a",
+            "label": "Homepages Video",
+            "name": "homepages_video",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Homepages",
+            "video_description": "Homepages are definitely one of the most complex pages within a website. It is one of those pages where you want to spend most of your time and make sure every piece of content deserves to be there. A carefully crafted page, with attention to detail will make a user want to explore your website further.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/KYMeT6UYbqU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5c7827c6ff55b",
+            "label": "Listing Page Template",
+            "name": "listing_page_template",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Listing Page",
+            "video_description": "The Listing Template is the easiest way to create a Blog or Gallery Listing Page. This Template allows you to showcase your latest Blog Post or Galleries.\r\n\r\nYou can find this template in the Pages – Templates section.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/yhtFR4kaD-s\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5c78282e87d2a",
+            "label": "Contact Page",
+            "name": "contact_page",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Contact Page",
+            "video_description": "Contact Pages are a very important part of your website. All the work previously done to your website is meant to lead users to this specific page, so it is important to make sure all your contact info is properly added.\r\n\r\nFirst of all, each theme has a few different layouts to offer. Sometimes these layouts can be very simple, and sometimes they can include additional Blocks. It is important to remember that none of the Page Templates we offer are hard coded, therefore you can easily add additional Content Blocks if necessary.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/P5QvKuD8RKg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5c78286287d2b",
+            "label": "About Page",
+            "name": "about_page",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "About Page",
+            "video_description": "About Pages are unique for each theme. In most cases they are a combination of many different types of Image and Text Blocks. All Blocks used in our default templates are Standalone Blocks, therefore all page content is added within these blocks.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/vCN_YwsXSmA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5a3a4e7adcabf",
+            "label": "Miscellaneous",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_581cb1700181b",
+            "label": "Default Page Layout",
+            "name": "flo-page__default-layout",
+            "type": "select",
+            "instructions": "The selected layout will be used as default for the new created pages.\r\nIt does not affect the existing pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left_sidebar": "Left Sidebar",
+                "right_sidebar": "Right Sidebar",
+                "full_width": "Full Width"
+            },
+            "default_value": [
+                "full_width"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_581cb1d90181c",
+            "label": "Default Post Sidebar",
+            "name": "flo-page__default-sidebar",
+            "type": "select_sidebar",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_581cb1700181b",
+                        "operator": "!=",
+                        "value": "full_width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_590b3b677a333",
+            "label": "Page Title Font",
+            "name": "flo-page__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-wp-title .flo-wp-title__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_5a3a4eaedcac0",
+            "label": "Search Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58208776b6b07",
+            "label": "Search Page - Title",
+            "name": "flo-search-page__page-title",
+            "type": "text",
+            "instructions": "The '%' will be replaced with the search key word.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Search results for: %",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58371038909c9",
+            "label": "Search Page - Layout",
+            "name": "flo-lvy2-search-layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top flo-image-select flo-image-select--columns-3 acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "choices": {
+                "listing_1": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-1.overview.jpg\" \/>",
+                "listing_2": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-2.overview.jpg\" \/>",
+                "listing_3": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-3.overview.jpg\" \/>",
+                "listing_4": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-4.overview.jpg\" \/>",
+                "listing_5": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-5.overview.jpg\" \/>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "listing_2",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_59df5cb1eaf69",
+            "label": "Search Page - Listing 1 Options",
+            "name": "flo-lvy2-search-options-listing_1",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58371038909c9",
+                        "operator": "==",
+                        "value": "listing_1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a379345b7fdd-2"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5d2deaf6a",
+            "label": "Search Page - Listing 2 Options",
+            "name": "flo-lvy2-search-options-listing_2",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58371038909c9",
+                        "operator": "==",
+                        "value": "listing_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_59d76facca7f1"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5da20777c",
+            "label": "Search Page - Listing 3 Options",
+            "name": "flo-lvy2-search-options-listing_3",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58371038909c9",
+                        "operator": "==",
+                        "value": "listing_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a379605d9f2a"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5dd40777f",
+            "label": "Search Page - Listing 4 Options",
+            "name": "flo-lvy2-search-options-listing_4",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58371038909c9",
+                        "operator": "==",
+                        "value": "listing_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a3797468b35a"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5dd30777e",
+            "label": "Search Page - Listing 5 Options",
+            "name": "flo-lvy2-search-options-listing_5",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58371038909c9",
+                        "operator": "==",
+                        "value": "listing_5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a37989d083ad"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5c7e7d2ba3ea1",
+            "label": "Search Pages Pagination",
+            "name": "flo-lvy2-archive_pages_pagination",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_59e4dd5beb205"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5a3a4ff1dcac1",
+            "label": "Archive Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58370e73d1828",
+            "label": "Archive Page - Layout Options",
+            "name": "flo-lvy2-archives-layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top flo-image-select flo-image-select--columns-3 acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "choices": {
+                "listing_1": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-1.overview.jpg\" \/>",
+                "listing_2": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-2.overview.jpg\" \/>",
+                "listing_3": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-3.overview.jpg\" \/>",
+                "listing_4": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-4.overview.jpg\" \/>",
+                "listing_5": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-listing-5.overview.jpg\" \/>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "listing_2",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_59df5e6507781",
+            "label": "Archive Page - Listing 1 Options",
+            "name": "flo-lvy2-archives-options-listing_1",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58370e73d1828",
+                        "operator": "==",
+                        "value": "listing_1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a379345b7fdd-2"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5f7f07785",
+            "label": "Archive Page - Listing 2 Options",
+            "name": "flo-lvy2-archives-options-listing_2",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58370e73d1828",
+                        "operator": "==",
+                        "value": "listing_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_59d76facca7f1"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5f7e07784",
+            "label": "Archive Page - Listing 3 Options",
+            "name": "flo-lvy2-archives-options-listing_3",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58370e73d1828",
+                        "operator": "==",
+                        "value": "listing_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a379605d9f2a"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5f7e07783",
+            "label": "Archive Page - Listing 4 Options",
+            "name": "flo-lvy2-archives-options-listing_4",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58370e73d1828",
+                        "operator": "==",
+                        "value": "listing_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a3797468b35a"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59df5f7c07782",
+            "label": "Archive Page - Listing 5 Options",
+            "name": "flo-lvy2-archives-options-listing_5",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58370e73d1828",
+                        "operator": "==",
+                        "value": "listing_5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_5a37989d083ad"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_59e99207b8860",
+            "label": "Archive Pages Pagination",
+            "name": "flo-lvy2-archive_pages_pagination",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_59e4dd5beb205"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5a3a509adcac2",
+            "label": "\"Not Found\" Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_585d5621823c7",
+            "label": "\"Not Found\" Page - Options",
+            "name": "flo-404_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top acf-field--full-width listing-pages-selector",
+                "id": ""
+            },
+            "clone": [
+                "group_593ff44f99574"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-4-pages"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1554796480
+}

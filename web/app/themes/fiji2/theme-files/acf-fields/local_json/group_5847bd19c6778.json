@@ -1,0 +1,378 @@
+{
+    "key": "group_5847bd19c6778",
+    "title": "7.2. Comment Areas",
+    "fields": [
+        {
+            "key": "field_58203eb886db3",
+            "label": "Comment Type",
+            "name": "flo-lovely2-blog-post__comments",
+            "type": "select",
+            "instructions": "If both comment types are enabled, you can change their order by simply dragging them around.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 1,
+            "allow_null": 1,
+            "choices": {
+                "wp": "Enable WordPress comments",
+                "fb_comments": "Enable Facebook comments"
+            },
+            "default_value": [
+                "wp"
+            ],
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_585257ec49f95",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/trento\/comment-area.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_587caee80ddb0",
+            "label": "A.1.1. Display Comments Count",
+            "name": "flo-lovely2-comments-block__top-bar-comments-count-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_587caf0b0ddb1",
+            "label": "A.1.2. Comments Count Font",
+            "name": "flo-lovely2-comments-block__top-bar-comments-count-font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comments-block__top-bar-comments-count",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_587cafb10ddb3",
+            "label": "A.2.1. \"Show\/Hide\" Button Font",
+            "name": "flo-lovely2-comments-block__top-bar-hide-button-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comments-block__top-bar-hide-button, .comments-block__top-bar-show-button, .comments-block__top-bar-toggle-button-label",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_58be8eaba9686",
+            "label": "A.2.2. \"Show\" Button Label",
+            "name": "flo-lovely2-comments-block__top-bar-show-button-label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Read Comments",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_587caf890ddb2",
+            "label": "A.2.3. \"Hide\" Button Label",
+            "name": "flo-lovely2-comments-block__top-bar-hide-button-label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Hide Comments",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_585258b65f206",
+            "label": "B.1. Display Avatars",
+            "name": "flo-lovely2-comments-block__display-avatar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_585259975f207",
+            "label": "B.2. Comment Author Name Font",
+            "name": "flo-lovely2-comments-block__name-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment-name",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_58525abb5f209",
+            "label": "B.3. Display Date",
+            "name": "flo-lovely2-comments-block__display-date",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5852bdfe83fda",
+            "label": "B.4. Comment Date Font",
+            "name": "flo-lovely2-comments-block__date-font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58525abb5f209",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment-meta",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_58525b045f20a",
+            "label": "B.5. Comment Text Font",
+            "name": "flo-lovely2-comments-block__text-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment-content",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1_regular"
+        },
+        {
+            "key": "field_5915735f39c45",
+            "label": "B.6. \"Reply\" Button Font",
+            "name": "flo-lovely2-comments-block__reply-font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-lovely2-comments-block__reply",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_2"
+        },
+        {
+            "key": "field_587cb18e1ea27",
+            "label": "C.1. Title",
+            "name": "flo-lovely2-comments-block__form-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Add Comment",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_587cb1b11ea28",
+            "label": "C.1.1. Title Font",
+            "name": "flo-lovely2-comments-block__form-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comments-block__form-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_58525d412202e",
+            "label": "C.2. Form Typography",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To modify the font styles of the form elements, such as the \"Add Comment\" button and the input fields, please go to Flotheme -> 5. Generics -> 5.3. Generic Typography.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_58525cb7df8ca",
+            "label": "C.3.1. \"Submit Comment\" Button Title",
+            "name": "flo-lovely2-comments-block__submit-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "POST COMMENT",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_587cb6121ea2c",
+            "label": "C.3.2. \"Submit Comment\" Button Font",
+            "name": "flo-lovely2-comments-block__submit-font",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".form-submit .submit",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1508226982
+}

@@ -1,0 +1,53 @@
+.flo-form{
+
+  input[type]{
+    margin: 0;
+  }
+
+  &__field{
+    margin-bottom: rem-calc(23.5);
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+   input[type="submit"]{
+     margin-top: rem-calc(40);
+   }
+}
+
+.flo-modal{
+    position: fixed;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: none;
+    .thx-msg {
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      padding: 20px;
+      vertical-align: middle;
+      margin: 0 auto;
+      top: 50%;
+      margin-top: -180px;
+      position: absolute;
+      left: 50%;
+      margin-left: -170px;
+      background-color: #fff;
+      border: 2px solid #e5e5e5;
+    }
+}
+
+.contact-response {
+  p {
+    border-radius: rem-calc(12.5);
+    border: 2px dashed $color-gray;
+    padding: rem-calc(15);
+    margin-top: rem-calc(15);
+    color: $color-gray-dark;
+  }
+}

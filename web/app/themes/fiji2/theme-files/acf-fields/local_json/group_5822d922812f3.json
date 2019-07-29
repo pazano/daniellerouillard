@@ -1,0 +1,1305 @@
+{
+    "key": "group_5822d922812f3",
+    "title": "9. Footer",
+    "fields": [
+        {
+            "key": "field_59f07d591ac80",
+            "label": "Video Tutorial",
+            "name": "video_tutorial",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Footer Overview",
+            "video_description": "Footer – a small block of content located at the bottom of your website. Most of the time this area includes SM Links, Copyrights texts, etc.\r\n\r\nTo manage your Footer content go to Flotheme – Footer section. Depending on your theme, you may have one or more layouts to chose from. Depending on the selected layout, options to customize the Footer will also differ.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/J_WxdlzopRs\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5cac562e00c8e",
+            "label": "Video Tutorial",
+            "name": "video_tutorial_2",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Creating the Custom Footer",
+            "video_description": "With the Fiji theme, you have an option to create a custom Footer for a specific page or blogposts\/galleries pages, while the rest of the pages will use the main Header setup for the whole site. Check this video to get more details about this option.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/ZIfV2MlZrP8\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_59c266a1a410d",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59c3402770e10",
+            "label": "Footer Areas Order",
+            "name": "flo-lovely2-footer__areas-order",
+            "type": "select",
+            "instructions": "Note: Here you can drag the Area Labels to reorder and you can remove a label to not display the area it represents.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-select--vertical",
+                "id": ""
+            },
+            "choices": {
+                "area_1": "Area No. 1",
+                "area_2": "Area No. 2",
+                "copyrights": "Copyrights Area"
+            },
+            "default_value": [
+                "area_1",
+                "area_2",
+                "copyrights"
+            ],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59c38c055057d",
+            "label": "Footer Areas Options",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59c26803f3c2c",
+            "label": "Area No. 1",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a3b57a83a219",
+            "label": "Area No. 1 Background Color",
+            "name": "flo-lovely2-footerf-a1__bgc",
+            "type": "color_picker",
+            "instructions": "Default: #DFE1E3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#DFE1E3"
+        },
+        {
+            "key": "field_5a3b57c63a21a",
+            "label": "Area No. 1 Elements Color",
+            "name": "flo-lovely2-footerf-a1__ec",
+            "type": "color_picker",
+            "instructions": "Default: #3C3C3C",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#3C3C3C"
+        },
+        {
+            "key": "field_59c342288395e",
+            "label": "Area No. 1 Layout",
+            "name": "flo-lovely2-footer-a1__layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select flo-image-select--columns-2 acf-field--label-on-top",
+                "id": ""
+            },
+            "choices": {
+                "b": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer-area-1--type-b.thumb.jpg\"><p>Type A<\/p>",
+                "d": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer-area-1--type-d.thumb.jpg\"><p>Type B<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "b",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_59c3553865181",
+            "label": "---- Area No. 1 Type B Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer-area-1--type-b.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5ac265673b7d8",
+            "label": "A.0. Hide Images on Mobile Devices",
+            "name": "flo-fiji2-footerf-a1a__insta_hide_mobile",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a3b4a8d415c4",
+            "label": "A.1. Images Source",
+            "name": "flo-lovely2-footer-a1b-l__i-s",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "images": "Uploaded Images",
+                "plugin": "Flo Instagram Plugin"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "images",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5a44e05fae258",
+            "label": "Flo Instagram Selector",
+            "name": "flo-instagram-footer-account",
+            "type": "acf_flo_instagram_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    },
+                    {
+                        "field": "field_5a3b4a8d415c4",
+                        "operator": "==",
+                        "value": "plugin"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5a3b4ae3415c5",
+            "label": "A.1.1. Images",
+            "name": "flo-lovely2-footer-a1b-l__i",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    },
+                    {
+                        "field": "field_5a3b4a8d415c4",
+                        "operator": "==",
+                        "value": "images"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": 3,
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5a3b4b62415cd",
+            "label": "B.1. Middle Area Content",
+            "name": "flo-lovely2-footer-a1b-m__c",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5a3b4bda415d0",
+            "label": "C.1. Link List",
+            "name": "flo-lovely2-footer-a1b-r__l",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 8,
+            "layout": "block",
+            "button_label": "Add Link",
+            "sub_fields": [
+                {
+                    "key": "field_5a3b4bf6415d1",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Portraits",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a3b4c02415d2",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5a3b4c14415d3",
+            "label": "C.1.1. Link Font",
+            "name": "flo-lovely2-footer-a1b-r__l-f",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 4",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_4"
+        },
+        {
+            "key": "field_5a3b82ad29911",
+            "label": "---- Area No. 1 Type D Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer-area-1--type-d.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bf2d7c051325",
+            "label": "Add Top Padding (Desktop Only)",
+            "name": "flo-fiji2-footerf-a1b__top-padding_enable",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5bf2d7de51326",
+            "label": "Top Padding",
+            "name": "flo-fiji2-footerf-a1b__top-padding_value",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    },
+                    {
+                        "field": "field_5bf2d7c051325",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 30,
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 1
+        },
+        {
+            "key": "field_5ac4e4ec72275",
+            "label": "A.0. Image Count on Mobile Devices",
+            "name": "flo-fiji2-footerf-a1b__insta_images_count_mobile",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "0",
+                "2": "2",
+                "4": "4",
+                "6": "6"
+            },
+            "default_value": [
+                6
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a3b82e8d81e8",
+            "label": "A.1. Images Source",
+            "name": "flo-lovely2-footer-a1d__i-s",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "images": "Uploaded Images",
+                "plugin": "Flo Instagram Plugin"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a44dfa971437",
+            "label": "Flo Instagram Selector",
+            "name": "flo-instagram-footer-account",
+            "type": "acf_flo_instagram_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    },
+                    {
+                        "field": "field_5a3b82e8d81e8",
+                        "operator": "==",
+                        "value": "plugin"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5a3b93e6850e8",
+            "label": "A.1.1. Images",
+            "name": "flo-lovely2-footer-a1d__i",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    },
+                    {
+                        "field": "field_5a3b82e8d81e8",
+                        "operator": "==",
+                        "value": "images"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 6,
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg,jpeg,png"
+        },
+        {
+            "key": "field_5a3b837ad81ec",
+            "label": "B.1. Link Label",
+            "name": "flo-lovely2-footer-a1d__l-l",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "@flothemes",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b83a6d81ee",
+            "label": "B.2. Link Font",
+            "name": "flo-lovely2-footer-a1d__l-f",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_1"
+        },
+        {
+            "key": "field_5a3b83bed81ef",
+            "label": "B.3. Link Background Color",
+            "name": "flo-lovely2-footer-a1d__l-bgc",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "",
+            "use_alpha": false
+        },
+        {
+            "key": "field_5a3b83e4d81f0",
+            "label": "B.4. Link Text Color",
+            "name": "flo-lovely2-footer-a1d__l-ec",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": false
+        },
+        {
+            "key": "field_5a3b8419d81f1",
+            "label": "B.5. Link URL",
+            "name": "flo-lovely2-footer-a1d__l-url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59c342288395e",
+                        "operator": "==",
+                        "value": "d"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b543ac6456",
+            "label": "Area No. 2",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a3b574ffd43f",
+            "label": "---- Area No. 2 Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer-area-2.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a3b57de3a21b",
+            "label": "Background Color",
+            "name": "flo-lovely2-footer-a2__bgc",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": "",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5a3b580b3a21c",
+            "label": "Elements Color",
+            "name": "flo-lovely2-footer-a2__ec",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": 0,
+            "legacy_color": 0
+        },
+        {
+            "key": "field_5a3b550636e1f",
+            "label": "A.1.1. Link Label",
+            "name": "flo-lovely2-footer-a2__l-l",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "@FLOTHEMES",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b554136e20",
+            "label": "A.1.2. Link Label Font",
+            "name": "flo-lovely2-footer-a2__l-f",
+            "type": "font_style_select",
+            "instructions": "Default: Call to Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_5a3b558836e21",
+            "label": "A.1.3. Link URL",
+            "name": "flo-lovely2-footer-a2__l-u",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b559a36e22",
+            "label": "A.2. Display Social Links",
+            "name": "flo-lovely2-footer-a2__d-s",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a3b55b936e23",
+            "label": "B.1. Title",
+            "name": "flo-lovely2-footer-a2__t",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "SUBSCRIBE TO OUR",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b55d336e24",
+            "label": "B.1.1. Title Font",
+            "name": "flo-lovely2-footer-a2__t-f",
+            "type": "font_style_select",
+            "instructions": "Default: Special Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "special_heading_2"
+        },
+        {
+            "key": "field_5a3b55f436e25",
+            "label": "B.2. Subtitle",
+            "name": "flo-lovely2-footer-a2__st",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "NEWSLETTER",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b561336e26",
+            "label": "B.2.1. Subtitle Font",
+            "name": "flo-lovely2-footer-a2__st-f",
+            "type": "font_style_select",
+            "instructions": "Default: Special Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "special_heading_2"
+        },
+        {
+            "key": "field_5a40a8af2a7de",
+            "label": "B.3. Newsletter Mailchimb Code <b style=\"color: red;\">*<\/b>",
+            "name": "flo-lovely2-footer-mailchimp_code",
+            "type": "textarea",
+            "instructions": "* This field is required if 'Area No. 2' is being used. \r\n<br\/>\r\nCheck the documentation to learn how to find the Mailchimp Fom Code: <a href=\"http:\/\/docs.flothemes.com\/integrating-mailchimp-theme-subscription-form\/\" target=\"_blank\">http:\/\/docs.flothemes.com\/integrating-mailchimp-theme-subscription-form\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Your Code Here",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a3b563f36e27",
+            "label": "B.3.1. Newsletter Form Placeholder",
+            "name": "flo-lovely2-footer-a2__nf-p",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ENTER YOUR EMAIL...",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3b566536e28",
+            "label": "B.3.2. Newsletter Form Font",
+            "name": "flo-lovely2-footer-a2__nf-f",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        },
+        {
+            "key": "field_5a3b569936e29",
+            "label": "B.3.3. Newsletter Form Background Color",
+            "name": "flo-lovely2-footer-a2__nf-bgc",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "secondary-background-color-2",
+            "default_value": "",
+            "use_alpha": false
+        },
+        {
+            "key": "field_5a3b56b736e2a",
+            "label": "B.3.4. Newsletter Form Elements Color",
+            "name": "flo-lovely2-footer-a2__nf-ec",
+            "type": "flo_color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": "",
+            "use_alpha": false
+        },
+        {
+            "key": "field_59c26816f3c2d",
+            "label": "Copyrights Area",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a3b590f16f49",
+            "label": "---- Copyrights Area Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-footer-copyrights-area.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a3b58213a21d",
+            "label": "Background Color",
+            "name": "flo-lovely2-footerf-cp__bgc",
+            "type": "color_picker",
+            "instructions": "Default: #DFE1E3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#DFE1E3"
+        },
+        {
+            "key": "field_5a3b58443a21e",
+            "label": "Elements Color",
+            "name": "flo-lovely2-footerf-cp__ec",
+            "type": "color_picker",
+            "instructions": "Default: #3C3C3C",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#3C3C3C"
+        },
+        {
+            "key": "field_5a3a3c48f449d",
+            "label": "A. Copyright Notice",
+            "name": "flo-lovely2-footer-cp__cn",
+            "type": "text",
+            "instructions": "Note: %year% will be replaced with the actual year according to the current date.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "©%year% COPYRIGHT FLOTHEMES",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3a3c7cf449e",
+            "label": "A.1. Copyright Notice Font",
+            "name": "flo-lovely2-footer-cp__cn-font",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        },
+        {
+            "key": "field_5a94ff86b0e67",
+            "label": "B. Display Back to Top Button",
+            "name": "flo-lovely2-footer-cp__dbtt",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a3a4d3c833f3",
+            "label": "B.1. Back to Top Button Label",
+            "name": "flo-lovely2-footer-cp__btt-label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a94ff86b0e67",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "TO TOP",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a94ffb4b0e68",
+            "label": "B.1.1. Back to Top Button Label Font",
+            "name": "flo-lovely2-footer-cp__bttlf",
+            "type": "font_style_select",
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a94ff86b0e67",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-9-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1561051933
+}

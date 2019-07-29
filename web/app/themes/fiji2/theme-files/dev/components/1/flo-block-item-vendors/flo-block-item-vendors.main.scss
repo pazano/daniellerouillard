@@ -1,0 +1,49 @@
+.flo-block-item-vendors {
+  $b: ".flo-block-item-vendors";
+
+  &__title {
+
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    &__link {
+      display: block;
+      flex-shrink: 0;
+      margin-bottom: rem-calc(3);
+    }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    padding: rem-calc(25) 0;
+
+    &__title {
+      width: $global-column-width * 3;
+      padding-right: $global-column-width;
+      flex-shrink: 0;
+    }
+    &__links {
+      flex-grow: 1;
+    }
+      &__link {
+        width: calc(100% / 3);
+        padding-right: $global-column-width / 2;
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__title {
+      text-align: center;
+      margin-bottom: rem-calc(20);
+    }
+    &__links {
+    }
+      &__link {
+        width: 100%;
+        padding: 0 rem-calc(20);
+        text-align: center;
+      }
+
+  }
+}

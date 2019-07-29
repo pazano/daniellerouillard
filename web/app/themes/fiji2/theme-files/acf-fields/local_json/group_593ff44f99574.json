@@ -1,0 +1,138 @@
+{
+    "key": "group_593ff44f99574",
+    "title": "4.7. \"Not Found\" Page",
+    "fields": [
+        {
+            "key": "field_593ff476b7d3c",
+            "label": "\"Not Found\" Page - Title",
+            "name": "flo-not-found-page__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Not Found.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_593ff490b7d3d",
+            "label": "\"Not Found\" Page - Description",
+            "name": "flo-not-found-page__description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We couldn't find what you were looking for.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_593ff4a6b7d3e",
+            "label": "\"Not Found\" Page - Link to Home Page Title",
+            "name": "flo-not-found-page__link-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Check out Our Home Page",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c811f14b82c5",
+            "label": "\"Not Found\" Page - Title font",
+            "name": "flo-not-found-page__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-block--not-found h1",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_5c811faeb82c6",
+            "label": "\"Not Found\" Page - Description Font",
+            "name": "flo-not-found-page__description-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-block--not-found h3",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_5c811feeb82c7",
+            "label": "\"Not Found\" Page - Link Font",
+            "name": "flo-not-found-page__link-title-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-block--not-found a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1_link"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1557159985
+}

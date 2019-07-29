@@ -1,0 +1,266 @@
+.flo-comments {
+  $b: ".flo-comments";
+
+  /* START: TOP AREA */
+    &__top-area {
+      border-bottom: 1px solid;
+      padding-bottom: rem-calc(57);
+    }
+      &__comments-count {
+
+      }
+      &__sharing-options {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+        &__sharing-options-label {
+          margin-right: rem-calc(25);
+        }
+        &__sharing-links {
+          a {
+            &:not(:last-child) {
+              margin-right: rem-calc(25);
+            }
+          }
+          i:before {
+            font-size: rem-calc(11);
+          }
+        }
+      &__tags {
+        a {
+          &:after {
+            content: ", ";
+          }
+        }
+      }
+
+    @include breakpoint(medium up) {
+      &__top-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+        &__comments-count,
+        &__sharing-options,
+        &__tags
+        {
+          width: calc(100% / 3);
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+        &__tags {
+          text-align: right;
+        }
+    }
+
+    @include breakpoint(small only) {
+      &__top-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+        &__comments-count {
+          margin-bottom: rem-calc(20);
+        }
+        &__sharing-options {
+          margin-bottom: rem-calc(20);
+        }
+    }
+  /* END: TOP AREA */
+
+  /* START: COMMENTS WRAP */
+    &__comments-wrap {
+
+    }
+      /* START: LIST */
+        &__list {
+          padding-top: rem-calc(37);
+
+          & > .comment:first-child > #{$b}__comment {
+            padding-top: 0;
+          }
+          .comment:last-child {
+              #{$b}__comment:last-child {
+                border-bottom: 0;
+              }
+            .comment:last-child {
+              #{$b}__comment {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+          &__comment {
+            padding: rem-calc(25) 0;
+
+            border-bottom: 1px solid;
+            #cancel-comment-reply-link i {
+              font-size: rem-calc(20);
+            }
+          }
+            &__comment-top-wrap   {
+              display: flex;
+              align-items: center;
+            }
+              &__comment-avatar {
+                $size: rem-calc(47.5);
+                width: $size;
+                height: $size;
+                border-radius: $size;
+                flex-grow: 0;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                display: inline-block;
+                overflow: hidden;
+                margin-right: $global-column-width * 0.5;
+
+                img {
+                  width: 100%;
+                }
+              }
+              &__comment-author {
+                padding: rem-calc(10) 0;
+              }
+              &__comment-date {
+                flex-grow: 1;
+                text-align: right;
+              }
+            &__comment-content {
+
+            }
+            &__comment-reply {
+              margin-top: rem-calc(22);
+            }
+            &__comment-alert {
+
+            }
+
+        @include breakpoint(medium up) {
+          &__list {
+            padding-right: $global-column-width;
+          }
+            .comment .comment {
+              #{$b}__comment {
+                position: relative;
+                padding-left: $global-column-width;
+                &:before {
+                  content: " ";
+                  display: block;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  height: 100%;
+                  width: $global-column-width * 1.5;
+                  z-index: -1;
+                }
+              }
+            }
+            &__comment-content {
+              padding-left: $global-column-width * 1.5;
+            }
+            &__comment-reply {
+              padding-left: $global-column-width * 1.5;
+            }
+        }
+
+        @include breakpoint(small only) {
+          &__comment-top-wrap {
+            margin-bottom: rem-calc(20);
+          }
+        }
+      /* END: LIST */
+
+      /* START: FORM */
+        &__form-wrap {
+          padding-top: rem-calc(50);
+          padding-bottom: rem-calc(60);
+        }
+          &__form-top-area {
+            margin-bottom: rem-calc(55);
+          }
+            &__form-title {
+
+            }
+            &__form-subtitle {
+              padding-top: rem-calc(48);
+            }
+
+          &__form-field {
+            border-bottom: 1px solid!important;
+          }
+          &__form-textarea {
+            border-bottom: 1px solid!important;
+            min-height: rem-calc(126);
+          }
+          .form-submit {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0;
+          }
+          &__form .submit {
+            display: inline-block;
+            margin-top: rem-calc(60);
+            padding: 0 rem-calc(42);
+          }
+
+        @include breakpoint(medium up) {
+          &__form-wrap {
+            padding-left: $global-column-width;
+            padding-right: $global-column-width;
+            // margin-top: 0;
+            // @include global-transition(margin);
+            &.is_stuck {
+              right: $global-padding--horizontal;
+              // margin-top: rem-calc(150);
+              &[style*=absolute] {
+                right: 0;
+              }
+            }
+          }
+
+          &__form{
+            display: flex;
+            flex-wrap: wrap;
+          }
+            &__form-field {
+              display: block;
+              margin-bottom: rem-calc(40)!important;
+              &--half {
+                $gap: $global-column-width;
+                width: calc(50% - #{$global-column-width / 2});
+                margin-right: $gap;
+                & + #{$b}__form-field--half {
+                  margin-right: 0;
+                }
+              }
+            }
+        }
+
+        @include breakpoint(small only) {
+          &__form-wrap {
+            padding: rem-calc(50) rem-calc(30);
+          }
+        }
+      /* END: FORM */
+
+      @include breakpoint(medium up) {
+        &__comments-wrap {
+          display: flex;
+          align-items: flex-start;
+        }
+          &__list,
+          &__form-wrap {
+            width: 50%;
+            flex-grow: 0;
+            flex-shrink: 0;
+          }
+      }
+
+  /* END: COMMENTS WRAP */
+
+  &__facebook{
+    text-align: center;
+  }
+}

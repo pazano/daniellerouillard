@@ -1,0 +1,159 @@
+/* General  Wrap*/
+.acf-video-tutorial {
+  width: 100%;
+  position: relative;
+}
+
+.acf-video-tutorial-wrap {
+  margin-right: auto;
+  margin-left:  auto;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ebeae9;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.3);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.3);
+  box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.3);
+}
+
+.acf-video-tutorial__embed-wrap {
+  margin:2.75rem;
+}
+
+.acf-video-tutorial__embed-wrap,
+.acf-video-tutorial__text-wrap {
+  width: 50%;
+}
+
+/* Video Wrap */
+.acf-video-tutorial__embed-wrap {
+  position: relative;
+}
+
+.acf-video-tutorial__video-overlay {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.acf-video-tutorial__video-overlay img {
+  width:100%;
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+.acf-video-tutorial__video-overlay:hover img {
+  cursor:pointer;
+  opacity: 0.65;
+}
+
+
+.acf-video-play i{
+  font-size: 0.6rem;
+}
+
+.acf-video-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.3);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.3);
+  box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.3);
+  transform: scale(1) translateY(-50%) translateX(-50%);
+  transition:all ease 0.5s;
+}
+
+.acf-video-tutorial__video-overlay:hover .acf-video-play{
+  cursor: pointer;
+  transform:scale(1.2) translateY(-40%) translateX(-40%);
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.5);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(176,176,176,0.5);
+  box-shadow: 0px 0px 30px 1px rgba(179, 179, 179, 0.5);
+}
+
+.flo-admin-icon-play:before {
+  margin-right: 0;
+}
+
+.acf-video-tutorial__video-embed.hide {
+  display:none;
+}
+
+
+
+/* Text Wrap */
+.acf-video-tutorial__text-wrap {
+  margin:2.75rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.acf-video-tutorial__title {
+  font-family: "Miller Banner", sans;
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+.acf-video-tutorial__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+}
+
+/* Video popup */
+.acf-video-popup {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  z-index:9999;
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: opacity ease 0.5s;
+}
+.acf-video-popup.popup-opened {
+  display: block;
+  opacity: 1;
+}
+.acf-popup-opened {
+  overflow:hidden !important;
+}
+
+.popup-opened iframe {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-opened .acf-video-close-button::after {
+  display: inline-block;
+  content: "\00d7";
+  color:#d0d0d0;
+  top: 15%;
+  right: 15%;
+  position: absolute;
+  font-size: 3em;
+  font-weight: 100;
+  transition: color ease 0.5s;
+}
+
+.popup-opened .acf-video-close-button:hover::after {
+  cursor: pointer;
+  color: #fff;
+}
+
+body:not(.post-type-acf-field-group):not(.wp-customizer) .acf-field + .acf-tab-wrap.-left:before{
+  display: none;
+}

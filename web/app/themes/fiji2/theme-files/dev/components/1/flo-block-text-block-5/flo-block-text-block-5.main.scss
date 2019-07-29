@@ -1,0 +1,31 @@
+.flo-block-text-block-5 {
+  $b: ".flo-block-text-block-5";
+  text-align: center;
+  &__decorative-image {
+  }
+  &__title {
+  }
+  &__separating-line {
+    width: rem-calc(45);
+    height: 1px;
+    margin: 0 auto;
+    margin-top: rem-calc(35);
+  }
+  @include breakpoint(medium up) {
+    &__decorative-image {
+    }
+    &__title {
+    }
+    &__separating-line {
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__decorative-image {
+    }
+    &__title {
+    }
+    &__separating-line {
+    }
+  }
+}

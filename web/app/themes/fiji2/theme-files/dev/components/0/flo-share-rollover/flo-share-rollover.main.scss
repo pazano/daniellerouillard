@@ -1,0 +1,59 @@
+.flo-share-rollover {
+  $b: ".flo-share-rollover";
+  position: relative;
+  display: inline-block;
+
+  &__trigger {
+    @include global-clickable;
+    @include global-transition(opacity);
+  }
+
+  &__share-wrap {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include global-transition(opacity);
+
+    display: inline-flex;
+    a {
+      margin: 0 rem-calc(7);
+      font-size: rem-calc(11);
+      @include global-transition(color);
+    }
+  }
+  &.visible {
+    #{$b}__trigger {
+      opacity: 0;
+      pointer-events: none;
+    }
+    #{$b}__share-wrap {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+
+  @include breakpoint(medium up) {
+
+    &__trigger {
+
+    }
+
+    &__share-wrap {
+
+    }
+  }
+
+  @include breakpoint(small only) {
+
+    &__trigger {
+
+    }
+
+    &__share-wrap {
+
+    }
+  }
+}

@@ -1,0 +1,182 @@
+.flo-block-image-links-3 {
+  $b: ".flo-block-image-links-3";
+
+  &__image-links-slider {
+  }
+    &__image-links-slide {
+    }
+      &__image-links-slide-content {
+        display: flex;
+      }
+        &__title-area {
+          text-align: center;
+          padding: rem-calc(20);
+        }
+          &__elements-wrap {
+            @include global-bgi-contain;
+          }
+            &__title {
+              display: inline-block;
+              margin: rem-calc(53) 0;
+            }
+            &__navigation-wrap {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 60%;
+              margin: 0 auto;
+              &--hide-arrows {
+                justify-content: center;
+                #{$b}__arrow {
+                  display: none;
+                }
+              }
+            }
+              &__arrow {
+                font-size: rem-calc(7);
+                &--left {
+                }
+                &--right {
+                }
+                &:hover {
+                  transform: scale(1.2);
+                }
+                @include global-transition(transform);
+                @include global-clickable;
+              }
+              &__image-links-counter {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: rem-calc(7);
+              }
+                &__current-item-number {
+                }
+                &__number-divider {
+                  width: 1px;
+                  height: rem-calc(30);
+                  margin: 0 rem-calc(18);
+                }
+                &__total-items-number {
+                }
+        &__image {
+          @include global-bgi-cover;
+        }
+        @include flo-responsive-image-bg(".flo-block-image-links-3__image");
+  @include breakpoint(medium up) {
+
+    &__image-links-slider {
+    }
+      &__image-links-slide {
+      }
+        &__image-links-slide-content {
+
+          &--title-area-left {
+            flex-direction: row;
+
+            #{$b}__image {
+              margin-left: rem-calc(30);
+            }
+          }
+          &--title-area-right {
+            flex-direction: row-reverse;
+
+            #{$b}__image {
+              margin-right: rem-calc(30);
+            }
+          }
+        }
+          &__title-area {
+            position: relative;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            padding-bottom: rem-calc(80);
+          }
+            &__elements-wrap {
+            }
+              &__title {
+              }
+              &__navigation-wrap {
+                position: absolute;
+                left: 50%;
+                bottom: rem-calc(20);
+                transform: translate(-50%, #{rem-calc(-20)});
+              }
+                &__arrow {
+                  &--left {
+                  }
+                  &--right {
+                  }
+                }
+                &__image-links-counter {
+                }
+                  &__current-item-number {
+                  }
+                  &__number-divider {
+                  }
+                  &__total-items-number {
+                  }
+          &__image {
+            flex-shrink: 0;
+            width: rem-calc(600 - 30);
+            height: rem-calc(427);
+          }
+
+  }
+
+  @include breakpoint(small only) {
+
+    &__image-links-slider {
+    }
+      &__image-links-slide {
+      }
+        &__image-links-slide-content {
+
+          &--title-area-left {
+            flex-direction: column;
+
+            #{$b}__title-area {
+              margin-bottom: rem-calc(20);
+            }
+          }
+          &--title-area-right {
+            flex-direction: column-reverse;
+
+            #{$b}__title-area {
+              margin-top: rem-calc(20);
+            }
+          }
+        }
+          &__title-area {
+          }
+            &__elements-wrap {
+            }
+              &__title {
+              }
+              &__navigation-wrap {
+              }
+                &__arrow {
+                  &--left {
+                  }
+                  &--right {
+                  }
+                }
+                &__image-links-counter {
+                }
+                  &__current-item-number {
+                  }
+                  &__number-divider {
+                  }
+                  &__total-items-number {
+                  }
+          &__image {
+            width: 100%;
+            height: rem-calc(300);
+          }
+
+  }
+}

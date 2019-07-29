@@ -1,0 +1,625 @@
+{
+    "key": "group_5bec03bae2dc7",
+    "title": "3.3. Header Top Bar",
+    "fields": [
+        {
+            "key": "field_5bec03c2b03f4",
+            "label": "3.3. Header Top Bar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5bec07969a938",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-header-topbar.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bec03d1b03f5",
+            "label": "3.3.1. Enable Header Top Bar",
+            "name": "flo-fiji2-header_top_bar_enable",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5bec07f97c086",
+            "label": "3.3.2. Header Top Bar Layout",
+            "name": "flo-fiji2-header_top_bar_layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bec03d1b03f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select flo-image-select--columns-2 acf-field--full-width",
+                "id": ""
+            },
+            "choices": {
+                "simple": "<img src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-header-topbar-type-simple.thumb.jpg\"><p>Simple<\/p>",
+                "extended": "<img src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-header-topbar-type-extended.thumb.jpg\"><p>Extended<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "simple",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5bec0a5246e37",
+            "label": "- Header Top Bar Simple Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bec03d1b03f5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5bec07f97c086",
+                        "operator": "==",
+                        "value": "simple"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-header-topbar-type-simple.overview.jpg\">",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bec0e018e4c1",
+            "label": "3.3.3. Top Bar Simple Settings",
+            "name": "flo-fiji2-header_top_bar_simple_settings",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bec03d1b03f5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5bec07f97c086",
+                        "operator": "==",
+                        "value": "simple"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width flo-no-border",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5bec0f14e6b35",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "secondary-background-color-2",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec0f49e6b36",
+                    "label": "Elements Color",
+                    "name": "elements_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-text-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec10f00b853",
+                    "label": "Accent Color",
+                    "name": "accent_color",
+                    "type": "flo_color_picker",
+                    "instructions": "This color will apply to the button underline and the close icon color",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-line-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec0e7de6b33",
+                    "label": "A.1. Top Bar Text",
+                    "name": "top_bar_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "VIVAMUS TRISTIQUE IPSUM EGET JUSTO ALIQUAM",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bec0eb7e6b34",
+                    "label": "A.2. Top Bar Text Font",
+                    "name": "top_bar_text_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Meta 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": ".flo-header-topbar--simple__text",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "meta_1"
+                },
+                {
+                    "key": "field_5bec10090d4b0",
+                    "label": "B.1. Button Text",
+                    "name": "top_bar_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "CALL TO ACTION",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bec102e0d4b1",
+                    "label": "B.2. Button Font",
+                    "name": "top_bar_button_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Call to Action 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": ".flo-header-topbar--simple__button",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "call_to_action_1"
+                },
+                {
+                    "key": "field_5bec1e04b2642",
+                    "label": "B.3. Button Link",
+                    "name": "top_bar_button_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bec1e18b2643",
+                    "label": "B.4. Open Button Link in New Tab",
+                    "name": "top_bar_button_target",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5bec0a5446e38",
+            "label": "- Header Top Bar Extended Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bec03d1b03f5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5bec07f97c086",
+                        "operator": "==",
+                        "value": "extended"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-header-topbar-type-extended.overview.jpg\">",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bec15c5937e6",
+            "label": "3.3.3. Top Bar Extended Settings",
+            "name": "flo-fiji2-header_top_bar_extended_settings",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bec03d1b03f5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5bec07f97c086",
+                        "operator": "==",
+                        "value": "extended"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width flo-no-border",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5bec15c6937e7",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "secondary-background-color-2",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec15c6937e8",
+                    "label": "Elements Color",
+                    "name": "elements_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-text-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec15c6937e9",
+                    "label": "Accent Color",
+                    "name": "accent_color",
+                    "type": "flo_color_picker",
+                    "instructions": "This color will apply to the button background color and the close icon color",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-line-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec16d8937f0",
+                    "label": "A. Top Bar Image",
+                    "name": "top_bar_image",
+                    "type": "image",
+                    "instructions": "This image will be cropped to the 180x110px resolution.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5bec15ee937ee",
+                    "label": "B.1. Top Bar Title",
+                    "name": "top_bar_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Professional Guide To Wedding Photography",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bec15f2937ef",
+                    "label": "B.2. Top Bar Title Font",
+                    "name": "top_bar_title_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Heading 3",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": ".flo-header-topbar--extended__title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_3"
+                },
+                {
+                    "key": "field_5bec15c6937ea",
+                    "label": "B.3. Top Bar Text",
+                    "name": "top_bar_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Nam vitae felis odio. Integer a nisl at urna viverra vulputate a quis ante. Vestibulum cursus aliquet ante, et iaculis lectus feugiat eget.",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_5bec15c6937ec",
+                    "label": "C.1. Button Text",
+                    "name": "top_bar_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "CONTACT",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bec15c6937ed",
+                    "label": "C.2. Button Font",
+                    "name": "top_bar_button_font",
+                    "type": "font_style_select",
+                    "instructions": "Default: Call to Action 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_css_selectors": ".flo-header-topbar--extended__button",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "call_to_action_1"
+                },
+                {
+                    "key": "field_5bee89559819a",
+                    "label": "C.3. Button Text Color",
+                    "name": "top_bar_button_color",
+                    "type": "flo_color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "color_options_prefix": "flo-color-",
+                    "default_color_id": "primary-background-color",
+                    "default_value": "",
+                    "use_alpha": 0
+                },
+                {
+                    "key": "field_5bec36fcb795a",
+                    "label": "C.4. Button Link",
+                    "name": "top_bar_button_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bec370fb795b",
+                    "label": "C.5. Open Button Link in New Tab",
+                    "name": "top_bar_button_target",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1551797459
+}

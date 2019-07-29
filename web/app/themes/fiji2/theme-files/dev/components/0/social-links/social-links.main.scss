@@ -1,0 +1,20 @@
+.flo-social-links {
+  $b: ".flo-social-links";
+
+  @at-root {
+    .flo-social-links-type-a {
+      #{$b}__link {
+        font-size: rem-calc(12);
+      }
+    }
+    .flo-social-links-type-b {
+      #{$b}__link:before {
+        line-height: 1em!important;
+        &:not(:last-child) {
+          margin-right: rem-calc(18);
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,163 @@
+&--one-slide {
+  .slick-list
+  // .slick-track
+  // .slick-slide,
+  // #{$b}__slide-content
+  {
+    height: auto!important;
+  }
+}
+&__slides {
+  flex-grow: 1;
+  height: 100%;
+
+  .slick-list,
+  .slick-track,
+  .slick-slide,
+  #{$b}__slide-content
+  {
+    height: 100%;
+  }
+}
+
+#{$b}__slides {
+}
+#{$b}__slide-img--bgi {
+  @include global-bgi-cover;
+}
+#{$b}__slide {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+#{$b}__slide-content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  @include global-transition(opacity);
+  @at-root {
+    .flo-block--merged-with-header {
+      #{$b}__slide-content {
+        height: 100vh;
+      }
+    }
+  }
+}
+#{$b}__slide-img {
+  display: none;
+  &--img {
+
+  }
+  &--bgi {
+    width: 100%;
+    height: 100%;
+  }
+}
+#{$b}__slide-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  &--cropped {
+    video {
+      height: 100%;
+    }
+  }
+  &--no-crop {
+    video {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+  }
+}
+
+@include breakpoint(medium up) {
+  #{$b}__slides {
+
+  }
+  @at-root {
+    .flo-block {
+
+    }
+
+  }
+  #{$b}__slide {
+
+    &.gradient-visible {
+      #{$b}__slide-img {
+        &:after {
+          opacity: 0.666;
+        }
+      }
+    }
+
+  }
+
+    #{$b}__slide-content {
+
+    }
+
+    #{$b}__slide-img {
+      position: relative;
+
+      &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        @include global-transition(opacity);
+      }
+
+      &--img {
+
+      }
+      &--bgi {
+        display: block;
+      }
+    }
+
+}
+
+@include breakpoint(small only) {
+  #{$b}__slides {
+
+  }
+  #{$b}__slide {
+
+  }
+  #{$b}__slide-content {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    @at-root {
+      .flo-block--merged-with-header {
+        #{$b}__slide-content {
+          height: 100vh;
+        }
+      }
+    }
+  }
+  #{$b}__slide-img {
+    &--bgi {
+      display: block;
+    }
+  }
+}

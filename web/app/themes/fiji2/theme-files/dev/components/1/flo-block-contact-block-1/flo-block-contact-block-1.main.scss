@@ -1,0 +1,516 @@
+@include flo-responsive-image-bg(".flo-block-contact-block-1");
+@include flo-responsive-image-bg(".flo-block-contact-block-1__contact-description");
+
+.flo-block-contact-block-1 {
+  $b: ".flo-block-contact-block-1";
+  position: relative;
+  background-attachment: fixed;
+  @include global-bgi-cover;
+
+  .flo-form {
+
+    label {
+      margin-top: rem-calc(8);
+    }
+
+    input, label, textarea {
+      text-align: center;
+    }
+  }
+  &__contact-description {
+    width: 100%;
+    position: relative;
+  }
+    &__image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__header-area {
+      width: 100%;
+
+      header:not(.is-sticky) {
+        .flo-header {
+          color: inherit!important;
+          border-color: inherit!important;
+          background-color: transparent!important;
+        }
+      }
+
+    }
+
+    &__left-side {
+      position: relative;
+    }
+      &__title {
+      }
+      &__title-paragraph {
+      }
+      &__scroll-down-wrap {
+      }
+        &__scroll-down {
+          display: inline-block;
+          border-bottom: 1px solid;
+        }
+
+    &__right-side {
+      position: relative;
+    }
+      &__social-links-wrap {
+      }
+        &__social-links-pretitle {
+        }
+        &__social-links-title {
+        }
+        &__social-links {
+          a {
+            font-size: rem-calc(12);
+            margin-right: rem-calc(6);
+          }
+        }
+      &__location-wrap {
+      }
+        &__location-pretitle {
+        }
+        &__location-title {
+        }
+        &__location {
+        }
+
+  &__form-wrap {
+    text-align: center;
+    width: 100%;
+  }
+    &__form-section {
+
+      &--custom {
+        text-align: center;
+
+        form {
+          width: 100%;
+        }
+
+        & .submit-row {
+          text-align: center;
+          padding-top: 0!important;
+        }
+        & .flo-submit-button {
+          margin-top: rem-calc(39);
+          padding: rem-calc(12) rem-calc(23);
+          line-height: 1em!important;
+          min-height: rem-calc(42);
+        }
+        input[type]:not([type="submit"]),textarea {
+          border-top: 0!important;
+          border-left: 0!important;
+          border-right: 0!important;
+        }
+        .error {
+          margin-top: rem-calc(5);
+          color: red!important;
+        }
+      }
+    }
+      &__form-title {
+        text-align: center;
+      }
+
+      &__form-subtitle {
+        text-align: center;
+      }
+
+      &__fields-wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__form-field {
+        position: relative;
+
+        &:not(:last-child) {
+          margin-bottom: rem-calc(29)!important;
+        }
+
+        input,
+        label,
+        textarea {
+          display: block;
+          text-align: center;
+          border: 0!important;
+          padding-bottom: rem-calc(6);
+          color: inherit!important;
+        }
+        & textarea {
+          min-height: rem-calc(100);
+        }
+      }
+      &__form-submit {
+        margin-top: rem-calc(39);
+        padding: rem-calc(12) rem-calc(23);
+        line-height: 1em!important;
+        min-height: rem-calc(42);
+      }
+
+  @include breakpoint(medium up) {
+    overflow: hidden;
+    &__desktop-wrap{
+      display: flex;
+      @include global-transition(opacity);
+    }
+    .invisible {
+      opacity: 0;
+    }
+    &__mobile-wrap{
+      display: none;
+    }
+    &__contact-description {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 $global-padding--horizontal + $gcw / 2;
+      height: 100vh;
+      background-image: none;
+    }
+    &:not(.flo-block-contact-block-1--no-scroll-effect){
+      #{$b}__contact-description {
+        position: fixed;
+        transition: opacity ease 0.5s;
+      }
+      // .invisible {
+      //   opacity: 0;
+      // }
+    }
+    &.flo-block-contact-block-1--no-scroll-effect {
+      #{$b}__form-wrap{
+        margin-top: 0;
+      }
+    }
+      &__image-overlay {
+      }
+
+      &__header-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+
+      &__left-side {
+        width: 50%;
+      }
+        &__title {
+
+          &:not(:last-child){
+            margin-bottom: rem-calc(50);
+          }
+
+        }
+        &__title-paragraph {
+          margin-left: $gcw / 2;
+
+          &:not(:last-child) {
+            margin-bottom: rem-calc(100);
+          }
+        }
+        &__scroll-down-wrap {
+          margin-left: $gcw / 2;
+        }
+          &__arrow-down {
+            position: absolute;
+            left: 0;
+          }
+          &__scroll-down {
+            @include global_clickable;
+          }
+
+      &__right-side {
+        width: 50%;
+        text-align: right;
+      }
+        &__social-links-wrap {
+
+          &:not(:last-child) {
+            margin-bottom: rem-calc(50);
+          }
+        }
+          &__social-links-pretitle {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(10);
+            }
+          }
+          &__social-links-title {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(24);
+            }
+
+          }
+          &__social-links {
+            a {
+            }
+          }
+        &__location-wrap {
+        }
+          &__location-pretitle {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(5);
+            }
+
+          }
+          &__location-title {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(10);
+            }
+
+          }
+          &__location {
+          }
+    &__form-wrap {
+      width: 100vw;
+      margin-top: 100vh;
+      height: auto;
+      z-index: 1;
+      display: block;
+      position: relative;
+      top: auto;
+      overflow: hidden;
+
+      .ps__rail-x,
+      .ps__rail-y {
+        display: none;
+      }
+    }
+      &__form-section {
+        padding: rem-calc(72) rem-calc(302) rem-calc(80);
+        height: 100%;
+      }
+        &__form-title {
+          margin-bottom: rem-calc(5);
+        }
+
+        &__form-subtitle {
+        }
+
+        &__fields-wrap {
+
+          &:not(:first-child) {
+            margin-top: rem-calc(45);
+          }
+
+        }
+
+        &__form-field {
+          $gap: rem-calc(44);
+          width: 100%;
+
+          &--half-width {
+            width: calc(50% - #{$gap / 2});
+
+            &:nth-child(2) {
+              margin-right: 0!important;
+            }
+          }
+          &:nth-child(1),
+          &:nth-child(2) {
+            margin-right: $gap;
+          }
+            input,
+            label,
+            textarea {
+              padding-left: 0!important;
+              padding-right: 0!important;
+            }
+          }
+        &__form-submit {
+        }
+
+    &--no-scroll-effect {
+      overflow: visible;
+
+      #{$b}__form-wrap {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        height: auto;
+      }
+    }
+  }
+  @include breakpoint(medium only) {
+    &__contact-description {
+      height: auto!important;
+      padding-top: rem-calc(220);
+      padding-bottom: rem-calc(100);
+      position: relative;
+    }
+    &__form-wrap {
+      margin-top: 0;
+      position: relative;
+      overflow: visible;
+    }
+  }
+  @include breakpoint(small only) {
+
+    background-image: none;
+    &__header-area{
+      z-index: 3;
+      position: relative;
+    }
+    &__desktop-wrap{
+      display: none;
+    }
+    &__mobile-wrap{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      min-height: 85vh;
+      #{$b}__right-side {
+        #{$b}__social-links-wrap,
+        #{$b}__location-wrap {
+          display: inline-block;
+          width: 50%;
+          margin: 0;
+        }
+        #{$b}__location-wrap {
+          float: right;
+          text-align: right;
+        }
+        #{$b}__scroll-down-wrap {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+          position: relative;
+          clear: both;
+          margin-top: rem-calc(55);
+        }
+      }
+      #{$b}__left-side {
+        text-align: center;
+        #{$b}__title {
+          margin-top: rem-calc(25);
+        }
+      }
+    }
+    &__contact-description {
+      min-height: 100vh;
+
+      &:before {
+        content: " ";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      @include global-bgi-cover;
+    }
+      &__image-overlay {
+      }
+
+      &__left-side {
+        padding: rem-calc(20);
+      }
+        &__title {
+
+          &:not(:last-child) {
+            margin-bottom: rem-calc(20);
+          }
+
+        }
+        &__title-paragraph {
+        }
+        &__scroll-down-wrap {
+        }
+          &__scroll-down {
+          }
+
+      &__right-side {
+        padding: rem-calc(20);
+      }
+        &__social-links-wrap {
+
+          &:not(:last-child) {
+            margin-bottom: rem-calc(20);
+          }
+
+        }
+          &__social-links-pretitle {
+            margin-bottom: rem-calc(5);
+          }
+          &__social-links-title {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(10);
+            }
+
+          }
+          &__social-links {
+
+            a {
+
+            }
+          }
+        &__location-wrap {
+        }
+          &__location-pretitle {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(5);
+            }
+          }
+          &__location-title {
+
+            &:not(:last-child){
+              margin-bottom: rem-calc(10);
+            }
+          }
+          &__location {
+          }
+
+    &__form-wrap {
+    }
+      &__form-section {
+        position: relative;
+        padding: rem-calc(40) rem-calc(20);
+
+      }
+        &__form-title {
+          margin-bottom: rem-calc(5);
+        }
+
+        &__form-subtitle {
+        }
+
+        &__fields-wrap {
+
+          &:not(:first-child) {
+            margin-top: rem-calc(45);
+          }
+
+        }
+
+        #{$b}__form-wrap .flo-form .field-row {
+          margin-bottom: rem-calc(25);
+        }
+
+        &__form-field {
+            width: 100%;
+            input,
+            label,
+            textarea {
+
+            }
+          }
+        &__form-submit {
+        }
+  }
+}

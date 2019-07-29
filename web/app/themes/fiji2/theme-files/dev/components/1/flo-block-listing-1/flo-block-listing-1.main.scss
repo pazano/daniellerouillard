@@ -1,0 +1,140 @@
+.flo-block-listing-1 {
+  $b: ".flo-block-listing-1";
+  
+  a {
+    &:focus,
+    &:active {
+      color: inherit;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+    &__decorative-image {
+      margin-bottom: rem-calc(29);
+    }
+    &__title {
+      text-align: center;
+      margin-bottom: rem-calc(10);
+    }
+    &__date-and-category {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: rem-calc(20);
+    }
+      &__category {
+        text-align: center;
+      }
+      &__separator {
+      }
+      &__date {
+        text-align: center;
+      }
+    &__featured-image {
+      width: auto;
+      height: auto;
+    }
+    &__excerpt {
+      margin-top: rem-calc(33);
+    }
+    &__content {
+      margin-bottom: rem-calc(66);
+    }
+    &__item-link {
+      text-align: center;
+      padding: rem-calc(11) rem-calc(35);
+      border: 1px solid;
+      border-color: inherit;
+    }
+
+  @include breakpoint(medium up) {
+    &__item {
+      padding: 0 $global-column-width;
+    }
+    &__item:not(:first-child){
+      padding-top: rem-calc(80);
+    }
+      &__decorative-image {
+
+      }
+      &__title {
+      }
+      &__date-and-category {
+      }
+        &__category {
+        }
+        &__separator {
+          width: 1px;
+          height: rem-calc(10);
+          margin: 0 rem-calc(10);
+          border-left: 1px solid;
+        }
+        &__date {
+        }
+      &__featured-image {
+        max-height: rem-calc(546);
+      }
+      &__excerpt {
+
+      }
+      &__content {
+
+      }
+      &__item-link {
+        margin-top: rem-calc(20);
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__item {
+      padding-top: rem-calc(40);
+    }
+      &__decorative-image {
+
+      }
+      &__title {
+      }
+      &__date-and-category {
+        flex-direction: column;
+      }
+        &__category {
+        }
+        &__separator {
+          height: 1px;
+          width: rem-calc(20);
+          margin: rem-calc(10) 0;
+          border-bottom: 1px solid;
+        }
+        &__date {
+        }
+      &__featured-image {
+      }
+      &__excerpt {
+      }
+      &__content {
+
+      }
+      &__item-link {
+        margin-top: rem-calc(20);
+      }
+  }
+}
+// sidebar compatibility
+@include breakpoint(medium up) {
+  .body_has_sidebar{
+    .flo-block-listing-1 {
+      &__item{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      &__featured-image{
+        max-height: none;
+      }
+    }
+  }
+}

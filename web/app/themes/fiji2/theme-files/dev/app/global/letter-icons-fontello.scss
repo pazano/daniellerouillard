@@ -1,0 +1,18 @@
+@import url("../fonts/fontello/css/flo-icons.css"); // relative to public/css/
+
+body.flo-social-links-type-b {
+  .flo-icon-youtube:not(.flo-icon-original):before { content: 'YT'; } /* '' */
+  .flo-icon-flickr:not(.flo-icon-original):before { content: 'FK'; } /* '' */
+  .flo-icon-vimeo:not(.flo-icon-original):before { content: 'VI'; } /* '' */
+  .flo-icon-twitter:not(.flo-icon-original):before { content: 'TW'; } /* '' */
+  .flo-icon-facebook:not(.flo-icon-original):before { content: 'FB'; } /* '' */
+  .flo-icon-gplus:not(.flo-icon-original):before { content: 'GP'; } /* '' */
+  .flo-icon-pinterest:not(.flo-icon-original):before { content: 'PI'; } /* '' */
+  .flo-icon-tumblr:not(.flo-icon-original):before { content: 'TM'; } /* '' */
+  .flo-icon-linkedin:not(.flo-icon-original):before { content: 'LK'; } /* '' */
+  .flo-icon-dribbble:not(.flo-icon-original):before { content: 'DB'; } /* '' */
+  .flo-icon-instagram:not(.flo-icon-original):before { content: 'IG'; } /* '' */
+  .flo-icon-yahoo:not(.flo-icon-original):before { content: 'YH'; } /* '' */
+  .flo-icon-delicious:not(.flo-icon-original):before { content: 'DE'; } /* '' */
+  .flo-icon-mail:not(.flo-icon-original):before { content: 'ML'; } /* '' */
+}

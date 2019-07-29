@@ -1,0 +1,25 @@
+.flo-block-text-block-1 {
+  $b: ".flo-block-text-block-1";
+  text-align: center;
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem-calc(25);
+    }
+  }
+  &__subtitle {
+  }
+
+  @include breakpoint(medium up) {
+    &__title {
+    }
+    &__subtitle {
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__title {
+    }
+    &__subtitle {
+    }
+  }
+}

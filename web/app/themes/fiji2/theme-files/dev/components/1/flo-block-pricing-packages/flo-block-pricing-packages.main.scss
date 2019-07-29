@@ -1,0 +1,180 @@
+.flo-block-pricing-packages {
+  $b: ".flo-block-pricing-packages";
+
+  &__title-area {
+    text-align: center;
+  }
+    &__title {
+    }
+  &__packages-area {
+    display: flex;
+  }
+    &__package {
+      @include global-bgi-cover;
+      height: rem-calc(475);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+      &__package-content {
+        padding: rem-calc(40) rem-calc(39);
+        text-align: center;
+        height: 100%;
+      }
+        &__image-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+        }
+        &__package-title {
+          position: relative;
+        }
+        &__package-description {
+          position: relative;
+          box-sizing: border-box;
+          height: rem-calc(138);
+        }
+        &__package-price {
+          position: relative;
+        }
+      &__package-link {
+      }
+  &__package-block-button-wrap {
+    text-align: center;
+  }
+    &__package-block-button {
+      display: inline-block;
+      padding: rem-calc(12) rem-calc(50);
+      border: 1px solid;
+      @include global-transition(color,background-color,border-color);
+    }
+
+  @include breakpoint(medium up) {
+
+    &__title-area {
+      margin-bottom: rem-calc(62);
+    }
+      &__title {
+      }
+    &__packages-area {
+      justify-content: space-around;
+      &--3-packages {
+        justify-content: space-between;
+      }
+    }
+      &__package {
+        $gap: rem-calc(22);
+        width: calc(100% / 3 - #{$gap});
+
+        &:not(:hover) {
+          #{$b}__package-description {
+            height: 0!important;
+          }
+          #{$b}__package-number{
+            opacity: 0;
+          }
+          #{$b}__package-title {
+            color: var(--elements-on-image-color);
+            // margin-bottom: rem-calc(5);
+          }
+          #{$b}__package-price {
+            color: var(--elements-on-image-color);
+          }
+        }
+
+        &:hover {
+          #{$b}__package-title {
+            margin-bottom: rem-calc(30);
+          }
+
+          #{$b}__image-overlay {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+      }
+        &__package-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          @include global-transition(background-color);
+          color: var(--elements-on-hover-color);
+        }
+          &__image-overlay {
+            width: 50%;
+            opacity: 0;
+
+            @include global-transition(width, opacity);
+          }
+          &__package-title {
+          }
+          &__package-description {
+            overflow: hidden;
+            @include global-transition(height);
+          }
+          &__package-price {
+          }
+        &__package-link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+    &__package-block-button-wrap {
+      margin-top: rem-calc(63);
+    }
+      &__package-block-button {
+      }
+
+  }
+
+  @include breakpoint(small only) {
+    &__title-area {
+      margin: rem-calc(30) 0;
+    }
+      &__title {
+      }
+    &__packages-area {
+      flex-direction: column;
+    }
+      &__package {
+        &:not(:last-child) {
+          margin-bottom: rem-calc(22);
+        }
+      }
+        &__package-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          color: var(--elements-on-hover-color);
+        }
+          &__image-overlay {
+            width: 100%;
+          }
+          &__package-title {
+          }
+          &__package-description {
+          }
+          &__package-price {
+          }
+        &__package-link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+    &__package-block-button-wrap {
+      margin-top: rem-calc(40);
+    }
+      &__package-block-button {
+      }
+
+  }
+}

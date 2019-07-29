@@ -1,0 +1,32 @@
+# Generic
+.DS_Store
+web/.DS_Store
+
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/flo-forms
+!web/app/plugins/flo-support
+!web/app/plugins/flo-launch
+!web/app/plugins/flothemes-themeup
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+web/app/viewcache/*
+!web/app/uploads/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+composer.phar
+
+# WP-CLI
+wp-cli.local.yml

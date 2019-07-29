@@ -1,0 +1,343 @@
+{
+    "key": "group_582b23559ce2c",
+    "title": "10. Style",
+    "fields": [
+        {
+            "key": "field_59720ba87e9ab",
+            "label": "How-tos",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59720bc07403c",
+            "label": "Stylekits",
+            "name": "stylekits",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Stylekits",
+            "video_description": "A Style Kit is a predesigned combination of Font and Color settings within a theme. Most of FloThemes include 2-3 Style Kits that are tailored to certain style e.g. Weddings, Editorial, etc. or maybe just different variations where style 1 uses bright color tones, and style 2 uses darker color tones. The same can apply to Font Styles within a Style Kit.\r\n\r\nYou can find these Style Kits by going to Flotheme – Style – Style Kits\r\n\r\nHaving this feature can help you quickly setup a site with consistent styling across all pages.\r\nDecide which Style Kit fits your requirement and click on Apply Style Kit",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/I7SpZwXOA44\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_59720cc27403d",
+            "label": "Typography videos",
+            "name": "",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Fonts Settings",
+            "video_description": "Every FloTheme is published with a number of fonts (up to 10) that are selected and setup to highlight the theme aesthetics. In case the theme has one or more stylekits, every stylekit has its own set of predefined fonts. These fonts have different purposes and for the users’ convenience they are labeled differently.\r\n\r\nFont Style Labels are basically the Font Style Names used within the Font Styles area.  (Each theme is unique and different in design, therefore Font Style Labels can be a bit different depending on the theme.)",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/CMic1VlVS1g\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5c782e0c7f803",
+            "label": "Typography videos",
+            "name": "_copy",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Custom Fonts",
+            "video_description": "You can add Custom Fonts by going to Flotheme – Styles – Typography – Custom Fonts – Add Font.\r\n\r\nOnce you click on Add Font – you have the same Media Library upload area used to upload images, etc. Upload your font files and you are all set to go! You can now locate the uploaded fonts in the Font Styles area.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/5WipmWAZSno\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5847bbfbccfba",
+            "label": "Colors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5954e1e4cd445",
+            "label": "Primary Text Color",
+            "name": "flo-color-primary-text-color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_59a54702bd42b",
+            "label": "Primary Line Color",
+            "name": "flo-color-primary-line-color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#BDBDBD"
+        },
+        {
+            "key": "field_59a547abbd42c",
+            "label": "Primary Background Color",
+            "name": "flo-color-primary-background-color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF"
+        },
+        {
+            "key": "field_59a547c4bd42d",
+            "label": "Secondary Background Color 1",
+            "name": "flo-color-secondary-background-color-1",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#F4F4F4"
+        },
+        {
+            "key": "field_59a547f9bd42e",
+            "label": "Secondary Background Color 2",
+            "name": "flo-color-secondary-background-color-2",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FAFAFA"
+        },
+        {
+            "key": "field_586397f6686d2",
+            "label": "Typography",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_585133d20a765",
+            "label": "",
+            "name": "flo-lovely2-typography",
+            "type": "typography",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "font_size": 14
+        },
+        {
+            "key": "field_585a52740f89f",
+            "label": "Style Kits",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_596f2bb2a8b6d",
+            "label": "Style Kits by Flo",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "A style kit is a set of colors and font options that determine the style and feel of your website. \r\nBelow we crafted a few style kits for you to chose from. Please note, that applying a new style kit will override the current color and font settings.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_595b960345c7a",
+            "label": "Style Kits",
+            "name": "flo-stylekit-lovely2",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width flo-image-select flo-image-select--columns-2",
+                "id": ""
+            },
+            "choices": {
+                "style_1": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/stylekit-fiji.thumb.jpg\"><p>Fiji<\/p>",
+                "style_2": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/stylekit-classic.thumb.jpg\"><p>Classic<\/p>",
+                "style_3": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/stylekit-earth.thumb.jpg\"><p>Earth<\/p>",
+                "style_4": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/stylekit-almond.thumb.jpg\"><p>Almond<\/p>"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_595b8fad41115",
+            "label": "Apply Style Kit Hidden Field",
+            "name": "flo-stylekit-trigger",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_595ceaa09f5ad",
+            "label": "Apply Style Kit Button",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-acf-stylekits__apply-wrap",
+                "id": ""
+            },
+            "message": "<input type=\"button\" class=\"flo-admin-button flo-set-stylekit flo-acf-stylekits__apply-button\" value=\"APPLY STYLE KIT\" onclick=\"floSetStylekit();\">",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_596f2bf25e805",
+            "label": "Your Style Kit",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "Below you can backup style\/restore the style options of your website. E.g. this is useful when you would like to try out some of the style kits above and do not want to lose your own color and font settings.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_595f69aa3cf00",
+            "label": "Style Kit backups",
+            "name": "flo-stylekits_backups",
+            "type": "flo_backup_stylekit",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-acf-stylekits__backups-wrap",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-10-style"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1551799309
+}

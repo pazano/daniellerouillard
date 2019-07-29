@@ -1,0 +1,119 @@
+.flo-block-newsletter-block-2 {
+  $b: ".flo-block-newsletter-block-2";
+
+  &__title-area {
+    text-align: center;
+  }
+    &__title {
+    }
+
+  &__newsletter-area {
+    display: flex;
+  }
+    &__text {
+    }
+
+    &__newsletter {
+    }
+      &__newsletter-area-form {
+      }
+        &__newsletter-area-form-field {
+          border-top: 0!important;
+          border-left: 0!important;
+          border-right: 0!important;
+          border-bottom: 1px solid;
+
+          text-align: center;
+          border-color: inherit!important;
+
+          padding: rem-calc(10)!important;
+        }
+        &__newsletter-area-form-submit {
+          padding: rem-calc(12) rem-calc(35);
+          border: 1px solid;
+          border-color: inherit;
+          color: inherit!important;
+          text-overflow: ellipsis;
+          @include global-transition(background-color, border-color, color);
+        }
+
+  @include breakpoint(medium up) {
+
+    padding: rem-calc(60) 0;
+
+    &__title-area {
+    }
+      &__title {
+      }
+
+    &__newsletter-area {
+
+      &:not(:first-child) {
+        margin-top: rem-calc(48);
+      }
+
+      align-items: center;
+    }
+      &__text {
+        text-align: center;
+        padding: 0 rem-calc(10);
+        width: calc(100% / 3);
+        flex-shrink: 0;
+      }
+
+      &__newsletter {
+        flex-grow: 1;
+      }
+        &__newsletter-area-form {
+          display: flex;
+        }
+          &__newsletter-area-form-field {
+            width: calc(100% / 2);
+
+          }
+          &__newsletter-area-form-submit {
+            margin: 0 auto;
+
+            @include global-clickable;
+          }
+
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(30) rem-calc(20);
+
+    &__title-area {
+    }
+      &__title {
+      }
+
+    &__newsletter-area {
+      text-align: center;
+
+      &:not(:first-child) {
+        margin-top: rem-calc(30);
+      }
+
+      flex-direction: column;
+    }
+      &__text {
+      }
+
+      &__newsletter {
+
+        &:not(:first-child) {
+          margin-top: rem-calc(20);
+        }
+
+      }
+        &__newsletter-area-form {
+          flex-direction: column;
+        }
+          &__newsletter-area-form-field {
+          }
+          &__newsletter-area-form-submit {
+            margin-top: rem-calc(20);
+          }
+
+  }
+}

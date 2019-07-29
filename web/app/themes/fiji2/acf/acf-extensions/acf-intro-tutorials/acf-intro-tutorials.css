@@ -1,0 +1,10 @@
+.acf-field-acf-intro-tutorials .acf-label {
+  display: none;
+}
+.acf-field-acf-intro-tutorials .acf-input {
+  width:100% !important;
+}
+.acf-field-acf-intro-tutorials .intro-section-title {
+  font-family: "Miller Banner", sans;
+  font-size: 21px !important;
+}

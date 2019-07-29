@@ -1,0 +1,134 @@
+.flo-footer-area-1-type-c {
+  $b: ".flo-footer-area-1-type-c";
+
+  &__image {
+    @include global-bgi-cover;
+  }
+  &__text-area {
+  }
+    &__title {
+      margin-bottom: rem-calc(6);
+    }
+    &__subtitle {
+      display: block;
+      margin-bottom: rem-calc(26);
+    }
+    &__text {
+      margin-bottom: rem-calc(28);
+    }
+    &__bottom-link {
+      display: inline-block;
+      padding-bottom: rem-calc(9);
+      border-bottom: 1px solid;
+      border-color: inherit;
+    }
+  &__right-area {
+
+  }
+    &__link-list-title {
+      margin-bottom: rem-calc(16.22);
+    }
+    &__link-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: rem-calc(23);
+      border-bottom: 1px solid;
+      border-color: inherit;
+      margin-bottom: rem-calc(33);
+    }
+      &__link {
+        width: 50%;
+        margin-bottom: rem-calc(3.22);
+      }
+    &__button {
+      display: block;
+      text-align: center;
+      padding: rem-calc(15) rem-calc(18);
+    }
+
+
+  @include breakpoint(medium up) {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: rem-calc(60) $global-padding--horizontal;
+    &__image {
+      $size: rem-calc(225);
+      width: $size;
+      height: $size;
+      margin-right: $global-column-width;
+    }
+    &__text-area {
+      padding-right: $global-column-width / 2;
+    }
+      &__title {
+
+      }
+      &__subtitle {
+
+      }
+      &__text {
+
+      }
+      &__bottom-link {
+
+      }
+    &__right-area {
+      width: 27.27%;
+      padding-left: $global-column-width / 2;
+      border-left: 1px solid;
+      border-color: inherit;
+    }
+      &__link-list-title {
+
+      }
+      &__link-list {
+
+      }
+        &__link {
+
+        }
+      &__button {
+
+      }
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+    &__image {
+      width: 100%;
+      height: rem-calc(300);
+      margin-bottom: rem-calc(50);
+    }
+    &__text-area {
+      margin-bottom: rem-calc(30);
+    }
+      &__title {
+
+      }
+      &__subtitle {
+
+      }
+      &__text {
+
+      }
+      &__bottom-link {
+
+      }
+    &__right-area {
+
+    }
+      &__link-list-title {
+
+      }
+      &__link-list {
+
+      }
+        &__link {
+
+        }
+      &__button {
+
+      }
+  }
+}

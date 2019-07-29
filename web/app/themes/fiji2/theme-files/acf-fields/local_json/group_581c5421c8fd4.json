@@ -1,0 +1,76 @@
+{
+    "key": "group_581c5421c8fd4",
+    "title": "1. Introduction",
+    "fields": [
+        {
+            "key": "field_5c77b3830450e",
+            "label": "Introduction Video",
+            "name": "",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Fiji Theme Overview",
+            "video_description": "The charm of this website theme is in its simplicity – the clean, well-structured layouts, the beautiful, easy to customize design blocks, the variety of grids and no code skills required. Each page layout is focused on clarity and presenting your content in a beautiful, coherent way. Check this video to see what templates, layouts, blocks you get with Fiji theme.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/v3Zx_QSKf2Q\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_584833dc4a337",
+            "label": "Next Steps",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "Now that you are familiar with the Fiji theme layouts, templates, blocks and options, let's go ahead and get started with the initial setup process by going to the <b>2. Getting Started<\/b> section located in the left Sidebar. This section will be useful for you to get the information about the plugins that we recommend using. In <b>2. Getting Started<\/b> you will also get an option to install the Demo Content that may help you to start working with the new site faster.\r\n\r\nLet's get started!",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5cadb5e01f232",
+            "label": "Intro Wrapper",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<div class=\"flo-options-intro__wrapper-head\"> <div class=\"flo-options-intro__wrapper--title\">Let us Guide You<\/div><div class=\"flo-options-intro__wrapper--message\">Follow our quick steps to start building your site<\/div><\/div><div class=\"flo-options-intro__wrapper--container\"> <div class=\"flo-options-intro__wrapper\"><\/div><div class=\"flo-options-intro__wrapper--arrows\"><\/div><\/div><div class=\"flo-options-intro-popup__wrapper\"> <div class=\"flo-options-intro-popup__wrapper-head\"> <a class=\"flo-options-intro__item--close-toggle\" href=\"#\">Close Guide X<\/a> <\/div><div class=\"flo-options-intro-popup__wrapper-blocks\"> <div class=\"flo-options-intro-popup__wrapper-blocks--container\"> <\/div><div class=\"flo-options-intro-popup__wrapper-footer\"> <div class=\"flo-options-intro-popup__wrapper-footer-index\"><\/div><div class=\"flo-options-intro-popup__wrapper-footer-total\"><\/div><div class=\"flo-options-intro-popup__wrapper-footer-navigation\"> <a class=\"flo-options-intro__item--prev-item\" href=\"#\">Previous<\/a> <a class=\"flo-options-intro__item--next-item\" href=\"#\">Next<\/a> <\/div><\/div><\/div><\/div>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-1-introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1555059499
+}

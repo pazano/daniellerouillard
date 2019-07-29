@@ -1,0 +1,264 @@
+{
+    "key": "group_582f24f90b33e",
+    "title": "7.Part. Generic Typography",
+    "fields": [
+        {
+            "key": "field_590ae255e08b0",
+            "label": "Tablet Font Size Zoom Factor",
+            "name": "flo-tablet_font-size-zoom",
+            "type": "number_slider",
+            "value": null,
+            "instructions": "Default: 0\r\n<br\/>\r\nUse this option only if the tablet font size seems too small. This option will affect the majority of the elements.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "%",
+            "default_value": 0,
+            "slider_min_value": 0,
+            "slider_max_value": 300,
+            "increment_value": 1
+        },
+        {
+            "key": "field_5943b3f0668ce",
+            "label": "Text Input Field Label Font",
+            "name": "flo-text_input_field_label_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Call To Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "label",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_585263c319ddc",
+            "label": "Text Input Field Font",
+            "name": "flo-text_input_field_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Meta 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "input[type]:not([type=\"submit\"]):not(.flo-no-styling), form textarea:not(.flo-no-styling), .parsley-required, .flo-form select",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_2"
+        },
+        {
+            "key": "field_582f2596820c3",
+            "label": "Paragraph Font",
+            "name": "flo-post__paragraph-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post, .woocommerce-product-details__short-description, .entry-content, .description_tab, .reviews_tab, .woocommerce-message, .flo-woocommerce-wrap",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_5832c3021e483",
+            "label": "Paragraph Link Font",
+            "name": "flo-post__paragraph-link-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Paragraph 1 Link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1_link"
+        },
+        {
+            "key": "field_5832bd34b4b68",
+            "label": "H1 font",
+            "name": "flo-post__h1",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h1, h1.product_title, h1.page-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_5832bf278d95a",
+            "label": "H2 font",
+            "name": "flo-post__h2",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h2, .woocommerce h2",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_5832bf3c8d95b",
+            "label": "H3 font",
+            "name": "flo-post__h3",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h3",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_5832bf508d95e",
+            "label": "H4 font",
+            "name": "flo-post__h4",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 4",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h4",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_4"
+        },
+        {
+            "key": "field_5832bf4e8d95d",
+            "label": "H5 font",
+            "name": "flo-post__h5",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h5",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_5"
+        },
+        {
+            "key": "field_5832bf4c8d95c",
+            "label": "H6 font",
+            "name": "flo-post__h6",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 6",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h6",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_6"
+        },
+        {
+            "key": "field_5832c91c78881",
+            "label": "Blockquote Font",
+            "name": "flo-post__blockquote-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Meta 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post blockquote, .flo-post blockquote p",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_3"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1522160129
+}

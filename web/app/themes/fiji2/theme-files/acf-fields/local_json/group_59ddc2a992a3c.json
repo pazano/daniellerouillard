@@ -1,0 +1,491 @@
+{
+    "key": "group_59ddc2a992a3c",
+    "title": "Block. Item Title 3",
+    "fields": [
+        {
+            "key": "field_59ddc2b6cf4d4",
+            "label": "Specific",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59ddc2c0cf4d5",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/fiji2\/flo-block-item-title-3.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59ddc30ecf4d6",
+            "label": "1. Elements Color",
+            "name": "elements_color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "Note: this color is applied only if there is no featured image present.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": ""
+        },
+        {
+            "key": "field_59ddc357cf4d8",
+            "label": "2. Display Featured Image",
+            "name": "display_featured_image",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ddc39acf4d9",
+            "label": "2.1. Featured Image Position",
+            "name": "featured_image_position",
+            "type": "radio",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc357cf4d8",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "above": "Above the Title Area",
+                "bg": "As Background",
+                "below": "Below the Title Area"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "bg",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59ddc345cf4d7",
+            "label": "2.2. Elements Color on Featured Image",
+            "name": "elements_color_on_featured_image",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc357cf4d8",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59ddc39acf4d9",
+                        "operator": "==",
+                        "value": "bg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-background-color",
+            "default_value": ""
+        },
+        {
+            "key": "field_5a9953e51a7a5",
+            "label": "2.3. Image Overlay Color",
+            "name": "overlay_color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc357cf4d8",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59ddc39acf4d9",
+                        "operator": "==",
+                        "value": "bg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": "primary-text-color",
+            "default_value": ""
+        },
+        {
+            "key": "field_5a99540a1a7a6",
+            "label": "2.4. Overlay Opacity",
+            "name": "overlay_opacity",
+            "type": "number_slider",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc357cf4d8",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59ddc39acf4d9",
+                        "operator": "==",
+                        "value": "bg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "%",
+            "default_value": 20,
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 5
+        },
+        {
+            "key": "field_59e05232ca47b",
+            "label": "3. Display The Header Inside This Block",
+            "name": "display_header",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ddc414cf4db",
+            "label": "A.1. Display Date",
+            "name": "display_date",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ddc43ccf4dc",
+            "label": "A.1.1. Date Font",
+            "name": "date_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Meta 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc414cf4db",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_1"
+        },
+        {
+            "key": "field_59ddc491cf4de",
+            "label": "A.2. Display Category",
+            "name": "display_category",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ddc45fcf4dd",
+            "label": "A.2.1. Category Font",
+            "name": "category_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Meta 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc491cf4de",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "meta_1"
+        },
+        {
+            "key": "field_59ddc4b3cf4df",
+            "label": "A.3. Title Font",
+            "name": "title_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "h1.product_title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_59ddc4d5cf4e0",
+            "label": "A.4. Display Excerpt",
+            "name": "display_excerpt",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ddc4eccf4e1",
+            "label": "A.4.1. Excerpt Font",
+            "name": "excerpt_font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc4d5cf4e0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_59ddc5c0cf4e2",
+            "label": "A.4.2. Use a Custom Excerpt",
+            "name": "use_custom_excerpt",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc4d5cf4e0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ddc5e5cf4e3",
+            "label": "A.4.2.1. Custom Excerpt",
+            "name": "custom_excerpt",
+            "type": "textarea",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ddc4d5cf4e0",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59ddc5c0cf4e2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_59ddcb113d3a7",
+            "label": "Additional Fields",
+            "name": "additional_fields",
+            "type": "clone",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58eb425e82b8c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1519998006
+}

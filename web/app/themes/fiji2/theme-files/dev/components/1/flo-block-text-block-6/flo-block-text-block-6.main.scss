@@ -1,0 +1,61 @@
+.flo-block-text-block-6 {
+  $b: ".flo-block-text-block-6";
+
+  display: flex;
+  &__title-section {
+  }
+    &__title {
+
+      &:not(:last-child) {
+        margin-bottom: rem-calc(5);
+      }
+    }
+    &__subtitle {
+    }
+
+  &__title-paragraph {
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoint(medium up) {
+
+    align-items: center;
+    padding: rem-calc(55) $gcw / 2;
+
+    &__title-section {
+      width: rem-calc(313);
+      flex-shrink: 0;
+    }
+      &__title {
+      }
+      &__subtitle {
+      }
+
+    &__title-paragraph {
+      margin-left: $gcw / 2;
+    }
+
+  }
+
+  @include breakpoint(small only) {
+
+    flex-direction: column;
+    padding: $global-padding-mobile--vertical rem-calc(20);
+
+    &__title-section {
+      text-align: center;
+      margin-bottom: rem-calc(20);
+    }
+      &__title {
+      }
+      &__subtitle {
+      }
+
+    &__title-paragraph {
+      text-align: center;
+    }
+
+  }
+}

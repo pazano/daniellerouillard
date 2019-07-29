@@ -1,0 +1,300 @@
+{
+    "key": "group_583bf3c75f394",
+    "title": "5. Post",
+    "fields": [
+        {
+            "key": "field_59f08ac1b3c1f",
+            "label": "How-tos",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59f08acfb3c20",
+            "label": "Blog Post",
+            "name": "blog_post",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Blog Post Settings",
+            "video_description": "If you are using a FloThemes site, you have two ways to manage a blogpost layout – by setting up Global Post Layout that will be applied to all the posts from your blog, and by changing the global layout for a particular post using the Custom Post Layout option. This video explains how you can create Global Post Layout (using templates or building it from the available blocks) and covers the additional settings of the blog post.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/qqhqH4zP6BA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_5937153b8e006",
+            "label": "Global Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5937140f3638f",
+            "label": "Layout",
+            "name": "flo-l2-p",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5a2547584f1a1"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_593713bd3638d",
+            "label": "Templates",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_593713ce3638e",
+            "label": "Post Templates",
+            "name": "post_templates",
+            "type": "flo_template_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "title": "Choose a Layout Template",
+            "subtitle": "Note: all the blocks from the current layout will be replaced with the ones from the selected template.",
+            "flexible_content_field_name": "flo-l2-p_layout",
+            "optimize_for_json_block_fetching": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_580a145e19f6f",
+            "label": "Miscellaneous",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_581c9a224d08c",
+            "label": "Default single post layout",
+            "name": "flo-post__default-layout",
+            "type": "select",
+            "instructions": "The selected layout option will apply to future Blog Posts only. It will not affect existing Blog Posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--instructions-below-field post-default-layout",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "left_sidebar": "Left Sidebar",
+                "right_sidebar": "Right Sidebar",
+                "full_width": "Full Width"
+            },
+            "default_value": [
+                "full_width"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_581ca994a3b23",
+            "label": "Default post sidebar",
+            "name": "flo-post__default-sidebar",
+            "type": "select_sidebar",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_581c9a224d08c",
+                        "operator": "!=",
+                        "value": "full_width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "post-default-sidebar",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5825835626d17",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--no-top-border",
+                "id": ""
+            },
+            "message": "<input type=\"button\" class=\"update-layout generic-record-button  button-primary  \" value=\"Update all posts\" onclick=\"updateLayoutMeta('post', 'post-default-layout','post-default-sidebar');\"> \r\n<div class=\"spinner-container\"><span class=\"spinner update-post-layout-spinner\"><\/span><\/div>\r\n<p class=\"description\">Click here if you wish to update all Blog Posts to the layout selected above. <\/p>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58203ca686db0",
+            "label": "Auto set featured image",
+            "name": "flo-blog-post__auto-set-featured",
+            "type": "true_false",
+            "instructions": "In case featured image is not uploaded to the post\/gallery, the first of the uploaded images will be set as featured image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--instructions-below-field",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58203d6b86db2",
+            "label": "Blog Post Responsive Images",
+            "name": "flo-blog-post__responsive_images",
+            "type": "select",
+            "instructions": "You can control from here the responsive images introduced in WP 4.4. It is recommended to have the responsive images enabled, at least for the mobile devices. But this may affect image quality. If you disable the responsive images, then the quality will be good, but the performance will be affected, especially on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--instructions-below-field",
+                "id": ""
+            },
+            "choices": {
+                "no_responsive": "Disable responsive images for all devices",
+                "mobile_only": "Allow responsive images only for mobile devices",
+                "all_devices": "Allow responsive images for all devices"
+            },
+            "default_value": [
+                "all_devices"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_587e21b7d738b",
+            "label": "Content Typography",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The font styles for the content of the blog post can be edited at Flotheme -> 8. Typography -> 8.1. Generic Typography.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58c119281944a",
+            "label": "4.3.2.1. Distance Below Post Images",
+            "name": "flo-fiji2-blog-post__content-distance-below-images",
+            "type": "number_slider",
+            "instructions": "Distance Between Blog Posts Images. \r\nDefault: 10px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 10,
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-5-posts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1554797868
+}

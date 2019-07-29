@@ -1,0 +1,82 @@
+.flo-block-related-items {
+  $b: ".flo-block-related-items";
+
+  &__title {
+    position: relative;
+    text-align: center;
+    margin-bottom: rem-calc(55);
+  }
+
+  &__items {
+
+  }
+    &__item {
+      display: block;
+    }
+      &__item-featured-image {
+        display: block;
+        height: rem-calc(200);
+        @include global-bgi-cover;
+      }
+      &__item-text-area {
+        display: block;
+        padding: rem-calc(24) rem-calc(20);
+        text-align: center;
+      }
+        &__item-title {
+          display: block;
+          margin-bottom: rem-calc(5);
+        }
+        &__item-category {
+          display: block;
+        }
+
+  @include breakpoint(medium up) {
+
+    &__title {
+    }
+
+    &__items {
+      display: flex;
+      justify-content: center;
+      margin: 0 rem-calc(-22.5);
+    }
+      &__item {
+        width: rem-calc(300);
+        margin: 0 rem-calc(22.5);
+        @include global-transition(transform);
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+        &__item-featured-image {
+        }
+        &__item-text-area {
+        }
+          &__item-category {
+          }
+          &__item-title {
+          }
+  }
+
+  @include breakpoint(small only) {
+
+    &__title {
+    }
+
+    &__items {
+    }
+      &__item {
+        width: 100%;
+        margin-bottom: rem-calc(20);
+      }
+        &__item-featured-image {
+        }
+        &__item-text-area {
+        }
+          &__item-category {
+          }
+          &__item-title {
+          }
+  }
+}

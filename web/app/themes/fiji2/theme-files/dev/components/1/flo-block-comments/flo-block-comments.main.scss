@@ -1,0 +1,281 @@
+.flo-block-comments {
+  $b: ".flo-block-comments";
+  
+  &__fb_comments{
+    text-align: center;
+    
+    #{$b}__title{
+      width: 100%;
+    }
+    
+  }
+    
+  &__list-wrap {
+
+  }
+    &__title {
+
+    }
+    &__list {
+
+    }
+      &__comment {
+        margin-bottom: rem-calc(37);
+      }
+        &__comment-left-wrap {
+
+        }
+          &__comment-avatar {
+            $size: rem-calc(50);
+            &,
+            img {
+              width: $size;
+            }
+            height: $size;
+            border-radius: $size;
+            overflow: hidden;
+            margin-bottom: rem-calc(17);
+            img {
+              display: inline-block;
+            }
+          }
+          &__comment-author {
+            margin-bottom: rem-calc(17);
+          }
+          &__comment-date {
+            &:before {
+              content: "/";
+              display: inline-block;
+              margin-right: 0.5em;
+            }
+          }
+
+        &__comment-content {
+
+        }
+          &__comment-text {
+            p {
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+          &__comment-reply {
+            margin-top: rem-calc(25);
+          }
+          &__comment-alert {
+
+          }
+
+  &__form-wrap {
+
+  }
+    &__form-title {
+
+    }
+    &__form {
+    }
+      &__form-field-wrap {
+        position: relative;
+      }
+        &__form-field {
+          color: inherit;
+
+        }
+        &__form-field-label {
+          color: inherit;
+          position: absolute;
+          left: 0;
+          pointer-events: none;
+
+          @include global-transition(top, transform);
+        }
+      &__form .submit {
+      }
+
+
+  @include breakpoint(medium up) {
+    // padding: $global-padding--vertical rem-calc(221);
+    // padding: $global
+
+    &__list-wrap {
+      display: flex;
+    }
+      &__title {
+        width: 22.62%;
+        flex-shrink: 0;
+      }
+      &__list {
+        width: 77.38%;
+        margin-bottom: rem-calc(87);
+      }
+        &__comment {
+          display: flex;
+
+        }
+          .comment .comment &__comment {
+            padding: rem-calc(52) rem-calc(38);
+
+            #{$b}__comment-date {
+              // padding-left: rem-calc(27);
+            }
+          }
+          &__comment-left-wrap {
+            width: rem-calc(180);
+            flex-shrink: 0;
+            padding-right: rem-calc(20);
+          }
+            &__comment-avatar {
+
+            }
+            &__comment-author {
+            }
+            &__comment-date {
+
+            }
+
+          &__comment-content {
+
+          }
+            &__comment-text {
+
+            }
+            &__comment-reply {
+
+            }
+            &__comment-alert {
+
+            }
+
+    &__form-wrap {
+      display: flex;
+    }
+      &__form-title {
+        width: 22.62%;
+      }
+      .comment-respond {
+        width: 77.38%;
+      }
+      &__form {
+        display: flex;
+        flex-wrap: wrap
+      }
+        &__form-field-wrap {
+          $gap: $global-column-width / 2;
+          // $gap: rem-calc(47.38);
+          $gap_per_item: $gap * 3 / 2;
+          $small-width: calc(100% / 3 - #{$gap});
+
+          &--small {
+            flex-shrink: 0;
+            width: $small-width;
+            margin-bottom: rem-calc(33.63)!important;
+            &:not(:nth-child(3)) {
+              margin-right: $gap_per_item;
+            }
+          }
+
+          &--big {
+            // width: rem-calc(500);
+            // width: calc(#{$small-width * 2} + #{$gap});
+            width: 100%;
+            margin-bottom: rem-calc(31.53);
+          }
+        }
+          &__form-field {
+
+          }
+          &__list .comment-respond {
+            width: 100%;
+            margin-bottom: rem-calc(100);
+            #{$b}__form-field-wrap {
+              width: 100%;
+              margin-bottom: rem-calc(40)!important;
+            }
+              #{$b}__form-field {
+                display: block;
+                &--small,
+                &--big {
+                  width: 100%;
+                }
+              }
+          }
+          &__form-field-label {
+
+          }
+        .form-submit {
+          width: 100%;
+        }
+        &__form .submit {
+
+        }
+  }
+
+  @include breakpoint(small only) {
+    &__list-wrap {
+    }
+      &__title {
+        text-align: center;
+        margin-bottom: rem-calc(30);
+      }
+      &__list {
+
+      }
+        .comment .comment #{$b}__comment {
+          padding: rem-calc(20) rem-calc(20);
+        }
+        &__comment {
+
+        }
+          &__comment-left-wrap {
+            margin-bottom: rem-calc(20);
+          }
+            &__comment-avatar {
+
+            }
+            &__comment-author {
+
+            }
+            &__comment-date {
+
+            }
+
+          &__comment-content {
+
+          }
+            &__comment-text {
+
+            }
+            &__comment-reply {
+
+            }
+            &__comment-alert {
+
+            }
+
+    &__form-wrap {
+
+    }
+      &__form-title {
+        text-align: center;
+        margin-bottom: rem-calc(20);
+      }
+      &__form {
+      }
+        &__form-field-wrap {
+          margin-bottom: rem-calc(41)!important;
+        }
+          &__form-field {
+
+          }
+          &__form-field-label {
+
+          }
+        .form-submit {
+          text-align: center;
+        }
+        &__form .submit {
+
+        }
+  }
+}

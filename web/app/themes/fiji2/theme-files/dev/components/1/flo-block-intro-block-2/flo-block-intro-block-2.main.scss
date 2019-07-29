@@ -1,0 +1,259 @@
+.flo-block-intro-block-2 {
+  $b: ".flo-block-intro-block-2";
+
+  &__image-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    @include global-bgi-cover;
+  }
+  @include flo-responsive-image-bg(".flo-block-intro-block-2__image-wrap");
+    &__image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    &__header-area {
+      width: 100%;
+
+      header:not(.is-sticky) {
+        .flo-header {
+          color: inherit!important;
+          border-color: inherit!important;
+          background-color: transparent!important;
+        }
+      }
+
+    }
+
+    &__text-area {
+      display: flex;
+      flex-grow: 1;
+      width: 100%;
+    }
+      &__title {
+      }
+      &__text {
+        
+        & > *:last-child {
+          margin-bottom: 0;
+        }
+      }
+    &__actions-wrap {
+      flex-shrink: 0;
+    }
+      &__button {
+        display: inline-flex;
+        border: 1px solid;
+        padding: 10px;
+        min-width: rem-calc(180);
+        justify-content: center;
+        align-items: center;
+        @include global-transition(color, background-color, border-color);
+      }
+      
+      &__icon {
+        font-size: 7px;
+      }
+
+  @include breakpoint(medium up) {
+    
+
+    &__image-wrap {
+    }
+
+      &__header-area {
+        header {
+          .flo-header {
+            padding: rem-calc(60) rem-calc(80);
+          }
+        }
+      }
+      &__text-area {
+        position: relative;
+        padding: 0 rem-calc(100) rem-calc(100) rem-calc(100);
+      }
+        &__title {
+          max-width: rem-calc(495);
+        }
+        &__text {
+          max-width: rem-calc(450);
+          margin-top: rem-calc(7);
+        }
+        &__button {
+          
+        }
+      &#{$b}--type-a {
+        #{$b}__text-area {
+          align-items: flex-end;
+          justify-content: space-between;
+          
+          &#{$b}__buttons-position--below {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            
+            #{$b}__actions-wrap {
+              &:not(:first-child) {
+                margin-top: rem-calc(40);
+              }
+            }
+          }
+        }
+        
+          #{$b}__button {
+            &:not(:first-child) {
+              margin-left: rem-calc(30);
+            }
+          }
+      }
+      
+      &#{$b}--type-b {
+        #{$b}__text-area {
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          text-align: center;
+        }
+        #{$b}__actions-wrap {
+          margin-top: rem-calc(50);
+        }
+      }
+      
+      &#{$b}--type-c {
+        #{$b}__text-area {
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          text-align: center;
+        }
+        
+        #{$b}__actions-wrap {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          justify-content: center;
+          width: 100%;
+          margin-top: rem-calc(100);
+          
+          #{$b}__button {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 50%;
+            padding: rem-calc(45) rem-calc(45) rem-calc(50) rem-calc(45);
+            
+            &:last-child {
+              border-left: none;
+            }
+            
+            #{$b}__button-title {
+              display: flex;
+              flex-direction: row;
+              text-align: left;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              &:not(:first-child) {
+                margin-top: rem-calc(5);
+              }
+            }
+            
+            #{$b}__icon {
+              // position: absolute;
+              font-size: 7px;
+              // top: 50%;
+              // transform: translateY(-50%);
+              // right: rem-calc(45);
+            }
+          }
+        }
+      }
+
+  }
+
+  @include breakpoint(small only) {
+
+    &__image-wrap {
+    }
+
+      &__header-area {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        header:not(.is-sticky) {
+          .flo-header {
+            color: inherit!important;
+            border-color: inherit!important;
+            background-color: transparent!important;
+          }
+        }
+      }
+
+      &__text-area {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        padding: $global-padding-mobile--vertical $global-padding-mobile--horizontal;
+      }
+        &__title {
+          margin-bottom: rem-calc(10);
+        }
+        &__text {
+        }
+      &__actions-wrap {
+        margin-top: rem-calc(20);
+      }
+      
+        &__button {
+          
+          &:not(:first-child) {
+            margin-top: rem-calc(15);
+          }
+        }
+        
+    &#{$b}--type-c {
+      #{$b}__button-pretitle {
+        margin-bottom: rem-calc(10);
+      }
+      #{$b}__button {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        padding: rem-calc(15);
+      }
+        #{$b}__button-title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: nowrap;
+        }
+          #{$b}__icon {
+            padding-left: rem-calc(30);
+          }
+    }
+    
+  }
+  @include breakpoint(medium only) {
+    &__text-area {
+      padding: rem-calc(53) rem-calc(100);
+    }
+  }
+}
+@media (min-width: 1025px) {
+  html:not(.html--style-fixed) .flo-block-intro-block__text-area {
+    // margin-left: $global-padding--horizontal;
+  }
+}

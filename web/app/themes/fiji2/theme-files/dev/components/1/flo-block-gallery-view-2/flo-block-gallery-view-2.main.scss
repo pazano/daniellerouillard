@@ -1,0 +1,38 @@
+.flo-block-gallery-view-2 {
+  $b: ".flo-block-gallery-view-2";
+  
+  &__image {
+    display: inline-block;
+    @include global-transition(opacity);
+
+    &.lazy {
+      opacity: 0;
+    }
+  }
+    &__image-thumb {
+      width: 100%;
+      // height: auto;
+    }
+
+  @include breakpoint(medium up) {
+    &__image {
+      cursor: pointer;
+    }
+      &__image-thumb {
+
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__image {
+      // margin-bottom: rem-calc(30);
+    }
+      &__image-thumb {
+
+      }
+  }
+}
+
+.fancybox-caption {
+  text-align: center;
+}

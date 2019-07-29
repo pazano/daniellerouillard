@@ -1,0 +1,61 @@
+<wpml-config>
+  <custom-types>
+   <custom-type translate='1'>gallery</custom-type>
+  </custom-types>
+  <admin-texts>
+	  <key name="options_dh_26_flo-lovely2-header__logo-text" />
+		<key name="options_dh_43_flo-lovely2-header__tagline" />
+		<key name="options_dh_47_flo-lovely2-header__featured-link-label" />
+		<key name="options_dh_49_flo-lovely2-header__featured-link-url" />
+		<key name="options_dh_53_flo-lovely2-header__menu-trigger-open-label" />
+		<key name="options_dh_54_flo-lovely2-header__menu-trigger-close-label" />
+		<key name="options_dh_63_flo-lovely2-header__tagline-2-pretitle" />
+		<key name="options_dh_65_flo-lovely2-header__tagline-2-title" />
+		<key name="options_mh_14_flo-lovely2-header-mobile-header__logo-text" />
+		<key name="options_mh_18_flo-lovely2-header-mobile-header__menu-trigger-label" />
+		<key name="options_mh_25_flo-lovely2-header-mobile-popup__close-button-label" />
+		<key name="options_mh_33_flo-lovely2-header-mobile-popup__custom-copyright-notice" />
+		<key name="options_overlay_label" />
+		<key name="options_flo-lovely2-footer-a1b-m__c" />
+		<key name="options_flo-lovely2-footer-a1b-r__l_0_title" />
+		<key name="options_flo-lovely2-footer-a1b-r__l_0_url" />
+		<key name="options_flo-lovely2-footer-a2__l-l" />
+		<key name="options_flo-lovely2-footer-a2__l-u" />
+		<key name="options_flo-lovely2-footer-a2__t" />
+		<key name="options_flo-lovely2-footer-a2__st" />
+		<key name="options_flo-lovely2-footer-mailchimp_code" />
+		<key name="options_flo-lovely2-footer-a2__nf-p" />
+		<key name="options_flo-lovely2-footer-cp__cn" />
+		<key name="options_flo-lovely2-footer-cp__btt-label" />
+		<key name="options_flo-l2-g_layout_5_previous_item_label" />
+		<key name="options_flo-l2-g_layout_5_next_item_label" />
+		<key name="options_flo-l2-g_layout_4_title" />
+		<key name="options_flo-portfolio-gallery__gallery-slug" />
+		<key name="options_flo-portfolio-gallery__gallery-category-slug" />
+		<key name="options_flo-portfolio-gallery__gallery-tag-slug" />
+		<key name="options_flo-l2-p_layout_5_comments_title" />
+		<key name="options_flo-l2-p_layout_5_reply_button_label" />
+		<key name="options_flo-l2-p_layout_5_form_title" />
+		<key name="options_flo-l2-p_layout_5_submit_button_label" />
+		<key name="options_flo-l2-p_layout_7_title" />
+		<key name="options_flo-l2-p_layout_3_title" />
+		<key name="options_flo-search-page__page-title" />
+		<key name="options_flo-lvy2-search-options-listing_2_flo-block__id" />
+		<key name="options_flo-lvy2-search-options-listing_2_flo-block__classes" />
+		<key name="options_flo-lvy2-archives-options-listing_2_26_flo-lvy2-archives-options-listing_2_flo-block__id" />
+		<key name="options_flo-lvy2-archives-options-listing_2_27_flo-lvy2-archives-options-listing_2_flo-block__classes" />
+		<key name="options_flo-lvy2-archive_pages_pagination_5_flo-lvy2-archive_pages_pagination_previous_link_label" />
+		<key name="options_flo-lvy2-archive_pages_pagination_6_flo-lvy2-archive_pages_pagination_next_link_label" />
+		<key name="options_flo-lvy2-archive_pages_pagination_20_flo-lvy2-archive_pages_pagination_flo-block__id" />
+		<key name="options_flo-lvy2-archive_pages_pagination_21_flo-lvy2-archive_pages_pagination_flo-block__classes" />
+		<key name="options_flo-not-found-page__title" />
+		<key name="options_flo-not-found-page__description" />
+		<key name="options_flo-not-found-page__link-title" />
+		<key name="options_flo-404_fields_0_flo-not-found-page__title" />
+		<key name="options_flo-404_fields_1_flo-not-found-page__description" />
+		<key name="options_flo-404_fields_2_flo-not-found-page__link-title" />
+		<key name="options_flo-lovely2-header__logo-text" />
+		<key name="options_flo-lovely2-header-mobile-header__menu-trigger-label" />
+		<key name="options_flo-lovely2-header-mobile-popup__close-button-label" />
+  </admin-texts>
+</wpml-config>

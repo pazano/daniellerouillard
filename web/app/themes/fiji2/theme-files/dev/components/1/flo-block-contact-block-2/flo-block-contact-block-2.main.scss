@@ -1,0 +1,178 @@
+.flo-block-contact-block-2 {
+  $b: ".flo-block-contact-block-2";
+  position: relative;
+  background-attachment: fixed;
+  @include global-bgi-cover;
+
+  .flo-form {
+
+    label {
+      margin-top: rem-calc(8);
+    }
+
+    input, label, textarea {
+      text-align: center;
+    }
+  }
+
+  &__form-wrap {
+    text-align: center;
+    width: 100%;
+  }
+    &__form-section {
+      &--custom {
+        text-align: center;
+        form {
+          width: 100%;
+        }
+
+        & .submit-row {
+          text-align: center;
+          padding-top: 0!important;
+        }
+        & .flo-submit-button {
+          margin-top: rem-calc(39);
+          padding: rem-calc(12) rem-calc(23);
+          line-height: 1em!important;
+          min-height: rem-calc(42);
+        }
+
+        input[type]:not([type="submit"]),textarea {
+          border-top: 0!important;
+          border-left: 0!important;
+          border-right: 0!important;
+        }
+        .error {
+          margin-top: rem-calc(5);
+          color: red!important;
+        }
+      }
+    }
+      &__form-title {
+      }
+
+      &__form-subtitle {
+      }
+
+      &__fields-wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__form-field {
+
+        position: relative;
+
+        &:not(:last-child) {
+          margin-bottom: rem-calc(29)!important;
+        }
+
+        input,
+        label,
+        textarea {
+          display: block;
+          text-align: center;
+          border: 0!important;
+          padding-bottom: rem-calc(6);
+          color: inherit!important;
+        }
+        & textarea {
+          min-height: rem-calc(100);
+        }
+      }
+      &__form-submit {
+        margin-top: rem-calc(39);
+        padding: rem-calc(12) rem-calc(23);
+        line-height: 1em!important;
+        min-height: rem-calc(42);
+      }
+
+  @include breakpoint(medium up) {
+    overflow: hidden;
+
+    &__form-wrap {
+    }
+      &__form-section {
+        padding: rem-calc(0) rem-calc(302);
+        height: 100%;
+      }
+        &__form-title {
+          margin-bottom: rem-calc(5);
+        }
+
+        &__form-subtitle {
+        }
+
+        &__fields-wrap {
+
+          &:not(:first-child) {
+            margin-top: rem-calc(45);
+          }
+
+        }
+
+        &__form-field {
+          $gap: rem-calc(44);
+          width: 100%;
+
+          &--half-width {
+            width: calc(50% - #{$gap / 2});
+
+            &:nth-child(2) {
+              margin-right: 0!important;
+            }
+          }
+          &:nth-child(1),
+          &:nth-child(2) {
+            margin-right: $gap;
+          }
+            input,
+            label,
+            textarea {
+              padding-left: 0!important;
+              padding-right: 0!important;
+            }
+          }
+        &__form-submit {
+        }
+
+  }
+  @include breakpoint(small only) {
+
+    &__form-wrap {
+    }
+      &__form-section {
+        position: relative;
+        padding: rem-calc(40) rem-calc(20);
+
+      }
+        &__form-title {
+          margin-bottom: rem-calc(5);
+        }
+
+        &__form-subtitle {
+        }
+
+        &__fields-wrap {
+
+          &:not(:first-child) {
+            margin-top: rem-calc(45);
+          }
+
+        }
+        // Flo Forms
+        #{$b}__form-wrap .flo-form .field-row {
+          margin-bottom: rem-calc(25);
+        }
+
+        &__form-field {
+            width: 100%;
+            input,
+            label,
+            textarea {
+            }
+          }
+        &__form-submit {
+        }
+  }
+}

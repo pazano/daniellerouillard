@@ -1,0 +1,118 @@
+.flo-block-listing-3 {
+  $b: ".flo-block-listing-3";
+  
+  a {
+    &:focus,
+    &:active {
+      color: inherit;
+    }
+  }
+
+  &__item {
+  }
+    &__featured-image {
+      display: block;
+      @include global-bgi-cover;
+    }
+    @include flo-responsive-image-bg(".flo-block-listing-3__featured-image");
+    &__text-area {
+      display: block;
+    }
+      &__decorative-image {
+        display: block;
+        margin-bottom: rem-calc(20);
+        max-height: rem-calc(100);
+      }
+      &__title {
+        display: block;
+      }
+      &__category {
+        display: block;
+        margin-top: rem-calc(5);
+      }
+      &__excerpt {
+        display: block;
+          margin-top: rem-calc(29);
+      }
+      &__button {
+        display: inline-block;
+        padding: rem-calc(11) rem-calc(30);
+        border: 1px solid;
+        border-color: inherit;
+        margin-top: rem-calc(35);
+      }
+
+  @include breakpoint(medium up) {
+    &__item {
+      display: flex;
+      align-items: center;
+      &:nth-child(even){
+        flex-direction: row-reverse;
+      }
+      &:not(#{$b}__item--has-featured-image) {
+        padding-top: rem-calc(40);
+        padding-bottom: rem-calc(40);
+        #{$b}__text-area {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+      &__featured-image {
+        width: 50%;
+        margin-bottom: rem-calc(20);
+        height: rem-calc(404);
+        margin-bottom: 0;
+      }
+      &__text-area {
+        width: 50%;
+        padding: 0 $global-column-width;
+      }
+        &__decorative-image {
+
+        }
+        &__title {
+
+        }
+        &__category {
+        }
+        &__excerpt {
+        }
+        &__button {
+          @include global-transition(color, background-color, border-color);
+        }
+  }
+
+  @include breakpoint(small only) {
+    &__item {
+      display: block;
+      margin-bottom: rem-calc(30);
+    }
+      &__featured-image {
+        height: rem-calc(200);
+        margin-bottom: rem-calc(30);
+      }
+      &__text-area {
+        text-align: center;
+        padding: rem-calc(25);
+      }
+        &__decorative-image {
+          display: inline-block;
+        }
+        &__title {
+
+        }
+        &__category {
+
+        }
+        &__excerpt {
+
+        }
+        &__button {
+
+        }
+  }
+}

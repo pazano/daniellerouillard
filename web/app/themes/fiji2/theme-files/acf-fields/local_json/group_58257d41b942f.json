@@ -1,0 +1,169 @@
+{
+    "key": "group_58257d41b942f",
+    "title": "2. Getting Started",
+    "fields": [
+        {
+            "key": "field_5c98a3e88a270",
+            "label": "Introduction",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5cb46eb4e947f",
+            "label": "",
+            "name": "",
+            "type": "acf_intro_tutorials",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "intro_sections_title": "Introduction",
+            "intro_sections_content": "<\/p>When you get started with a Flothemes site, we recommend to select one of the options to build your new site.<\/p>\r\n<p>Option 1.1. You have a site on WordPress ::<\/p>\r\n<p>You can install the new theme on top of your existing content, using FloLaunch plugin. You will work in preview mode while your current site is still online.Here is the <a href=\"https:\/\/docs.flothemes.com\/flo-launch-plugin\/\" target=\"_blank\">link<\/a> where you can check how it works<\/p>\r\n\r\n<p>Option 1.2. You are moving your site from another platform, ie. WIX, Squarespace, etc.<\/p>\r\n<p>You might want to migrate your content to your new WordPress site. Please refer to our documentation or check the <a href=\"https:\/\/flothemes.com\/switch\/\" target=\"_blank\">next article<\/a><\/p>\r\n\r\n<p>Option 2. You want to build a new site and want to use the theme’s demo site content.<\/p>\r\n<p>A video tutorial is available, which you can find in the Demo Content tab below, which will instruct you on how to install demo content and use it as a base for you new site.<\/p>\r\n\r\n<p>Option 3. You want to build a site from scratch ::\r\nTo successfully build your new site from scratch using the theme’s options please follow our tutorials.<\/p>"
+        },
+        {
+            "key": "field_5c93afac71d17",
+            "label": "Import Demo Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5919afc44908f",
+            "label": "Importing Demo Video",
+            "name": "importing_demo_video",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "How to Import Demo Content",
+            "video_description": "Importing Demo Content is a great way to boost the website setup process. During this process you will receive all demo page layouts of a selected theme. However, instead of our original images you will receive image placeholders that will need to be replaced with your own.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/5v3aNlj1rFc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_58418e54d6168",
+            "label": "Select demo content you want to import",
+            "name": "flo-get_started__import_demo_content",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "demo-content-folder",
+                "id": ""
+            },
+            "choices": {
+                "0": "Select the demo to be imported",
+                "export": "Demo Fresh",
+                "export-2": "Demo Classic",
+                "export-3": "Demo Earth",
+                "export-4": "Demo Almond"
+            },
+            "default_value": [
+                "export"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_58418eedc5212",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--no-top-border",
+                "id": ""
+            },
+            "message": "<input type=\"button\" class=\"import-demo-content generic-record-button  button-primary  \" value=\"Import dummy data\" onclick=\"importDummyData();\">\r\n<div class=\"spinner-container\"><span class=\"spinner import-demo-spinner\"><\/span><\/div>\r\n<div class=\"import-response\"><\/div>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c93afc671d18",
+            "label": "Recommended Plugins",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c781c4c24d97",
+            "label": "Recommended Plugins",
+            "name": "recommended_plugins_copy",
+            "type": "enhanced_message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "enhanced_message": "<?php\r\n\t\t\techo sprintf(__('Plugins are add-ons to your site that can make life easier for you. There are 2 types of Plugins - Required and Recommended. For example:\r\n<br\/>\r\nFlo-Updater - required Plugin to keep your Theme up to date.\r\n<br\/>\r\nFlo-Instagram - recommended Plugin to show your Instagram feed in the Footer.  %s\r\n\t\t\t\tIf you are not sure what you need, you can leave this for later. %s%s','flotheme'), '<br\/>','<br\/>','<br\/>','<br\/>');\r\n\r\n\t\t\techo sprintf(__('%sInstall and Activate%s recommended Plugins','flotheme'),'<a href=\"'.get_dashboard_url().'themes.php?page=install-required-plugins\" target=\"_blank\">','<\/a>' );\r\n\t\t?>",
+            "hide_label": "no"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-2-getting-started"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1555329990
+}

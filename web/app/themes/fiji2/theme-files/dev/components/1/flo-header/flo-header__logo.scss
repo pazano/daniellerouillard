@@ -1,0 +1,38 @@
+&__logo {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  &--is-light {
+    #{$b}__logo-image--default {
+      opacity: 0;
+    }
+    #{$b}__logo-image--light {
+      opacity: 1;
+    }
+  }
+
+  // @include global-transition(color);
+  &-image {
+    display: block;
+    width: 100%;
+
+    @include global-transition(opacity);
+    &--sticky,
+    &--light
+    {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  @include breakpoint(medium up) {
+
+  }
+
+  @include breakpoint(small only) {
+
+  }
+}

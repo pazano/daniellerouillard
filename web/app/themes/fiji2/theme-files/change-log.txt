@@ -1,0 +1,222 @@
+v 1.0.5
+
+- Enhanced Flo Social compatibility;
+
+========================
+
+v 1.0.4
+
+- Added Flo instagram selector;
+- Adjusted the fading effect for Galleries;
+
+================================================
+
+v 1.0.3
+
+- Fixed "Use another mobile menu" option;
+- Fixed 404 title font option;
+- Fixed Category Switcher links in case the listing pagination doesn't have any posts;
+- Image block 2 -> Fixed bottom mobile image position;
+- Fixed Slideshow play button in case the link button is enabled;
+- Added default value for the Mailchimp fields;
+
+================================================
+
+v 1.0.2
+
+- Improved Theme Function Stability;
+
+================================================
+
+v 1.0.1
+
+- Fixed header issue when more slideshows are used;
+- Fixed Video Block 1 missing image title issue;
+- Fixed Global Layout builder issue;
+
+================================================
+
+v 1.0
+
+- Included new Video Tutorials;
+- Included Featured Images Position Selector (for Gallery and Blog post types);
+- Video Block 1 -> Fixed Image Title;
+- Slideshow 1 -> Added possibility to add HTML in the bottom part of the Slideshow;
+- Gallery view 2 -> Added Captions under slideshow Images;
+- Slideshow 1 -> Added Button options;
+- Added Clone Block functionality;
+- Added Documentation Article Navigation in the Introduction Tab;
+- Included Internet Explorer checker for correct Image Rendering in IE browsers;
+- Added Video tutorials layout;
+- Improved Core Theme Functionalities;
+
+================================================
+
+v 0.7.2
+
+- Press block -> Added Title option and adjusted layout spacing;
+- Numeric Block -> Fixed Script Rendering;
+
+================================================
+
+v 0.7.1
+
+- Contact block 1 -> Fixed no scroll Content Effect;
+- Mosaic Block -> Fixed Warnings if the images are not set;
+- Re-builded Press block;
+- Added Revisions support for Gallery posts;
+- Fixed image spacing option for posts created with Gutenberg;
+- Featured links block -> Fixed Link Target option;
+
+================================================
+
+v 0.7
+
+- Adjusted Left and Right Sidebar Rendering;
+- Adjusted Auto-set Featured image function;
+- Newsletter block 1 -> Fixed Instagram image quality;
+- Intro Block 1 -> Added mobile options;
+- Image block 2 -> Fixed mobile block content which appears over the sticky header;
+- Desktop header settings -> Added spacing option;
+- Fixed the default page title option (4.3);
+- Fixed Mobile Custom header Menu option;
+- Fixed Intro block content if the Title is missing;
+- Gallery view 2 -> Included on-demand lazy loading;
+- Changed the Flo Forms source;
+- Added Site Preloader options (7.7);
+- Added Listing pagination block with the load more functionality;
+- Added Second Mobile Menu Popup;
+
+================================================
+
+v 0.6.2
+
+- Fixed "Auto Set Featured Images" minor bug;
+- Image Align Center -> Gutenberg fix;
+- Gutenberg gallery -> fixed image positions;
+- Fixed New Demo imports;
+
+================================================
+
+v 0.6.1
+
+- Minor Yoast SEO compatibility with Gutenberg;
+- Included full support for Flo Forms plugin;
+- Included Flo Support plugin in the recommended plugins list;
+- Changed theme dashboard screenshots;
+- Featured Links Block => Fixed warning when the link is empty;
+- Footer Area => Fixed footer issue when there are two footer areas;
+- Updated Theme Core files;
+
+================================================
+
+v 0.6
+
+- New Stylekit => Fiji Earth;
+- New Stylekit => Fiji Almond;
+- New Blocks Added => Intro Block 2, Image Block 3, Image Block 4, Numberic Details, Image Links 4, Image Links 5, Pricing Packages Block 2, Header Popup;
+
+================================================
+
+V 0.5
+
+- Image Block 2 -> Fixed Images for the Mobile Devices
+- WP Content -> Fixed Content Width setting
+- WP Content -> Improved Content Delivery
+- Fixed Double Header issue on Archive and Search page
+- Removed window reload after the device cookie check
+- Item Title 3 block -> Display full featured image file size
+- Related Items -> Improved Image sizes for Better quality
+- Support of any custom post type
+- Fixed Password protected pages
+- Added WPML XML file
+- Testimonials block -> Added counter option
+- Added Facebook Comments
+- Testimonials block -> Increase elements limit number to 9
+- Improved Heading default Typography
+- Header type C -> Fixed WPML switcher position
+- Improved Typography functionality
+- Included Memory Limit Checker
+
+================================================
+
+V 0.4.1
+
+- Contact Block 1 -> Fixed non-sticky header mobile overlap;
+- Improved compatibility checking with the ACF plugin and low PHP versions (below 5.4);
+
+================================================
+
+V 0.4
+
+- Item Vendors 2 -> Improved mobile layout;
+- Mobile Menu -> Increased dropdown toggle icon size for easier tapping;
+- Contact Form 1 -> Simplified scrolling behavior;
+- Image Block 2 -> Added mobile options;
+- FAQ Block 2 -> Added Mobile option to hide background image and set text color;
+- Text Block 3 -> Centered Title on mobile;
+- Image Block 1 -> Optimized Image for all devices;
+- Image Links 1 -> Optimized Images for all Devices;
+- Category Switcher -> Added mobile options;
+- Mosaic Image Links 1 -> Optimized Images for all Devices;
+- Testimonials Block -> Optimized images and added mobile options;
+- Item Title 2 -> Added mobile "Mobile Featured Image Height" option;
+- Video Block 1 -> Added Mobile option for Image Height;
+- Gallery View 2 -> Added Mobile Options;
+- Listing Block 2 -> Optimized Cropped Image behavior for all devices;
+- Listing 3 Block -> Added Mobile option for setting Image Height, Optimized Featured Images for all devices;
+- Listing 4 Block -> Added Opacity for Background Color Option;
+- Listing 5 -> Added Mobile Image Height Option for Non-Masonry Layout;
+- Category Switcher -> Optimized Image for All Devices;
+- Contact Block 1 -> Optimized Background Image for all devices;
+- FAQ Block 2 -> Optimized Image for all Device Sizes;
+- Image Block 2 -> Optimized Image sizes for all Devices;
+- Newsletter Block 1 -> Increased resolution for images (640x640);
+- Slideshow 1 -> Added Mobile Options;
+- Slideshow 2 -> Added Mobile Options;
+- Gallery View 2 -> Optimized Lightbox images;
+- Image Links 2 and 3 Blocks -> Optimized Images for all Devices;
+- Intro Block -> Optimized Image for all Devices;
+- Video Block 2 -> Optimized Image for all Devices;
+- WPML Config area -> Styled;
+- Category Switcher -> Added "A.2. Mobile Image Height" option;
+- Mosaic Images Block -> Added Mobile Option for changing the gaps between images;
+- Footer -> Area 1 -> Added "A.0. Hide Images on Mobile Devices" and "A.0. Image Count on Mobile Devices";
+- FAQ Block 2 -> Fixed delimiter color bug in Safari browsers;
+- Image Block 2 -> Fixed Image Background Position;
+- Listing 3 -> Improved Image Crop on mobile devices;
+- Gallery Views 1 and 3 -> Optimized images for all devices;
+- Implemented Global Post/Gallery layout options inheriting. Now the block changes set in the global layout section are inherited to the Custom Layout;
+- Builder -> Added search block option;
+
+================================================
+
+V 0.3
+
+- Contact Block 1 and 2 -> Minor Flo Forms Improvements;
+- Added options to disable fading effect per device (mobile, tablet, desktop);
+- Header Type C -> Fixed menu width calculation;
+- Horizontal Divider -> Fixed decorative icon sizing for Firefox browsers;
+- Footer Area 1 Type B -> Small fix for Instagram images rendering;
+- Posts -> Fixed 'Distance Below Post Images' option;
+- Fixed Width option -> Enabled archive support;
+- Footer Area 1 Type D -> Mobile styling improvements;
+- Slideshow 2 -> Improved mobile rendering;
+- Pricing Packages Block -> Fixed anchor rendering on mobile devices;
+- Intro Block -> Fixed minor header issue on mobile devices;
+- Added 'Flo Admin Preview' option;
+- Typography - added preview for the mobile font size;
+- Fixed tablet zoom factor;
+
+================================================
+
+V 0.2
+
+- Updated video tutorials;
+- New Block Added -> Item Title 3 From Porto 2;
+
+================================================
+
+V 0.1
+
+- Initial release

@@ -1,0 +1,31 @@
+.flo-block-horizontal-divider {
+  $b: ".flo-block-horizontal-divider";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__line {
+    position: relative;
+    display: inline-block;
+    height: 1px;
+  }
+    &__decorative-icon {
+    }
+
+  @include breakpoint(medium up) {
+    &__line {
+    }
+      &__decorative-icon {
+        padding: 0 rem-calc(60);
+        box-sizing: content-box;
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__line {
+    }
+      &__decorative-icon {
+        padding: 0 rem-calc(30);
+      }
+  }
+}

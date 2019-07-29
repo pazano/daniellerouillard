@@ -1,0 +1,32 @@
+.flo-block-share-links {
+  $b: ".flo-block-share-links";
+  text-align: center;
+
+  &__title {
+    margin-bottom: rem-calc(27);
+  }
+  &__share-links {
+    a {
+      font-size: rem-calc(12);
+      margin: 0 rem-calc(5.5);
+    }
+  }
+
+  @include breakpoint(medium up) {
+    &__title {
+
+    }
+    &__share-links {
+
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__title {
+
+    }
+    &__share-links {
+
+    }
+  }
+}

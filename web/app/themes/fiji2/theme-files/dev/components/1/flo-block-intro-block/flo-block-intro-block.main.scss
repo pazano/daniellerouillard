@@ -1,0 +1,127 @@
+.flo-block-intro-block {
+  $b: ".flo-block-intro-block";
+
+  &__image-wrap {
+    position: relative;
+    @include global-bgi-cover;
+  }
+  @include flo-responsive-image-bg(".flo-block-intro-block__image-wrap");
+    &__image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__header-area {
+      width: 100%;
+
+      header:not(.is-sticky) {
+        .flo-header {
+          color: inherit!important;
+          border-color: inherit!important;
+          background-color: transparent!important;
+        }
+      }
+
+    }
+
+    &__title-area {
+    }
+      &__title {
+      }
+      &__text {
+      }
+
+  @include breakpoint(medium up) {
+
+
+    &__image-wrap {
+    }
+
+      &__header-area {
+        width: 100%;
+
+        header:not(.is-sticky) {
+          .flo-header {
+            color: inherit!important;
+            border-color: inherit!important;
+            background-color: transparent!important;
+          }
+        }
+      }
+      &__title-area {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        // margin-left: calc((100vw - 61.88rem) / 2);
+      }
+        &__title {
+          max-width: rem-calc(495);
+          margin-bottom: rem-calc(37)
+        }
+        &__text {
+          padding-left: rem-calc(45);
+          max-width: rem-calc(450);
+        }
+
+  }
+
+  @include breakpoint(small only) {
+
+    &__image-wrap {
+    }
+    
+    &__header-mobile-merge {
+      .flo-header-mobile-sticky-wrapper:not(.is-sticky){
+        .flo-header-mobile {
+          background-color: transparent !important;
+        }
+      }
+      
+      &#{$b}__light-mobile-logo {
+        .flo-header-mobile__logo-image--light {
+          opacity: 1;
+        }
+        .flo-header-mobile__logo-image--default {
+          opacity: 0;
+        }
+      }
+    }
+    
+      &__header-area {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        header:not(.is-sticky) {
+          .flo-header {
+            color: inherit!important;
+            border-color: inherit!important;
+            background-color: transparent!important;
+          }
+        }
+      }
+
+      &__title-area {
+        position: relative;
+        padding: $global-padding-mobile--vertical $global-padding-mobile--horizontal;
+      }
+        &__title {
+          margin-bottom: rem-calc(25);
+        }
+        &__text {
+        }
+
+  }
+  @include breakpoint(medium only) {
+    &__title-area{
+      padding: rem-calc(53) rem-calc(100);
+    }
+  }
+}
+@media (min-width: 1025px) {
+  html:not(.html--style-fixed) .flo-block-intro-block__title-area {
+    margin-left: $global-padding--horizontal;
+  }
+}

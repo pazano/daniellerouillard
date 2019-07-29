@@ -1,0 +1,114 @@
+.flo-block-item-title-2 {
+  $b: ".flo-block-item-title-2";
+
+  &__featured-image {
+    @include global-bgi-cover;
+  }
+
+  &__text-area {
+    position: relative;
+    text-align: center;
+  }
+    &__decorative-image {
+      margin-bottom: rem-calc(15);
+    }
+    &__title {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(5);
+      }
+    }
+    &__date-and-category {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+      &__category {
+
+        & a:not(:last-child):after {
+          content: ", ";
+        }
+      
+      }
+      &__separator {
+      }
+      &__date {
+      }
+
+  @include breakpoint(medium up) {
+    position: relative;
+
+    &--display-featured-image {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-end;
+      min-height: rem-calc(500);
+      #{$b}__text-area {
+        width: calc(100% - #{$global-column-width * 2});
+        margin: 0 auto;
+      }
+    }
+
+    &__featured-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      // height: rem-calc(400);
+      height: calc(100% - #{$global-column-width / 2});
+    }
+
+    &__text-area {
+      padding: rem-calc(31) rem-calc(20)
+    }
+      &__decorative-image {
+
+      }
+      &__title {
+      }
+      &__date-and-category {
+      }
+        &__category {
+        }
+        &__separator {
+          width: 1px;
+          height: rem-calc(10);
+          margin: 0 rem-calc(10);
+          border-left: 1px solid;
+        }
+        &__date {
+        }
+  }
+
+  @include breakpoint(small only) {
+
+    &__featured-image {
+      height: rem-calc(300);
+      margin: 0;
+    }
+
+    &__text-area {
+      padding: rem-calc(30);
+      padding-bottom: 0;
+    }
+      &__decorative-image {
+
+      }
+      &__title {
+      }
+      &__date-and-category {
+        flex-direction: column;
+      }
+        &__category {
+        }
+        &__separator {
+          height: 1px;
+          width: rem-calc(10);
+          margin: rem-calc(10) 0;
+          border-bottom: 1px solid;
+        }
+        &__date {
+        }
+  }
+}

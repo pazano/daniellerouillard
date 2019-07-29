@@ -1,0 +1,12 @@
+.flo-footer-sidebars {
+  $b: ".flo-footer-sidebars";
+
+
+  @include breakpoint(medium up) {
+    padding: rem-calc(50) $global-padding--horizontal;
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(50) $global-padding-mobile--horizontal;
+  }
+}

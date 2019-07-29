@@ -1,0 +1,18 @@
+//Slick Slider reset default styles
+
+.slick-slider {
+  .slick-track,
+  .slick-list,
+  .slick-slide,
+  a{
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+}
+
+.slick-arrow{
+  @include global-transition(color);
+  cursor: pointer;
+}
+

@@ -1,0 +1,183 @@
+.flo-block-testimonials-1 {
+  $b: ".flo-block-testimonials-1";
+  position: relative;
+  &__testimonials-slider {
+    display: flex;
+  }
+    &__testimonial-slide {
+    }
+      &__testimonial-slide-content {
+        display: flex;
+      }
+        &__testimonial-image {
+          @include global-bgi-cover;
+          width: rem-calc(270);
+        }
+        &__testimonial-text-area {
+          text-align: center;
+        }
+          &__decorative-letter {
+            margin-bottom: rem-calc(15);
+          }
+          &__title {
+          }
+          &__text {
+            margin-bottom: rem-calc(36);
+            & p:last-child {
+              margin-bottom: 0;
+            }
+          }
+          &__testimonial-counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: rem-calc(100);
+            margin: 0 auto;
+          }
+            &__current-item-number {
+              align-self: flex-start;
+            }
+            &__number-divider {
+              height: 1px;
+              width: rem-calc(100);
+              margin: rem-calc(5) 0;
+            }
+            &__total-item-number {
+              align-self: flex-end;
+            }
+  &__arrows {
+    &--hide-arrows {
+      display: none!important;
+    }
+  }
+    &__arrow {
+      font-size: rem-calc(7);
+      &:hover {
+        animation-play-state: running;
+      }
+      @include global-clickable;
+      @include global-transition(transform);
+
+      animation-play-state: paused;
+      animation-name: lovely-arrow;
+      animation-iteration-count: infinite;
+      animation-duration: 1.8s;
+
+      @keyframes lovely-arrow {
+        0%   {transform: scaleX(1);}
+        50%  {transform: scaleX(1.2);}
+        100% {transform: scaleX(1);}
+      }
+      &--left {}
+      &--right {}
+    }
+  @include breakpoint(medium up) {
+
+    padding: rem-calc(80) rem-calc(70);
+
+    &__testimonials-slider {
+    }
+    &__image--no-crop{
+      #{$b}__testimonial-image{
+        background-size: contain;
+      }
+    }
+      &__testimonial-slide {
+        width: 100%;
+      }
+        &__testimonial-slide-content {
+          justify-content: space-evenly;
+          align-items: center;
+          $block_paddings: $global-padding--horizontal * 2;
+          //width: calc(100vw - #{$block_paddings});
+        }
+          &__testimonial-image {
+            height: rem-calc(404);
+          }
+          &__testimonial-text-area {
+            width: rem-calc(362);
+          }
+            &__decorative-letter {
+            }
+            &__title {
+              margin-bottom: rem-calc(43);
+            }
+            &__text {
+            }
+            &__testimonial-counter {
+            }
+              &__current-item-number {
+              }
+              &__number-divider {
+              }
+              &__total-item-number {
+              }
+    &__arrows {
+    }
+      &__arrow {
+        &--left {
+          position: absolute;
+          left: rem-calc(70);
+          top: 50%;
+        }
+        &--right {
+          position: absolute;
+          right: rem-calc(70);
+          top: 50%;
+        }
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__testimonials-slider {
+    }
+    &__mobile-image--no-crop{
+      #{$b}__testimonial-image{
+        background-size: contain;
+      }
+    }
+      &__testimonial-slide {
+      }
+        &__testimonial-slide-content {
+          flex-direction: column;
+        }
+          &__testimonial-image {
+            margin: rem-calc(20) auto;
+            height: rem-calc(300);
+            margin-bottom: rem-calc(20);
+          }
+          &__testimonial-text-area {
+            padding: rem-calc(20);
+            width: 100%;
+          }
+            &__decorative-letter {
+            }
+            &__title {
+              margin-bottom: rem-calc(20);
+            }
+            &__text {
+            }
+            &__testimonial-counter {
+            }
+              &__current-item-number {
+              }
+              &__number-divider {
+              }
+              &__total-item-number {
+              }
+    &__arrows {
+      display: flex;
+      justify-content: space-around;
+      padding: rem-calc(20) 0;
+    }
+      &__arrow {
+        &--left {
+        }
+        &--right {
+
+        }
+      }
+  }
+}

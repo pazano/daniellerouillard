@@ -1,0 +1,45 @@
+.flo-block-listing-pagination-2 {
+  $b: ".flo-block-listing-pagination-2";
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  @include global-transition(color, background-color);
+  
+  &__button-wrap {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid;
+    @include global-transition(background-color, color);
+    @include global-clickable;
+    
+    &:hover {
+      color: var(--hover-text-color);
+      background-color: var(--hover-background-color)
+    }
+  }
+    &__button {
+      display: block;
+      color: inherit !important;
+      padding: rem-calc(12) rem-calc(64);
+    }
+
+  @include breakpoint(medium up) {
+    &__button-wrap {
+    }
+      &__button {
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__button-wrap {
+    }
+      &__button {
+      }
+  }
+}

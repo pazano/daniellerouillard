@@ -1,0 +1,143 @@
+.flo-header-mobile{
+  $b: ".flo-header-mobile";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: rem-calc(20) $global-padding-mobile--horizontal;
+  z-index: 111;
+  visibility: hidden;
+
+  @include global-transition(background-color, color, opacity, padding);
+
+  /* START: SPACER */
+    &__spacer {
+      width: 15%;
+    }
+  /* END: SPACER */
+
+  /* START: MENU TRIGGER */
+    &__menu-trigger {
+      width: 15%;
+      text-align: right;
+    }
+  /* END: MENU TRIGGER */
+
+  /* START: LOGO */
+    &__logo{
+      display: block;
+      width: 60%;
+      position: relative;
+      line-height: 1em!important;
+      text-align: center;
+      @include global-transition(color);
+
+      &--light {
+        #{$b}__logo-image--default {
+          opacity: 0;
+        }
+        #{$b}__logo-image--light {
+          opacity: 1;
+        }
+      }
+    }
+      &__logo-image {
+        @include global-transition(opacity);
+        &--sticky,
+        &--light
+        {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+        }
+      }
+  /* END: LOGO */
+
+  /* START: HIDE ON DESKTOP */
+    @include breakpoint(medium up){
+      display: none;
+
+      @at-root {
+        .flo-header-mobile-sticky-wrapper{
+          display: none;
+        }
+      }
+    }
+  /* END: HIDE ON DESKTOP */
+
+  /* START: MOBILE LOGO */
+    @at-root {
+      .body--flo-page-hero-elements-color-is-light {
+        .flo-header-and-flo-page-hero > header > .flo-header-mobile .flo-header-mobile__logo-image,
+        .flo-header-and-flo-page-hero .flo-header-mobile-sticky-wrapper:not(.is-sticky) .flo-header-mobile .flo-header-mobile__logo-image {
+          &--default {
+            opacity: 0;
+          }
+          &--light {
+            opacity: 1;
+          }
+        }
+      }
+      .flo-header-mobile-sticky-wrapper.is-sticky {
+        #{$b} {
+          position: fixed!important;
+          bottom: auto!important;
+        }
+        #{$b}__logo-image--default {
+          opacity: 1;
+        }
+        #{$b}__logo-image--light {
+          opacity: 0;
+        }
+      }
+      @include breakpoint(small only){
+        .sticky-container{
+          height: auto !important;
+        }
+      }
+    }
+  /* END: MOBILE LOGO */
+
+  /* START: STICKY */
+    @at-root {
+
+      .flo-header-mobile-sticky-wrapper {
+        @include global-transition(height);
+        #{$b}.is-main {
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: auto!important;
+        }
+        &.is-sticky {
+          #{$b}.is-main {
+            position: fixed!important;
+            top: 0;
+            bottom: auto!important;
+            padding: rem-calc(15) $global-padding-mobile--horizontal;
+
+            #{$b}__logo-image {
+              &--default {
+                opacity: 1;
+              }
+              &--light {
+                opacity: 0;
+              }
+              &--sticky {
+                opacity: 1;
+              }
+            }
+          }
+
+        }
+
+      }
+
+    }
+  /* END: STICKY */
+
+}

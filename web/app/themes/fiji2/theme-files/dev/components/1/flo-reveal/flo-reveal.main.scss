@@ -1,0 +1,72 @@
+.flo-reveal {
+  $b: ".flo-reveal";
+
+  height: 100vh;
+  pointer-events: none;
+
+  &--visible {
+    pointer-events: initial
+  }
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  // Start: Appear/Disappear
+    position: fixed;
+
+    // Start: Defaults
+      top: 0;
+      left: -100%;
+      opacity: 0;
+    // End: Defaults
+
+    // Start: Ready for transition
+      &--ready {
+        opacity: 1;
+        @include global-transition(transform);
+      }
+    // End: Ready for transtion
+
+    // Start: Transition initial position
+      &[data-initial-position="left"] {
+        left: 0;
+        right: auto;
+        transform: translateX(-100%);
+        &#{$b}--visible {
+          transform: translate(0);
+        }
+      }
+      &[data-initial-position="right"] {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
+        &#{$b}--visible {
+          transform: translate(0);
+        }
+      }
+    // End: Transition initial position
+
+    &-overlay {
+      &:not(#{$b}-overlay--visible){
+        opacity: 0!important;
+        pointer-events: none;
+      }
+      @include global-transition(opacity);
+    }
+
+  // End: Appear/Disappear
+
+  // Start: Z-Index Map
+    z-index: 1000001;
+
+    &-overlay {
+      z-index: 100000;
+    }
+  // Start: Z-Index Map
+}

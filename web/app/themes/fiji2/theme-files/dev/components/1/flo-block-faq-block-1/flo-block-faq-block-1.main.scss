@@ -1,0 +1,101 @@
+.flo-block-faq-block-1 {
+  $b: ".flo-block-faq-block-1";
+
+  &__title-area {
+    text-align: center;
+    position: relative;
+    margin-bottom: rem-calc(50);
+  }
+    &__title {
+      position: relative;
+      z-index: 2;
+    }
+    &__title-decorative-icon {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  &__faq-wrap {
+  }
+    &__single-qa {
+      /*-Add bottom margin to all children except for the last 2-*/
+      margin-bottom: rem-calc(44);
+      &:nth-last-child(1),
+      &:nth-last-child(2){
+        margin-bottom: 0;
+      }
+    }
+      &__question {
+        margin-bottom: rem-calc(10);
+        position: relative;
+      }
+      &__answer {
+        & p:last-child {
+          margin-bottom: 0;
+        }
+      }
+  @include breakpoint(medium up) {
+    &__title-area {
+    }
+      &__title {
+      }
+      &__title-decorative-icon {
+      }
+    &__faq-wrap {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      padding: rem-calc(40) 0;
+    }
+      &__single-qa {
+        $half_column: $global-column-width / 2;
+        width: 50%;
+        &:nth-child(odd) {
+          padding-left: $half_column;
+          padding-right: $global-column-width;
+        }
+        &:nth-child(even) {
+          padding-left: $global-column-width;
+          padding-right: $half_column;
+        }
+      }
+        &__question {
+        }
+        &__answer {
+        }
+    &__divider {
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__title-area {
+    }
+      &__title {
+      }
+      &__title-decorative-icon {
+      }
+    &__faq-wrap {
+    }
+      &__single-qa {
+        &:nth-last-child(1),
+        &:nth-last-child(2){
+          margin-bottom: rem-calc(44);
+        }
+      }
+        &__question {
+        }
+        &__answer {
+        }
+    &__divider {
+      display: none;
+    }
+  }
+}

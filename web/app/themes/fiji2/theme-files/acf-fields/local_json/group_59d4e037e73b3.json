@@ -1,0 +1,373 @@
+{
+    "key": "group_59d4e037e73b3",
+    "title": "3.1.1. Menu Popup Options",
+    "fields": [
+        {
+            "key": "field_59d4e037ece96",
+            "label": "- 3.1.1. Menu Popup Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59d4e037ecec1",
+            "label": "Menu Popup Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/fiji2\/flo-header--menu-popup.overview.jpg\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d4e037eced1",
+            "label": "1. Background Color",
+            "name": "flo-lovely2-header-menu-popup__background-color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": 2,
+            "default_value": ""
+        },
+        {
+            "key": "field_59d4e037ecee1",
+            "label": "2. Elements Color",
+            "name": "flo-lovely2-header-menu-popup__elements-color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": 7,
+            "default_value": ""
+        },
+        {
+            "key": "field_59d4e037ecef0",
+            "label": "A. Logo",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d4e037ecf00",
+            "label": "A.1. Logo Bottom Gap",
+            "name": "flo-lovely2-header-menu-popup__logo-bottom-gap",
+            "type": "number_slider",
+            "value": null,
+            "instructions": "Default: 160px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 160,
+            "slider_min_value": 10,
+            "slider_max_value": 200,
+            "increment_value": 5
+        },
+        {
+            "key": "field_59d4e037ecf10",
+            "label": "B. Menu",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d4e037ecf1f",
+            "label": "B.1. Menu Items Font",
+            "name": "flo-lovely2-header-menu-popup__menu-items-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Heading 4 Italic",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__menu-popup .menu-item a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_4_italic"
+        },
+        {
+            "key": "field_59d4e037ecf2e",
+            "label": "B.1.1. Menu Dropdown Items Font",
+            "name": "flo-lovely2-header-menu-popup__dropdown-items-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Call To Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__menu-popup .menu-item .sub-menu a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_59d4e037ecf3d",
+            "label": "B.1.2. Menu Dropdown Background Color",
+            "name": "flo-lovely2-header-menu-popup__menu-dropdown-background-color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": 3,
+            "default_value": ""
+        },
+        {
+            "key": "field_59d4e037ecf4d",
+            "label": "B.1.3. Menu Dropdown Items Color",
+            "name": "flo-lovely2-header__menu-dropdown-items-color",
+            "type": "flo_color_picker",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "color_options_prefix": "flo-color-",
+            "default_color_id": 2,
+            "default_value": ""
+        },
+        {
+            "key": "field_59d4e037ecf5d",
+            "label": "C. Copyright Notice",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field-message--special-1",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d4e037ecf6c",
+            "label": "C.1. Text Above Copyright Notice",
+            "name": "flo-lovely2-header-popup__text-above-copyright-notice",
+            "type": "textarea",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "SACRAMENTO, CALIFORNIA\r\n123.456.7890",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_59d4e037ecf7b",
+            "label": "C.1.1. Text Above Copyright Notice Font",
+            "name": "flo-lovely2-header-popup__text-above-copyright-notice-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Call To Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__menu-popup-text-above-copyright-notice",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_59d4e037ecf8b",
+            "label": "C.2. Copyright Notice",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59d4e037ecfaa",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<b>Note:<\/b> The copyright notice can be changed from 9. Footer -> Options",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d4e037ecf9a",
+            "label": "C.2.1. Copyright Notice Font",
+            "name": "flo-lovely2-header__copyright-notice-font",
+            "type": "font_style_select",
+            "value": null,
+            "instructions": "Default: Call To Action 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__menu-popup-copyright-notice",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "call_to_action_1"
+        },
+        {
+            "key": "field_59d4e037ecfaa",
+            "label": "C.2.2. Use Custom Copyright Notice",
+            "name": "flo-lovely2-header-popup__use-copyright-custom-notice",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59d4e037ecfb9",
+            "label": "C.2.2.1. Custom Copyright Notice",
+            "name": "flo-lovely2-header-popup__custom-copyright-notice",
+            "type": "textarea",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59d4e037ecfaa",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "©2017 Flothemes",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-3-header"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1519831785
+}

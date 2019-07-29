@@ -1,0 +1,479 @@
+{
+    "key": "group_57b5afef14aaa",
+    "title": "Slideshow Settings",
+    "fields": [
+        {
+            "key": "field_58c1ac7d76a8a",
+            "label": "Sliders guide",
+            "name": "sliders_guide",
+            "type": "video_tutorial",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "video_title": "Slideshows - Initial Steps",
+            "video_description": "Slideshows is a convenient tool to showcase your best work, promotions or upcoming events. \r\n<br>\r\n1. Choosing Slideshow Layout :: Before you add the Slideshow to the page, it's important to choose the proper slideshow layout. We highly recommend to refer to the Theme Demo you purchased and look into the various Slideshows used within the Homepages. Having already determined the Slideshow type you like, you can then proceed with adding content. \r\n<br>\r\n2. Choosing Slideshow Images :: Depending on the selected Slideshow layout now you can select the images that work the best for it. Make sure that the image is not too busy, as in many cases it will also have the website header with menu and logo over it. In some cases you may want to add additional text or links over the image. So be sure to choose proper images for the website Slideshow.",
+            "video_embed": "<iframe width=\"800\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/ajazudsq_mg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>",
+            "video_embed_image": ""
+        },
+        {
+            "key": "field_589831f8963ba",
+            "label": "Slide Effect",
+            "name": "slideshow_slide_effect",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "slide": "Slide",
+                "fade": "Fade"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_58983284963bb",
+            "label": "Slide Effect: Transition Speed",
+            "name": "slideshow_transition_speed",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 0,
+            "slider_max_value": 10000,
+            "increment_value": 100,
+            "slider_units": "ms",
+            "default_value": 500
+        },
+        {
+            "key": "field_57b5b0591dafc",
+            "label": "Autoplay",
+            "name": "slideshow_autoplay",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_585a6300fe6fc",
+            "label": "Autoplay: Delay",
+            "name": "autoplay_speed",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57b5b0591dafc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "66",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 1,
+            "slider_max_value": 30,
+            "increment_value": 1,
+            "slider_units": "s",
+            "default_value": 5
+        },
+        {
+            "key": "field_57b5b0dc1dafe",
+            "label": "Autoplay: Pause on Hover",
+            "name": "slideshow_pause_on_hover",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57b5b0591dafc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57b57bdf73db3",
+            "label": "Slides",
+            "name": "_post_image_gallery",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Slide",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_57b5a54c921ce",
+                    "label": "Image",
+                    "name": "slide_image",
+                    "type": "flo-image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589833e1963bd",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_589833e1963bd",
+                                "operator": "==",
+                                "value": "image_and_video_embed"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5898339b963bc",
+                    "label": "Video",
+                    "name": "slide_video",
+                    "type": "file",
+                    "instructions": "Note: for best website performance we recommend using videos not bigger than 10MB.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589833e1963bd",
+                                "operator": "==",
+                                "value": "video_slide"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "mp4"
+                },
+                {
+                    "key": "field_589833e1963bd",
+                    "label": "Type",
+                    "name": "slide_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "75",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "image": "Image",
+                        "image_and_video_embed": "Image + Video Embed",
+                        "video_slide": "Video in Background"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5898342e963bf",
+                    "label": "Video Embed code",
+                    "name": "slide_video_url",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589833e1963bd",
+                                "operator": "==",
+                                "value": "image_and_video_embed"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "new_lines": "wpautop",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "rows": ""
+                },
+                {
+                    "key": "field_58a7010507bfc",
+                    "label": "Video Size",
+                    "name": "slide_video_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589833e1963bd",
+                                "operator": "==",
+                                "value": "video_slide"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "cropped": "Full Screen",
+                        "no-crop": "Original Ratio"
+                    },
+                    "default_value": [
+                        "cropped"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5898345d963c0",
+                    "label": "Content",
+                    "name": "slide_info",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "acf-field__full-width",
+                        "id": ""
+                    },
+                    "min": 1,
+                    "max": 1,
+                    "layout": "block",
+                    "button_label": "",
+                    "collapsed": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_589834de963c3",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Lorem Ipsum. Dolor Sit Amet.",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a420937dd655",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5cb476a26f6ce",
+                            "label": "Text URL",
+                            "name": "text_url",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_589834f0963c4",
+                            "label": "Bottom Label",
+                            "name": "bottom_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "BASED IN SARATOGA SPRINGS, NY.",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_58983489963c1",
+                            "label": "Elements Color",
+                            "name": "elements_color",
+                            "type": "color_picker",
+                            "instructions": "Default: #FFFFFF",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFFFFF"
+                        },
+                        {
+                            "key": "field_5a8466e103e83",
+                            "label": "Image Overlay Color",
+                            "name": "image_overlay_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#000000"
+                        },
+                        {
+                            "key": "field_5a84679103e84",
+                            "label": "Image Overlay Opacity",
+                            "name": "image_overlay_opacity",
+                            "type": "number_slider",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "slider_units": "%",
+                            "default_value": 30,
+                            "slider_min_value": 0,
+                            "slider_max_value": 100,
+                            "increment_value": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "slideshow"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1555330885
+}

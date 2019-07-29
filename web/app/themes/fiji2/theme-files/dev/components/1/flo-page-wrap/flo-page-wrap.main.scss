@@ -1,0 +1,14 @@
+.flo_page_wrap{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  //flex-wrap: wrap;
+  &--padding-top-large{
+    padding-top: rem-calc(150);
+  }
+}
+
+.flo_page {
+  flex-grow: 1;
+  width: 100%;
+}

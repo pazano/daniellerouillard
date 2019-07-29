@@ -1,0 +1,83 @@
+/**
+* All of the CSS for your admin-specific functionality should be
+* included in this file.
+*/
+#beacon-flo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  padding: 10px 15px 10px 10px;
+  width: auto;
+  height: auto;
+  line-height: 48px;
+  bottom: 30px;
+  right: 30px;
+  
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 40px;
+  outline: 0;
+  border: 1px solid #fff;
+  
+  transform: scale(1);
+  transform-origin: center;
+  transition: all .24s linear;
+  
+  cursor: pointer; 
+  user-select: none;
+  
+  & > i {
+    font-size: 25px;
+    line-height: 1em;
+    color: #858585;
+  }
+  
+  & > span {
+    font-family: 'Nitti-Grotesk-Medium';
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 1em;
+    color: #000;
+  }
+  
+  &:hover{
+    transform: scale(1.1);
+    border-color: #DD684C;
+    background-color: #DD684C;
+    
+    & > * {
+      color: #fff;
+    }
+  }
+  &:active, 
+  &:focus {
+    transform: scale(.9);
+  }
+}
+
+.flo-admin-site-preview__trigger {
+  font-family: 'Nitti-Grotesk-Medium';
+  right: 165px;
+}
+
+#hs-beacon {
+  display: none;
+}
+
+.flo-support {
+  #hs-beacon {
+    display: block;
+    &, & > div {
+      width: 100%;
+      height: 100%;
+    }
+    iframe {
+      position: relative!important;
+      width: 100%!important;
+      height: 100%!important;
+      background-color: transparent!important;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.flo-footer-area-1-type-b {
+  $b: ".flo-footer-area-1-type-b";
+
+  @include images(rem-calc(90));
+  &__left-area {
+
+  }
+    &__images {
+    }
+      &__image {
+
+      }
+
+  &__middle-area {
+
+  }
+  &__right-area {
+
+  }
+
+    &__link-list {
+    }
+      &__link {
+      }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: rem-calc(53) rem-calc(100);
+
+    &__left-area {
+      width: 29.2%;
+      // padding-right: $global-column-width / 2;
+    }
+      &__images {
+
+      }
+        .img-block,
+        &__image {
+          &:not(:last-child) {
+            margin-right: rem-calc(22);
+          }
+        }
+
+    &__middle-area {
+      width: 41.6%;
+      padding: 0 $global-column-width / 2;
+    }
+    &__right-area {
+      display: flex;
+      justify-content: center;
+      width: 29.2%;
+      // padding: 0 $global-column-width / 2;
+    }
+      &__link-list {
+        display: inline-block;
+        text-align: center;
+        // width: $gcw * 2.8;
+        margin: 0 rem-calc(-10);
+      }
+        &__link {
+          margin: 0 rem-calc(10);
+        }
+  }
+
+  @include breakpoint(small only) {
+    &.hide-mobile-instagram{
+      #{$b}__left-area {
+        display: none;
+      }
+    }
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+    text-align: center;
+    &__left-area {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: rem-calc(40);
+
+    }
+      .flo-shcode-instgm-container,
+      &__images {
+        order: 1;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .img-block,
+      &__image {
+        &:not(:first-child){
+          width: calc(50% - #{rem-calc(10)})!important;
+        }
+        &:not(:first-child){
+          margin-bottom: 0;
+        }
+        height: auto;
+      }
+    &__middle-area {
+      margin-bottom: rem-calc(40);
+    }
+    &__right-area {
+
+    }
+      &__link-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+        &__link {
+          width: 50%;
+          margin-bottom: rem-calc(3.22);
+        }
+  }
+}

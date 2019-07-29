@@ -1,0 +1,66 @@
+.flo-header {
+  $b: ".flo-header";
+  position: relative;
+  z-index: 999;
+
+  @include global-transition(color, background-color, border-color, padding);
+
+  /* START: HEADER COMMON ELEMENTS */
+    @import "flo-header__menu";
+    @import "flo-header__logo";
+    @import "flo-header__social-links";
+  /* END: HEADER COMMON ELEMENTS */
+
+  /* START: HEADER TYPES */
+    @import "flo-header-type-a";
+    @import "flo-header-type-b";
+    @import "flo-header-type-c";
+    @import "flo-header-type-d-or-e";
+    @import "flo-header-type-f-or-g";
+    @import "flo-header-type-h-or-i";
+    @import "flo-header-type-j";
+  /* END: HEADER TYPES */
+
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+
+* {
+  border-color: inherit;
+}
+
+/* START: STICKY HEADER STYLES */
+  .flo-header--sticky {
+    .sticky-wrapper {
+      // margin-bottom: $global-padding--vertical;
+
+      @include global-transition(height);
+
+      &.is-sticky {
+        .flo-header {
+          position: fixed!important;
+          top: 0!important;
+          bottom: auto!important;
+          padding-top: rem-calc(20);
+          padding-bottom: rem-calc(20);
+
+          &__logo-image--default {
+            opacity: 0;
+          }
+          &__logo-image--light {
+            opacity: 0;
+          }
+          &__logo-image--sticky {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+/* END: STICKY HEADER STYLES */
+
+.flo-block--header {
+  padding-bottom: 0;
+}
+@import "flo-header__topbar";

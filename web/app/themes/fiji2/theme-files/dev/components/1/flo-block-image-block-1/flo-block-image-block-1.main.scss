@@ -1,0 +1,106 @@
+.flo-block-image-block-1 {
+  $b: ".flo-block-image-block-1";
+  display: flex;
+  &__image-wrap {
+    @include global-bgi-cover;
+  }
+    &__image {
+    }
+  &__text-area {
+  }
+    &__title {
+    }
+    &__title-paragraph {
+      & p:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__button-wrap {
+    }
+      &__button {
+        display: inline-block;
+        border: 1px solid;
+        border-color: inherit;
+        line-height: 1em!important;
+        padding: rem-calc(16) rem-calc(30);
+
+        @include global-transition(color, background-color);
+      }
+  @include breakpoint(medium up) {
+    padding: rem-calc(0) rem-calc(44);
+    &--left-aligned {
+      flex-direction: row;
+
+      & #{$b}__text-area {
+        padding-left: rem-calc(45);
+      }
+      & #{$b}__image-wrap {
+        margin-right: rem-calc(45);
+      }
+    }
+    &--right-aligned {
+      flex-direction: row-reverse;
+
+      & #{$b}__text-area {
+        padding-right: rem-calc(45);
+      }
+      & #{$b}__image-wrap {
+        margin-left: rem-calc(45);
+      }
+    }
+    &__image-wrap {
+      width: 50%;
+    }
+      &__image {
+      }
+    &__text-area {
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+      &__title {
+        margin-bottom: rem-calc(72);
+      }
+      &__title-paragraph {
+      }
+      &__button-wrap {
+        margin-top: rem-calc(108);
+      }
+        &__button {
+        }
+  }
+
+  @include breakpoint(small only) {
+    &--left-aligned {
+      flex-direction: column;
+      & #{$b}__image-wrap {
+        margin-bottom: rem-calc(30);
+      }
+    }
+    &--right-aligned {
+      flex-direction: column-reverse;
+      & #{$b}__image-wrap {
+        margin-top: rem-calc(30);
+      }
+    }
+    &__image-wrap {
+    }
+      &__image {
+      }
+    &__text-area {
+    }
+      &__title {
+        margin-bottom: rem-calc(20);
+      }
+      &__title-paragraph {
+      }
+      &__button-wrap {
+        margin-top: rem-calc(20);
+      }
+        &__button {
+          max-width: none;
+        }
+  }
+}

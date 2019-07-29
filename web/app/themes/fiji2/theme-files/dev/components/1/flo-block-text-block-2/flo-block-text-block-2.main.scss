@@ -1,0 +1,18 @@
+.flo-block-text-block-2 {
+  $b: ".flo-block-text-block-2";
+
+  &__text-content {
+    max-width: rem-calc(700);
+    margin: 0 auto;
+    text-align: center;
+  }
+  @include breakpoint(medium up) {
+    &__text-content {
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__text-content {
+    }
+  }
+}

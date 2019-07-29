@@ -1,0 +1,47 @@
+.flo-block-text-block-3 {
+  $b: ".flo-text-block-3";
+
+  &__title {
+    text-align: center;
+  }
+  &__text-columns {
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+    &__left-text-column {
+    }
+    &__right-text-column {
+    }
+  @include breakpoint(medium up) {
+    &__title {
+      margin-bottom: rem-calc(70);
+    }
+    &__text-columns {
+      display: flex;
+    }
+      &__left-text-column {
+        width: 50%;
+        padding-right: rem-calc(34);
+      }
+      &__right-text-column {
+        width: 50%;
+        padding-left: rem-calc(34);
+      }
+  }
+
+  @include breakpoint(small only) {
+    &__title {
+      margin-bottom: rem-calc(35);
+    }
+    &__text-columns {
+      & div:not(:last-child) {
+        margin-bottom: rem-calc(34);
+      }
+    }
+      &__left-text-column {
+      }
+      &__right-text-column {
+      }
+  }
+}

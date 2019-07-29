@@ -1,0 +1,10 @@
+.block-name {
+  $b: ".block-name";
+
+  @include breakpoint(medium up) {
+
+  }
+  @include breakpoint(small only) {
+
+  }
+}

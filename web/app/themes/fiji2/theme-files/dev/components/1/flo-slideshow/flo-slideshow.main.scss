@@ -1,0 +1,205 @@
+.flo-slideshow {
+  $b: ".flo-slideshow";
+  height: 100vh;
+  width: 100vw;
+
+  @import "flo-slideshow__slides";
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+
+  @import "flo-slideshow__layout--type-a";
+  @import "flo-slideshow__layout--type-b";
+  @import "flo-slideshow__layout--type-c";
+
+  /* START: ONE SLIDE MODIFICATOR */
+    &--one-slide {
+      #{$b}__slides {
+        cursor: default;
+      }
+      #{$b}__counter,
+      #{$b}__arrow-next,
+      #{$b}__slide-selectors
+      {
+        display: none!important;
+      }
+    }
+  /* END: ONE SLIDE MODIFICATOR */
+
+  /* START: COUNTER */
+    &__counter {
+      display: flex;
+      align-items: center;
+
+      position: absolute;
+    }
+      &__counter-index {
+        padding-bottom: 0!important;
+        line-height: 1em!important;
+        @include global-transition(color);
+      }
+
+      &__counter-separator,
+      &__counter-count {
+        opacity: 0.5;
+      }
+      &__counter-separator {
+        height: 1px;
+        width: rem-calc(11);
+        margin: 0 rem-calc(4);
+        @include global-transition(background-color);
+      }
+      &__counter-count {
+        padding-bottom: 0!important;
+        line-height: 1em!important;
+        @include global-transition(color);
+      }
+      @include breakpoint(medium up) {
+        &__counter {
+          bottom: rem-calc(35);
+          right: rem-calc(55);
+        }
+      }
+      @include breakpoint(small only) {
+        &__counter {
+          // display: none;
+          bottom: rem-calc(35);
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+  /* END: COUNTER */
+
+  /* START: TITLE AREA */
+    &__title-area {
+      position: absolute;
+      width: 90%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+        &__title-area-pretitle {
+          margin-bottom: rem-calc(23);
+          @include global-transition(color);
+
+          &:before {
+            content: " ";
+
+            display: inline-block;
+            vertical-align: middle;
+            width: rem-calc(23);
+            height: 1px;
+            margin-right: rem-calc(21);
+
+            @include global-transition(background-color);
+          }
+        }
+        &__title-area-title {
+          @include global-transition(color);
+        }
+
+    @include breakpoint(medium up) {
+      &__title-area {
+        width: calc(100% / 3.1);
+      }
+    }
+    @include breakpoint(small only) {
+      &__title-area {
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+        align-items: center;
+        text-align: center;
+      }
+    }
+  /* END: TITLE AREA */
+
+  /* START: FEATURED LINK */
+    &__featured-link {
+      display: flex;
+      align-items: center;
+      position: absolute;
+    }
+      &__featured-link-title-area {
+        display: block;
+        padding: rem-calc(25);
+      }
+        &__featured-link-pretitle {
+          display: block;
+          margin-bottom: rem-calc(10);
+          @include global-transition(color);
+        }
+        &__featured-link-title {
+          display: block;
+          @include global-transition(color);
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      &__featured-link-image {
+        display: block;
+        flex-shrink: 0;
+        flex-grow: 0;
+
+        $size: rem-calc(117.5);
+        width: $size;
+        height: $size;
+        border: rem-calc(12.5) solid;
+        box-sizing: border-box;
+        @include global-bgi-cover;
+        @include global-transition(border-color);
+      }
+      &__featured-link-divider {
+        height: rem-calc(80);
+        width: 1px;
+        @include global-transition(background-color);
+      }
+    @include breakpoint(medium up) {
+      &__featured-link {
+
+      }
+    }
+    @include breakpoint(small only) {
+      &__featured-link {
+        display: none;
+      }
+
+    }
+
+  /* END: FEATURED LINK */
+
+  @include breakpoint(medium up) {
+    @at-root {
+      .flo-block--merged-with-header {
+
+        &.flo-slideshow-block--type-a {
+          .flo-header.is-not-sticky {
+            background-color: transparent!important;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(small only) {
+    @at-root {
+      .flo-block--merged-with-header {
+        padding-top: 0!important;
+
+        &.flo-slideshow-block--type-a {
+          .flo-header-mobile.not-sticky.is-main {
+            background-color: transparent!important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+.comments-block{
+  $b: ".comments-block";
+  padding-top: rem-calc(85);
+
+  .flo-icon-reply{
+    font-size: rem-calc(14);
+  }
+
+
+  .parent{
+    .comment{
+      .comment-body{
+        padding-left: rem-calc(35);
+        padding-right: rem-calc(35);
+      }
+      &.depth-3{
+        .comment-body{
+          padding-left: rem-calc(50);
+        }
+      }
+      &.depth-4{
+        .comment-body{
+          padding-left: rem-calc(65);
+        }
+      }
+      &.depth-5{
+        .comment-body{
+          padding-left: rem-calc(80);
+        }
+      }
+      &.depth-5{
+        .comment-body{
+          padding-left: rem-calc(95);
+        }
+      }
+    }
+  }
+
+  .comment-body{
+    display: flex;
+    flex-direction: column;
+    padding: rem-calc(22) 0;
+  }
+
+  .comment-name-and-reply{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .comment-avatar-and-name{
+    display: flex;
+    align-items: center;
+  }
+
+  .flo-lovely2-comments-block__reply{
+    position: relative;
+    margin: rem-calc(10) 0;
+    @include global-transition(color);
+    .comment-reply-link{
+//      text-indent: -99999px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+    &:hover{
+      color: $color-gray-light;
+    }
+  }
+
+  .comment-block-content{
+    display: flex;
+    padding-top: rem-calc(10);
+  }
+
+  .comment-meta{
+    display: flex;
+    align-items: center;
+    padding-top: rem-calc(24);
+  }
+
+  .comment-avatar{
+    padding-right: rem-calc(14);
+    img{
+      border-radius: 50%;
+      width: rem-calc(36);
+      margin: 0;
+    }
+  }
+
+  .comment-respond{
+    //padding-top: rem-calc(50);
+    display: flex;
+    flex-direction: column;
+    input:not([type="submit"]){
+      margin-bottom: rem-calc(20);
+    }
+
+  }
+
+
+  &__top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: rem-calc(24);
+  }
+
+  &__show{
+    position: relative;
+  }
+
+  &__top-bar-hide-button{
+    .flo-icon{
+      font-size: rem-calc(8);
+    }
+  }
+  &__top-bar-show-button{
+    .flo-icon{
+      font-size: rem-calc(12);
+    }
+  }
+
+  &__top-bar-hide-button,
+  &__top-bar-show-button,
+  &__top-bar-toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include global-transition(opacity, visibility, height);
+  }
+
+  //&__top-bar-hide-button-text,
+  //&__top-bar-show-button-text,
+  //&__top-bar-toggle-button {
+  //  padding-right: rem-calc(12.5);
+  //}
+
+  &__top-bar-toggle-button {
+    cursor: pointer;
+    user-select: none;
+  }
+    &__top-bar-toggle-button-label-wrap {
+      position: relative;
+    }
+      &__top-bar-toggle-button-label {
+
+        @include global-transition(opacity, color);
+
+        &--show {
+
+        }
+        &--hide {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          opacity: 0;
+        }
+      }
+      &__top-bar-toggle-button-icon {
+        margin-left: rem-calc(12.5);
+        transform: rotate(180deg);
+        @include global-transition(transform);
+      }
+
+
+  &__collapsed{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+  }
+
+  &__posts{
+    @include global-transition(visibility, opacity);
+  }
+
+  &--expanded{
+    #{$b}__posts{
+      // height: auto;
+      // opacity: 1;
+      // visibility: visible;
+    }
+    #{$b}__top-bar-show-button{
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+    #{$b}__top-bar-hide-button{
+      opacity: 1;
+      visibility: visible;
+      height: inherit;
+    }
+
+    #{$b}__top-bar-toggle-button-label {
+      &--show {
+        opacity: 0;
+      }
+      &--hide {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &--collapsed{
+    #{$b}__posts{
+      // height: 0;
+      // visibility: hidden;
+      // opacity: 0;
+    }
+    #{$b}__top-bar-show-button{
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #{$b}__top-bar-hide-button{
+      visibility: hidden;
+      opacity: 0;
+    }
+    #{$b}__top-bar-toggle-button-label {
+      &--show {
+        opacity: 1;
+      }
+      &--hide {
+        opacity: 0;
+      }
+    }
+    #{$b}__top-bar-toggle-button-icon {
+      transform: rotate(0deg);
+    }
+  }
+  //Form
+  &__post-form{
+    padding-top: rem-calc(44);
+
+    .form-submit{
+      padding-top: rem-calc(48);
+    }
+
+    /* START: PARSLEY */
+      .parsley-errors-list {
+        display: block;
+      }
+        .parsley-required {
+          color: red;
+          margin: rem-calc(10) 0;
+        }
+    /* END: PARSLEY */
+
+  }
+
+  &__form-title-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__form-title{
+    padding-bottom: rem-calc(36);
+  }
+
+
+  &__form-field{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem-calc(20);
+    //padding-top: rem-calc(12);
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  .form-submit{
+    padding-top: rem-calc(48);
+  }
+
+
+  @include breakpoint(medium up){
+
+    //padding-left: rem-calc(95);
+    //padding-right: rem-calc(95);
+
+    .comment-content{
+      padding-top: rem-calc(14);
+    }
+    //&__post-form{
+    //  padding-left: rem-calc(95);
+    //  padding-right: rem-calc(95);
+    //}
+    &__form-field{
+      input[type]:not([type="submit"]){
+        margin-right: rem-calc(90);
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(small only){
+    .comment-block-content{
+     flex-direction: column;
+    }
+    &__form-field{
+      flex-direction: column;
+      input[type]:not([type="submit"]) {
+        margin-bottom: rem-calc(35);
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+      }
+    &__post-form{
+      padding-left: rem-calc(20);
+      padding-right: rem-calc(20);
+    }
+  }
+}
+
+.comment-reply-title{
+  text-align: center;
+  // padding-bottom: rem-calc(40);
+
+  .flo-icon-close{
+    padding-right: rem-calc(10);
+    font-size: rem-calc(14);
+  }
+}
+.comments-pagination{
+  h2.screen-reader-text{
+    display: none;
+  }
+  .nav-links{
+    text-align: center;
+  }
+  .page-numbers{
+    &.prev,&.next{
+      .screen-reader-text{
+        display: none;
+      }
+    }
+    &.prev{
+      float: left;
+    }
+    &.next{
+      float: right;
+    }
+  }
+}

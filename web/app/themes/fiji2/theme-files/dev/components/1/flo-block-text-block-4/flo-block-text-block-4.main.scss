@@ -1,0 +1,43 @@
+.flo-block-text-block-4 {
+  $b: ".flo-block-text-block-4";
+  display: flex;
+  &__text-column {
+  }
+    &__title {
+    }
+    &__title-paragraph {
+      & p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  @include breakpoint(medium up) {
+    justify-content: center;
+    &__text-column {
+      // The calculation is done so that if the users uses 1 or 2 columns their width remains consistent.
+      $gap: rem-calc(60);
+      width: calc(100% / 3 - #{$gap});
+      &:not(:last-child) {
+        margin-right: $gap;
+      }
+    }
+      &__title {
+        margin-bottom: rem-calc(43);
+      }
+      &__title-paragraph {
+      }
+  }
+
+  @include breakpoint(small only) {
+    flex-direction: column;
+    &__text-column {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(30);  
+      }
+    }
+      &__title {
+        margin-bottom: rem-calc(10);
+      }
+      &__title-paragraph {
+      }
+  }
+}
