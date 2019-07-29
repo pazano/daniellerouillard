@@ -8,6 +8,7 @@ web/app/plugins/*
 !web/app/plugins/flo-forms
 !web/app/plugins/flo-support
 !web/app/plugins/flo-launch
+!web/app/plugins/flo-instagram
 !web/app/plugins/flothemes-themeup
 web/app/mu-plugins/*/
 web/app/upgrade
