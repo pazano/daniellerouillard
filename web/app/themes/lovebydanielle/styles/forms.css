@@ -1,0 +1,52 @@
+.flo-block-contact-block-2__form-section--custom input[type]:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+.flo-block-contact-block-2__form-section--custom textarea,
+.app-flo-forms .form-preview .form-group.field-checklist .listbox,
+.app-flo-forms .form-preview .radio-list,
+.app-flo-forms .form-preview .field-checkbox {
+  padding: 16px;
+  border-bottom: 0 !important;
+  background-color: #fefefe;
+  box-shadow:
+    inset 0px 0px 0px 1px #cacaca;
+}
+.flo-block-contact-block-2__form-section--custom input[type]:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus,
+.flo-block-contact-block-2__form-section--custom textarea:focus {
+    box-shadow:
+      inset 0px 0px 0px 1px #cacaca,
+      inset 0px 0px 5px 2px #ffcc00;
+}
+
+.list-row,
+.app-flo-forms .form-preview .radio-list label {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.list-row .is-checked label {
+  text-transform: uppercase;
+}
+
+.list-row label {
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.app-flo-forms .form-preview .form-group.field-checklist .listbox,
+.app-flo-forms .form-preview .radio-list {
+  flex-flow: column nowrap !important;
+  padding-left: 8px;
+}
+
+.flo-block-contact-block-2 .flo-form label {
+  text-align: left !important;
+  padding-left: 8px;
+}
+
+.form-group:not(.field-checkbox) > label {
+  color: #fc0;
+}
+
+.app-flo-forms input[type="text"], .app-flo-forms input[type="email"], .app-flo-forms input[type="number"], .app-flo-forms select {
+  height: 4em !important;
+}

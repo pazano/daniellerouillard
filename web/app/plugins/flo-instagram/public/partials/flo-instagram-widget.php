@@ -224,7 +224,7 @@ class widget_flo_instagram extends WP_Widget {
 	        <?php if (!get_option('flo_instagram_accounts')) { ?>
 	          <a class="flo_instagram_widget--error-wrapper" href="admin.php?page=flo_instagram" target="_blank">
 	            <div class="flo_instagram_widget--error">
-	              <?php echo sprintf(__('Please add at least one user from the settings page','flotheme'),'<a href="admin.php?page=flo_instagram" target="_blank">', '</a>'); ?>
+	              <?php echo sprintf(__('Please add at least one user from the settings page','flotheme'),'<a href="admin.php?page=flo_instagram">', '</a>'); ?>
 	            </div>
 	          </a>
 	        <?php } else { $IGusers = get_option('flo_instagram_accounts'); ?>

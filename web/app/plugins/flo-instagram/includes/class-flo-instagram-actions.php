@@ -48,27 +48,41 @@ class Flo_Instagram_Actions {
 		add_action('wp_ajax_flo_get_user_object', array(&$this, 'flo_get_user_object'));
 		add_action('wp_ajax_flo_get_all_user_objects', array(&$this, 'flo_get_all_user_objects'));
 		add_action('wp_ajax_flo_make_master', array(&$this, 'flo_make_master'));
-		add_action('wp_ajax_flo_update_users', array(&$this, 'flo_update_users'));
 		add_action('wp_ajax_flo_update_cache_time', array(&$this, 'flo_update_cache_time'));
 		add_action('wp_ajax_flo_update_user_transient', array(&$this, 'flo_update_user_transient'));
 		add_action('wp_ajax_flo_reset_all_instagram_data', array(&$this, 'flo_reset_all_instagram_data'));
 		
 		add_action('wp_ajax_nopriv_flo_update_user_transient', array(&$this, 'flo_update_user_transient'));
-		
-		
   }
-
+	
+	public function recursively_sanitize ($data = array()) {
+		if (!is_array($data) || !count($data)) {
+			return array();
+		}
+		foreach ($data as $k => $v) {
+			if (!is_array($v) && !is_object($v)) {
+				$data[$k] = sanitize_text_field(trim($v));
+			}
+			if (is_array($v)) {
+				$data[$k] = $this->recursively_sanitize($v);
+			}
+		}
+		return $data;
+	}
+	
   public function flo_add_user() {
 		check_ajax_referer( 'flo_instagram_settings_security_nonce', 'security' );
 		$usersList = get_option('flo_instagram_accounts');
 		if(!$usersList) {
 			$usersList = array();
 		}
-
+		
 		$response = array();
-		$newUser = $_POST['user'];
-		$newUserObj = json_encode($_POST['userObj']);
-
+		$newUser = sanitize_text_field($_POST['user']);
+		
+		$newUserObj = $this->recursively_sanitize($_POST['userObj']);
+		$newUserObj = json_encode($newUserObj);
+		
 		$cacheTime = get_option('flo_instagram_cache_time');
 		if($cacheTime === false || $cacheTime === '') {
 			$cacheTime = 60;
@@ -90,7 +104,7 @@ class Flo_Instagram_Actions {
 
 				$response[$newUser]['message'] = $newUser . ' expired transient, refreshing';
 				$response[$newUser]['action'] = true;
-				$response[$newUser]['data'] = $_POST['userObj'];
+				$response[$newUser]['data'] = $this->recursively_sanitize($_POST['userObj']);
 			}
 		} else {
 
@@ -99,7 +113,7 @@ class Flo_Instagram_Actions {
 			set_transient('flo_instagram_'.$newUser, $newUserObj, $cacheTime * 60);
 
 			$response[$newUser]['message'] = $newUser . ' added succesfully';
-			$response[$newUser]['data'] = $_POST['userObj'];
+			$response[$newUser]['data'] = $this->recursively_sanitize($_POST['userObj']);
 			$response[$newUser]['action'] = true;
 
 		}
@@ -113,7 +127,7 @@ class Flo_Instagram_Actions {
 
 		$usersList = get_option('flo_instagram_accounts');
 		$response = array();
-		$requestedUser = $_POST['user'];
+		$requestedUser = sanitize_text_field($_POST['user']);
 
 		if (($key = array_search($requestedUser, $usersList)) !== false) {
 	    unset($usersList[$key]);
@@ -167,7 +181,7 @@ class Flo_Instagram_Actions {
 		check_ajax_referer( 'flo_instagram_settings_security_nonce', 'security' );
 
 		$response = array();
-		$requestedUser = $_POST['user'];
+		$requestedUser = sanitize_text_field($_POST['user']);
 		$object = get_transient( 'flo_instagram_'.$requestedUser );
 
 		if (empty($object)) {
@@ -185,7 +199,7 @@ class Flo_Instagram_Actions {
 
 	public function flo_make_master() {
 		check_ajax_referer( 'flo_instagram_settings_security_nonce', 'security' );
-		$requestedUser = $_POST['user'];
+		$requestedUser = sanitize_text_field($_POST['user']);
 		update_option('flo_social_masterKey', $requestedUser);
 		echo json_encode([
 			'message' => $requestedUser . ' marked as master',
@@ -195,8 +209,6 @@ class Flo_Instagram_Actions {
 	}
 
 	public function flo_get_all_user_objects() {
-		// check_ajax_referer( 'flo_instagram_settings_security_nonce', 'security' );
-
 		$allAccounts = get_option('flo_instagram_accounts');
 		$response = [];
 		if($allAccounts !== false && sizeof($allAccounts)) {
@@ -216,39 +228,10 @@ class Flo_Instagram_Actions {
 		die();
 	}
 
-	public function flo_update_users() {
-		check_ajax_referer( 'flo_instagram_settings_security_nonce', 'security' );
-
-		$users = $_POST['users'];
-		$savedUsers = get_option('flo_instagram_accounts');
-
-		$cacheTime = get_option('flo_instagram_cache_time');
-		if($cacheTime === false || $cacheTime === '') {
-			$cacheTime = 60;
-		}
-
-		$response = [];
-
-		foreach ($users as $username => $userObj) {
-			if(in_array($username, $savedUsers)) {
-				set_transient('flo_instagram_'.$username, json_encode($userObj), $cacheTime * 60);
-				$response[$username]['data'] = $userObj;
-				$response[$username]['message'] = $username . ' transient updated';
-				$response[$username]['action'] = true;
-			} else {
-				$response[$username]['message'] = $username . ' does not exist';
-				$response[$username]['action'] = false;
-			}
-		}
-
-		echo json_encode($response);
-		die();
-	}
-
 	public function flo_update_cache_time() {
 		check_ajax_referer( 'flo_instagram_settings_security_nonce', 'security' );
 
-		$newVal = $_POST['cacheVal'];
+		$newVal = intval(sanitize_text_field($_POST['cacheVal']));
 		$newCache = update_option('flo_instagram_cache_time', $newVal);
 		
 		if($newCache) {
@@ -280,7 +263,7 @@ class Flo_Instagram_Actions {
 		
 		if(isset($_POST['security']) && isset($_POST['transient'])) {
 			if(isset($_POST['fromFront']) && $_POST['fromFront'] == true) {
-				$user = $_POST['user'];
+				$user = sanitize_text_field($_POST['user']);
 				$referName = 'transient_nonce_' . $user;
 			} else {
 				$referName = 'flo_instagram_settings_security_nonce';
@@ -288,7 +271,7 @@ class Flo_Instagram_Actions {
 			
 			check_ajax_referer( $referName, 'security' );
 			
-			$transient = $_POST['transient'];
+			$transient = $this->recursively_sanitize($_POST['transient']);
 			$username = $transient['username'];
 			
 			$cacheTime = get_option('flo_instagram_cache_time');

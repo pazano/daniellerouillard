@@ -112,7 +112,9 @@ class Flo_Instagram_Public {
 			} else {
 				$ver = $this->version;
 			}
+			
 			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/all.min.js', array( 'jquery' ), $ver, false );
+			wp_localize_script( $this->plugin_name, 'floAjaxUrl', admin_url( 'admin-ajax.php' ) );
 
 	}
 

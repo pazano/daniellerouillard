@@ -114,17 +114,9 @@ class Flo_Instagram_Admin {
 		} else {
 			$ver = $this->version;
 		}
+		
 
-		$handle = 'jquery-ui';
-		$list = 'enqueued';
-		if (wp_script_is( $handle, $list )) {
-			return;
-		} else {
-			wp_register_script( $handle, 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js');
-			wp_enqueue_script( $handle );
-		}
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/all.min.js', [ 'jquery', 'jquery-ui' ], $ver, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/all.min.js', [ 'jquery', 'jquery-ui-slider' ], $ver, false );
 
 		if(!get_option('flo_instagram_accounts')) {
 			$accounts = [];

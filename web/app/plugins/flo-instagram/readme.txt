@@ -1,16 +1,16 @@
-=== Flo Social - Display Your Instagram Feed ===
+=== Flo Social ===
 Contributors: wpmigo,flothemesplugins
 Donate link:
 Tags: instagram feed, instagram widget, instagram shortcode, instagram photos, instagram images
 Requires at least: 5.0
 Tested up to: 5.2.2
-Stable tag: 2.2.7
+Stable tag: 2.3.1
 Author: Flothemes
 Author URI: https://flothemes.com/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Displays the Instagram feed in an easy, clean and beautifully way.
+Displays the Instagram feed in an easy, clean and beautiful way.
 
 == Description ==
 
@@ -29,6 +29,7 @@ Showcase your Instagram images in a clean and beautiful way and increase your so
 
 For more details and step by step instructions read the <a href="https://docs.flothemes.com/flo-instagram-plugin/" target="_blank">documentation here</a>.
 
+NOTE: Flo Social is not an affiliate product of Instagram.
 
 == Installation ==
 
@@ -62,6 +63,20 @@ Another issue may be that the images are showing a broken image icon. If that's 
 == Screenshots ==
 
 == Changelog ==
+
+V 2.3.1
+Security Updates
+
+V 2.3.0
+Updated plugin name: "Flo Social for Instagram" -> "Flo Social"
+
+V 2.2.9
+Updated plugin description
+Fixed ajaxurl undefined error
+
+V 2.2.8
+Updated plugin name: "Flo Social - Display your Instagram feed" -> "Flo Social for Instagram"
+Shortcode - fixed "mobile images per row" option;
 
 V 2.2.7
 Footer account selector fixes
