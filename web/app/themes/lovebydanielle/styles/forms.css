@@ -86,6 +86,11 @@
 .form-group:not(.field-checkbox) > label {
   color: #333;
 }
+.form-group.conditional-value > label {
+  color: #666;
+  margin-left: 8px;
+  font-size: 0.8rem;
+}
 
 .field-checkbox {
   margin: 5px 5px 5px 13px !important;
@@ -104,3 +109,4 @@
 .app-flo-forms input[type="text"], .app-flo-forms input[type="email"], .app-flo-forms input[type="number"], .app-flo-forms select {
   height: 4em !important;
 }
+
