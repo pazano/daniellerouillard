@@ -6,6 +6,6 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+// add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 
 ?>
