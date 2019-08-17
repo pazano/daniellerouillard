@@ -84,7 +84,7 @@
 }
 
 .form-group:not(.field-checkbox) > label {
-  color: #fc0;
+  color: #333;
 }
 
 .field-checkbox {
