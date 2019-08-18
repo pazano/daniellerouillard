@@ -16,43 +16,6 @@
       inset 0px 0px 5px 2px #ffcc00;
 }
 
-/* Custom Checkbox / Radio
-.flo-block-contact-block-2__form-section--custom input[type="radio"],
-.flo-block-contact-block-2__form-section--custom input[type="checkbox"] {
-  display: none;
-}
-.list-row label::before,
-.list-row label::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-}
-.list-row label::before {
-  height: 16px;
-  width: 16px;
-  border: 1px solid;
-}
-.list-row label::after {
-  height: 6px;
-  width: 9px;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
-  transform: rotate(-45deg);
-  left: 0px;
-  top: 3px;
-}
-.flo-block-contact-block-2__form-section--custom input[type="checkbox"] + label::after {
-  content: none;
-}
-.flo-block-contact-block-2__form-section--custom input[type="checkbox"]:checked + label::after {
-  content: "";
-}
-.flo-block-contact-block-2__form-section--custom input[type="checkbox"]:focus + label::before {
-  outline: rgb(59, 153, 252) auto 5px;
-}
-*/
-
-
 .list-row,
 .app-flo-forms .form-preview .radio-list label {
   padding-top: 4px;
@@ -91,6 +54,11 @@
   margin-left: 8px;
   font-size: 0.8rem;
 }
+.form-group.required > label::after {
+  content: "*";
+  color: #f00;
+}
+
 
 .field-checkbox {
   margin: 5px 5px 5px 13px !important;
@@ -102,10 +70,6 @@
 .field-checkbox > label {
   margin-top: 0px !important;
 }
-.field-checkbox.field-wrap {
-  align-items: center;
-}
-
 .app-flo-forms input[type="text"], .app-flo-forms input[type="email"], .app-flo-forms input[type="number"], .app-flo-forms select {
   height: 4em !important;
 }
