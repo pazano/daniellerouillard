@@ -40,6 +40,7 @@
     "roots/wordpress": "^5.2.2",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/wp-smushit":"3.2.4",
     "wpackagist-plugin/flo-forms": "^1.0.13",
     "wpackagist-plugin/wordpress-seo": "^11.6",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.11.8"
