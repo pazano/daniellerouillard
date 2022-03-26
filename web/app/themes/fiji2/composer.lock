@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "29ac8d4c39321c9e2fbc289105dc8c35",
     "content-hash": "59d3a6b6277cd49927ea7e82c4f52e8d",
     "packages": [
         {
@@ -46,7 +45,7 @@
                     "email": "taylorotwell@gmail.com"
                 }
             ],
-            "time": "2015-01-29 16:04:27"
+            "time": "2015-01-29T16:04:27+00:00"
         },
         {
             "name": "illuminate/events",
@@ -89,7 +88,7 @@
                     "email": "taylorotwell@gmail.com"
                 }
             ],
-            "time": "2014-10-02 19:49:50"
+            "time": "2014-10-02T19:49:50+00:00"
         },
         {
             "name": "illuminate/filesystem",
@@ -132,7 +131,7 @@
                     "email": "taylorotwell@gmail.com"
                 }
             ],
-            "time": "2014-12-29 18:11:33"
+            "time": "2014-12-29T18:11:33+00:00"
         },
         {
             "name": "illuminate/support",
@@ -180,7 +179,7 @@
                     "email": "taylorotwell@gmail.com"
                 }
             ],
-            "time": "2015-01-27 20:51:43"
+            "time": "2015-01-27T20:51:43+00:00"
         },
         {
             "name": "illuminate/view",
@@ -225,7 +224,7 @@
                     "email": "taylorotwell@gmail.com"
                 }
             ],
-            "time": "2015-01-27 20:51:43"
+            "time": "2015-01-27T20:51:43+00:00"
         },
         {
             "name": "symfony/finder",
@@ -272,7 +271,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-03 08:01:13"
+            "time": "2015-01-03T08:01:13+00:00"
         },
         {
             "name": "windwalker/data",
@@ -316,7 +315,7 @@
                 "framework",
                 "windwalker"
             ],
-            "time": "2016-02-12 15:36:22"
+            "time": "2016-02-12T15:36:22+00:00"
         },
         {
             "name": "windwalker/registry",
@@ -365,7 +364,7 @@
                 "windwalker"
             ],
             "abandoned": "windwalker/structure",
-            "time": "2016-03-07 10:02:08"
+            "time": "2016-03-07T10:02:08+00:00"
         },
         {
             "name": "windwalker/renderer",
@@ -423,7 +422,7 @@
                 "renderer",
                 "windwalker"
             ],
-            "time": "2016-02-12 15:36:22"
+            "time": "2016-02-12T15:36:22+00:00"
         }
     ],
     "packages-dev": [
@@ -465,7 +464,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Official version of pdepend to be handled with Composer",
-            "time": "2016-03-10 15:15:04"
+            "time": "2016-03-10T15:15:04+00:00"
         },
         {
             "name": "phpmd/phpmd",
@@ -530,20 +529,20 @@
                 "phpmd",
                 "pmd"
             ],
-            "time": "2016-04-04 11:52:04"
+            "time": "2016-04-04T11:52:04+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.6.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d"
+                "reference": "2acf168de78487db620ab4bc524135a13cfe6745"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
-                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/2acf168de78487db620ab4bc524135a13cfe6745",
+                "reference": "2acf168de78487db620ab4bc524135a13cfe6745",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +607,12 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-05-30 22:24:32"
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2018-11-07T22:31:41+00:00"
         },
         {
             "name": "symfony/config",
@@ -661,7 +665,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:41:56"
+            "time": "2016-06-29T05:41:56+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -721,7 +725,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:42:25"
+            "time": "2016-06-29T05:42:25+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -770,7 +774,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:41:56"
+            "time": "2016-06-29T05:41:56+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
@@ -806,7 +810,7 @@
                 "standards",
                 "wordpress"
             ],
-            "time": "2016-05-02 03:33:03"
+            "time": "2016-05-02T03:33:03+00:00"
         }
     ],
     "aliases": [],
@@ -818,5 +822,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
